@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+</head>
+
+<body>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap">
+        <div class="inner">
+            <div>
+                <h2 class="sub_tit01">
+                    자기소개서 <span>작성페이지</span>
+                </h2>
+
+                <!-- 작성 -->
+                <div class="post_write">
+
+                    <!-- 기본정보 -->
+                    <div class="top white_round section02 mt_50">
+                        <div class="write_tit">
+                            <span class="ico_person ico"></span>
+                            <p>
+                                기본 <span class="blue02">정보</span>
+                            </p>
+                        </div>
+                        <div class="post_write_info clear">
+                            <div class="left">
+                                <p class="pw_tit">
+                                    신청자명
+                                </p>
+                                <p class="pw_txt">
+                                    이정은
+                                </p>
+                            </div>
+                            <div class="right">
+                                <p class="pw_tit">
+                                    등록일
+                                </p>
+                                <p class="pw_txt">
+                                    2021.06.05
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="blue_line section02">
+
+                        <div class="post_write_table pw_item_four">
+                            <table>
+                                <caption>기본정보 작성</caption>
+                                
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="pw_tit">
+                                            <label for="area">지역</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="area" name="area">
+                                                <option>고성군</option>
+                                            </select>
+                                        </td>
+
+                                        <th scope="row" class="pw_tit">
+                                            <label for="state">상태</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="state" name="state">
+                                                <option>구직자</option>
+                                            </select>
+                                        </td>
+
+                                        <th scope="row" class="pw_tit">
+                                            <label for="field">취업분야</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="field" name="field">
+                                                <option>대기업</option>
+                                            </select>
+                                        </td>
+
+                                        <th scope="row" class="pw_tit">
+                                            <label for="term">구직준비기간</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="term" name="term">
+                                                <option>3개월</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="pw_tit">
+                                            <label for="age">연령</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="age" name="age">
+                                                <option>20대</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row" class="pw_tit">
+                                            <label for="gender">성별</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <select class="w100" id="gender" name="gender">
+                                                <option>여성</option>
+                                            </select>
+                                        </td>
+
+                                        <th scope="row" class="pw_tit">
+                                            <label for="serial">직렬</label>
+                                        </th>
+                                        <td colspan="3" class="pw_txt colspan3">
+                                            <div class="select_wrap">
+                                                <select class="w100" id="serial" name="serial">
+                                                    <option>선택</option>
+                                                </select>
+                                                <select class="w100" id="serial02" name="serial02">
+                                                    <option>선택</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //기본정보 -->
+
+                    <!-- 제목 -->
+                    <div class="white_round section02">
+                        <div class="write_tit_wrap">
+                            <div class="write_tit">
+                                <span class="ico_title ico"></span>
+                                <p>
+                                    <label for="tit">제목</label>
+                                </p>
+                            </div>
+                            <div class="write_tit_area">
+                                <input type="text" placeholder="제목을 입력해주세요." id="tit" name="tit" class="w100" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //제목 -->
+
+                    <!-- 자기소개서 항목 -->
+                    <div class="white_round section02">
+                        <div class="write_tit">
+                            <span class="ico_file ico"></span>
+                            <p>자기소개서 <span class="thin01">(항목 및 내용)</span></p>
+                        </div>
+                        <div class="text_filed">
+                            <div class="text_filed_area">
+                                <div class="post_write_table pw_item_two mt_30">
+                                    <table>
+                                        <caption>자기소개서 작성</caption>
+                                        <colgroup>
+                                            <col style="width: 10%">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="self_tit">항목(제목)</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <input type="text" placeholder="제목을 입력해주세요." id="self_tit" name="self_tit" class="w100" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="txt_area">
+                                <textarea class="textarea"></textarea>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="btn_wrap trt">
+                            <input type="button" class="btnAdd btn_line btn_pink_line" value="+ 항목 추가">
+                        </div>
+                    </div>
+
+                </div>
+                <p class="pink section02 f18 bold01">※ 컨설팅 신청 후, 작성 내용을 수정할 수 없습니다. 이점 유의하여 신청바랍니다.</p>
+                <div class="btn_wrap btn_wrap02 mt_50">
+                   <div class="fl btn_one">
+                    <a href="javascrip:vold" class="btn_style02 btn_blue_line wd180 btn_prev btn"><span>이전화면</span></a>
+                    </div>
+                   <div class="fr btn_three">
+                    <input type="button" class="btn_style02 btn_blue wd180 btn" value="임시저장">
+                    <input type="button" class="btn_style02 btn_gray wd180 btn" value="삭제">
+                    <input type="submit" class="btn_style02 btn_pink wd180 btn" value="컨설팅 신청">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 작성 -->
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <script src="./js/run.js"></script>
+    
+</body></html>
