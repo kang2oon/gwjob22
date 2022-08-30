@@ -7,6 +7,7 @@
 	<!--link rel="stylesheet" type="text/css" href="./inc/fonts.css"-->
     <link rel="stylesheet" type="text/css" href="https://cdn.kldp.org/fonts/Free/S-Core/css/scdream.css">
 	<link rel="stylesheet" type="text/css" href="./inc/prism.css" />
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/datalab.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./inc/proto.css" />
     <link rel="stylesheet" type="text/css" href="./inc/pt-common.css" />
@@ -1687,9 +1688,7 @@
                                         </div>
                                         <div>
                                             <h4>기업평가등급</h4>
-                                            <div>
-                                                <div class="bizGrade">BBB-</div>
-                                            </div>
+                                            <div class="bizGrade">BBB-</div>
                                         </div>
                                         <div>
                                             <h4>기업인증현황</h4>
@@ -1739,9 +1738,7 @@
                                         </div>
                                         <div>
                                             <h4>기업평가등급</h4>
-                                            <div>
-                                                <div class="bizGrade">BBB-</div>
-                                            </div>
+                                            <div class="bizGrade">BBB-</div>
                                         </div>
                                         <div>
                                             <h4>기업인증현황</h4>
@@ -1793,9 +1790,7 @@
                                         </div>
                                         <div>
                                             <h4>기업평가등급</h4>
-                                            <div>
-                                                <div class="bizGrade">BBB-</div>
-                                            </div>
+                                            <div class="bizGrade">BBB-</div>
                                         </div>
                                         <div>
                                             <h4>기업인증현황</h4>
@@ -1827,7 +1822,31 @@
                     </div>
                     <!-- -->
                     <div class="container mod_nm gap"><span>.mod_finance05</span>재무정보 모듈 5</div>
-
+                    <div class="mod_finance05">
+                        <div class="container">
+                            <h3><span>finance</span>기업 재무정보</h3>
+                            <div class="tab_wrap clearfix">
+                                <div class="conts">
+                                    <div class="unit">단위 : 백만원</div>
+                                        <div class="legend">
+                                            <ul>
+                                                <li class="lg_capital"><i></i> 자본금</li>
+                                                <li class="lg_sales"><i></i> 매출액</li>
+                                                <li class="lg_profit"><i></i> 당기순이익</li>
+                                            </ul>
+                                        </div>
+                                        <div id="graph_three" class="bb" style="position: relative;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="preview">HTML 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_finance05.html"></pre>
+                        <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
+                        <div class="preview">JS 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_finance05.js"></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1861,10 +1880,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+<script src="https://naver.github.io/billboard.js/release/latest/dist/billboard.pkgd.min.js"></script>
+<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script> -->
 <script src="./inc/prism.js"></script>
 <script src="./inc/jsontohtml.js"></script>
-<script src="./inc/map.js"></script>
+<!-- <script src="./inc/map.js"></script> -->
 <script>
     xmlhttp.open("GET", "./inc/sample.json");
     xmlhttp.send();

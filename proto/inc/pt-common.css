@@ -31,7 +31,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .container-fluid{position:relative;width:100%;}
 .container{position:relative;width:1200px;margin:0 auto;}
 
-.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
+.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;}
     .mod_history01 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history01 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history01 .history > div::after{content:"";display:block;width:24px;height:100%;background-color:#e4e4e4;position:absolute;left:50%;transform:translateX(-50%);top:0;}
@@ -75,7 +75,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history01 .history > div:nth-child(even) > span::after{right:10px;left:auto;}
     }
 
-.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
+.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;}
     .mod_history02 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history02 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history02 .history .slick-slide > span{
@@ -102,7 +102,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     @media all and (max-width:640px) {}
     @media all and (max-width:480px) {}
 
-.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
+.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;}
     .mod_history03 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history03 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history03 .history > div{display:flex;justify-content:space-between;flex-wrap:wrap;}
@@ -120,7 +120,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history03 .history > div > ul{width:100%;margin-left:0;}
     }
 
-.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
+.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;}
     .mod_history04 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history04 .history_wrap{position:relative;width:1200px;margin:0 auto;}
     .mod_history04 .history_wrap .thumb{float:left;width:560px;position:relative;}
@@ -200,7 +200,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     }
 
 .mod_interview01{background-color:#215350;padding:64px 0;}
-    .mod_interview01 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;color:#fff;}
+    .mod_interview01 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;color:#fff;}
     .mod_interview01 h3 span{display:block;color:rgba(255,255,255,.75);font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_interview01 .interview_wrap{position:relative;width:1200px;margin:0 auto;}
     .mod_interview01 .interview_wrap .iv_tab{display:flex;flex-direction:row;}
@@ -241,12 +241,14 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_interview01 .interview_wrap .slick-arrow{width:40px;height:60px;background-size: 112px}
         .mod_interview01 .interview_wrap .slick-arrow.slick-prev{left:0;background-position:-6px -8px;}
         .mod_interview01 .interview_wrap .slick-arrow.slick-next{right:0;background-position:-65px -8px;}
+        .mod_interview01 h3{font-size:30px;}
+        .mod_interview01 h3 span{font-size:12px;}
     }
     @media all and (max-width:480px) {}
 
 .mod_interview02 {background: #154382;padding: 64px 0}
     .mod_interview02 .container {padding: 80px 60px;background: #0f579a;border-radius: 30px;box-shadow: 1px 1px 15px rgb(0 0 0 / 20%);}
-    .mod_interview02 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;color:#fff;}
+    .mod_interview02 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;color:#fff;}
     .mod_interview02 h3 span{display:block;color:rgba(255,255,255,.75);font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_interview02 .photo {max-width: 250px;}
     .mod_interview02 .iv_wrap {background: #fff;border-radius: 20px;padding: 40px 40px 60px 40px;display: flex;justify-content: space-between}
@@ -261,6 +263,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview02 .slick-dots li button{display:none;}
 
     @media all and (max-width:1024px) {
+        .mod_interview02 .container {padding: 0px 30px;}
         .mod_interview02 .photo {max-width: 200px;}
         .mod_interview02 .iv_wrap .interview {width: calc(100% - 200px);padding-left:20px;}
     }
@@ -270,10 +273,12 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_interview02 .iv_wrap .interview {width: 100%;padding-left:0px;}
     }
     @media all and (max-width:640px) {
-        .mod_interview02 .container {padding: 0px;background: none;border-radius: 30px;box-shadow: none;}
+        .mod_interview02 .container {background: none;border-radius: 30px;box-shadow: none;}
         .mod_interview02 .iv_wrap + .iv_wrap {margin-top: 15px;}
         .mod_interview02 .iv_wrap .q {font-size: 18px;}
         .mod_interview02 .iv_wrap .a {font-size: 14px;}
+        .mod_interview02 h3{font-size:30px;}
+        .mod_interview02 h3 span{font-size:12px;}
     }
     @media all and (max-width:480px) {}
 
@@ -295,7 +300,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview03 .slick-dots li button{display:none;}
 
     @media all and (max-width:1024px) {
-        .mod_interview03 .container {padding: 0px;background: none;}
+        .mod_interview03 .container {padding: 0px 30px;background: none;}
     }
     @media all and (max-width:768px) {
         .mod_interview03 .cnt_wrap {display: block;}
@@ -308,6 +313,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     @media all and (max-width:640px) {
         .mod_interview03 .photo {display: none;}
         .mod_interview03 .iv_wrap .interview {padding: 0px;}
+        .mod_interview03 h3{font-size:30px;}
+        .mod_interview03 h3 span{font-size:12px;}
+        .mod_interview03 .iv_wrap .q {font-size:18px;}
+        .mod_interview03 .iv_wrap .a {font-size:14px;}
     }
     @media all and (max-width:480px) {}
 
@@ -335,7 +344,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     }
     .mod_interview04 .container .iv_cont > div{height: 530px;display:none;border-radius: 20px;border: 10px solid #fff;}
     .mod_interview04 .container .iv_cont > div.active{display:block;}
-    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom: -80px;right: -24px;max-width:240px;}
+    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom: -80px;right: 0;}
     .mod_interview04 .container .iv_cont > div .interview{height: 100%;padding: 50px;}
     .mod_interview04 .container .iv_cont > div .interview .q{color: #fad529;font-weight: 800;font-size:20px;}
     .mod_interview04 .container .iv_cont > div .interview .q::before{content:"Q. ";}
@@ -354,17 +363,26 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview04 .container .slick-dots li button{display:none;}
 
     @media all and (max-width:1024px) {
+        .mod_interview04 .container{padding-right: 30px;}
         .mod_interview04 .container .iv_cont > div .photo {display: none;}
+        .mod_interview04 .container .iv_tab {left: 30px}
     }
     @media all and (max-width:768px) {
+        .mod_interview04 .container{padding: 0 30px;}
+        .mod_interview04 .container .iv_tab {left: 0}
         .mod_interview04{background-size: cover;}
-        .mod_interview04 .container{padding: 0px;}
         .mod_interview04 .container .iv_tab{position: relative;width: 100%;padding: 30px 0 40px 0;border-top:none;}
         .mod_interview04 .container .iv_tab h2 > p {display: inline-block;font-size: 40px;}
         .mod_interview04 .container .iv_tab .btn_g {position:absolute;right: 0;bottom: 40px;}
         .mod_interview04 .container .iv_cont > div{height: auto;}
     }
-    @media all and (max-width:640px) {}
+    @media all and (max-width:640px) {
+        .mod_interview04 .container .iv_tab .txt {font-size: 12px;}
+        .mod_interview04 .container .iv_tab h2,
+        .mod_interview04 .container .iv_tab h2 > p {font-size: 30px;}
+        .mod_interview04 .container .iv_cont > div .interview .q {font-size:18px;}
+        .mod_interview04 .container .iv_cont > div .interview .a {font-size:14px;}
+    }
     @media all and (max-width:480px) {}
 
 
@@ -381,7 +399,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview05 .tabs li a {display: block;width: 100%;height: 100%;padding: 10px 20px;color: #00aeef;}
     .mod_interview05 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 60px;}
     .mod_interview05 .tab_content .slick-slide > div + div {margin-top:20px;}
-    .mod_interview05 .tab_content img{position: absolute;right: 0;bottom: 0;max-width:240px;}
+    .mod_interview05 .tab_content img{position: absolute;right: 0;bottom: 0}
     .mod_interview05 .q{font-size: 24px;margin-bottom: 10px;padding-left: 25px;font-weight: 800;position: relative;}
     .mod_interview05 .a{color: #666;width: calc(100% - 200px);word-break: keep-all;font-size: 16px;}
     .mod_interview05 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
@@ -391,6 +409,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview05 .container .slick-dots li button{display:none;}
 
     @media all and (max-width:1024px) {
+        .mod_interview05 .container {padding: 0 30px;}
         .mod_interview05 .tab_content .photo {display:none;}
     }
     @media all and (max-width:768px) {
@@ -404,6 +423,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_interview05 .tabs li a {padding: 10px 0;text-align: center;}
         .mod_interview05 .q {font-size: 18px;}
         .mod_interview05 .a {font-size: 14px;}
+        .mod_interview05 h3{font-size:30px;}
+        .mod_interview05 h3 span{font-size:12px;}
     }
     @media all and (max-width:480px) {}
 
@@ -427,8 +448,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview06 .prev_arrow:after, 
     .mod_interview06 .next_arrow:after{color: #fff;font-size: 20px}
 
-
     @media all and (max-width:1024px) {
+        .mod_interview06 .container {padding:0 30px;}
         .mod_interview06 .interview_txt .photo {width:50%;}
         .mod_interview06 .interview_txt .txt {width: calc(100% - 54%);}
     }
@@ -440,10 +461,12 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_interview06 .interview_txt h3{font-size: 24px}
         .mod_interview06 .interview_txt p{font-size: 14px;}
         .mod_interview06 .interview_txt strong{font-size: 18px;margin: 10px 0}
-        .mod_interview06 .q{font-size: 16px;padding: 10px 65px 10px 45px}
+        .mod_interview06 .q{font-size: 14px;padding: 10px 65px 10px 45px}
         .mod_interview06 .a{padding: 10px 20px;font-size: 14px;}
-        .mod_interview06 .q:after{background-size: 20px;width: 20px;height: 15px}
+        .mod_interview06 .q:after{background-size: 14px;background-position: center;width: 20px;height: 15px}
         .mod_interview06 .q.active:after{background-size: 20px;}
+        .mod_interview06 .sw_btn_wrap {right:30px;}
+        .mod_interview06 .bg > div > div + div {margin-top:8px;}
     }
     @media all and (max-width:640px) {}
     @media all and (max-width:480px) {}
@@ -453,7 +476,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
     .mod_interview07 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_interview07 .container{display: flex;}
-    .mod_interview07 .container > div{width: 33.333%;background:#e7eef0;border-right:2px dashed #dcdcdc;padding:40px 40px 128px;position:relative;}
+    .mod_interview07 .container > div{width: 33.333%;background: #e7eef0;border-right: 2px dashed #dcdcdc;padding: 40px;position: relative;}
     .mod_interview07 .container > div:last-child{border-right: 0}
     .mod_interview07 .container h3{text-align: center;font-size: 30px;margin-bottom: 40px;position: relative;z-index: 2}
     .mod_interview07 .container > div:nth-child(1){border-bottom: 3px solid #6986e4}
@@ -462,12 +485,11 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 .container > div:nth-child(1) h3:after{content: '';display: block;width: 180px;height: 12px;background: #6986e4;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(2) h3:after{content: '';display: block;width: 180px;height: 12px;background: #5ee6c2;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(3) h3:after{content: '';display: block;width: 180px;height: 12px;background: #fce073;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
-    .mod_interview07 .photo{position:absolute;bottom:-80px;left:50%;transform:translateX(-50%);width:160px;height:160px;overflow:hidden;border-radius:50%;}
-    /* .mod_interview07 img{position: absolute;bottom: -80px;left: 50%;transform: translateX(-50%)} */
+    .mod_interview07 img{position: absolute;bottom: -80px;left: 50%;transform: translateX(-50%)}
     .mod_interview07 .swiper{overflow: hidden;padding-bottom: 50px}
     .mod_interview07 .swiper-wrapper{height: 400px;padding-bottom: 50px}
     .mod_interview07 .swiper-slide{height: calc(100%/3)}
-    .mod_interview07 .q{font-size: 18px;margin-bottom: 10px;position: relative;padding-left: 25px}
+    .mod_interview07 .q{font-size: 18px;font-weight:600;margin-bottom: 10px;position: relative;padding-left: 25px}
     .mod_interview07 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
     .mod_interview07 .a{font-size: 14px;color: #555;}
     .mod_interview07 .container .slick-arrow{
@@ -487,6 +509,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 
     @media all and (max-width:1024px) {
         .mod_interview07 {margin: 60px 0}
+        .mod_interview07 .container{padding: 0 30px;}
         .mod_interview07 .container{display: block}
         .mod_interview07 .container > div{width: 100%;margin-bottom: 40px;padding: 20px; padding-top: 170px;position: relative;}
         .mod_interview07 .container > div:last-child{margin-bottom: 0}
@@ -497,12 +520,17 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_interview07 .swiper-slide{height: auto}
     }
     @media all and (max-width:768px) {}
-    @media all and (max-width:640px) {}
+    @media all and (max-width:640px) {
+        .mod_interview07 h3{font-size:30px;}
+        .mod_interview07 h3 span{font-size:12px;}
+        .mod_interview07 .q {font-size:18px;}
+        .mod_interview07 .a {font-size:14px;}
+    }
     @media all and (max-width:480px) {}
 
 /* swot */
 .mod_swot01{padding: 80px 0;background: #e6f4fd;}
-    .mod_swot01 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
+    .mod_swot01 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
     .mod_swot01 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_swot01 .swot_wrap{display: flex;flex-wrap: wrap;margin-top: 60px}
     .mod_swot01 .swot_wrap > div {width: calc(25% - 22.5px);margin-right: 30px;text-align: center;border-radius: 40px;padding: 60px 30px;}
@@ -543,6 +571,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 
     
     @media all and (max-width:1024px) {
+        .mod_swot01 .container {padding: 0 30px;}
         .mod_swot01 .swot_wrap > div{width: calc(50% - 10px);margin-right: 20px;margin-bottom: 50px}
         .mod_swot01 .swot_wrap > div:nth-child(2n){margin-right: 0}
         .mod_swot01 .swot_wrap > div:nth-child(3),
@@ -554,8 +583,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_swot01 .swot_wrap .swotT .tit:before{background-size: 70px !important;width: 70px;height: 90px}
     }
     @media all and (max-width:768px) {
-        .mod_swot01 .swot_wrap > div{padding: 10px;margin-bottom: 60px}
-        .mod_swot01 .swot_wrap .desc{font-size: 1.80px}
+        .mod_swot01 .swot_wrap > div{padding: 40px;margin-bottom: 60px}
+        .mod_swot01 .swot_wrap .desc{font-size: 14px}
         .mod_swot01 .swot_wrap .swotS .tit:before,
         .mod_swot01 .swot_wrap .swotW .tit:before,
         .mod_swot01 .swot_wrap .swotO .tit:before,
@@ -564,6 +593,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_swot01 .swot_wrap .swotW:before,
         .mod_swot01 .swot_wrap .swotO:before,
         .mod_swot01 .swot_wrap .swotT:before{top: -30px}
+        .mod_swot01 h3{font-size:30px;}
+        .mod_swot01 h3 span{font-size:12px;}
     }
     @media all and (max-width:640px) {
         .mod_swot01 .swot_wrap .tit{font-size: 18px}
@@ -603,6 +634,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_swot02 .swot_wrap .swotT span {background: #557eff;}
 
 @media all and (max-width:1024px) {
+    .mod_swot02 .container {padding: 0 30px;}
     .mod_swot02 .swot_wrap{flex-wrap: wrap;}
 	.mod_swot02 .swot_wrap > div{width:calc(50% - 10px);margin-right: 20px; margin-bottom: 40px}
 	.mod_swot02 .swot_wrap > div:nth-child(2n){margin-right: 0}
@@ -611,15 +643,18 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	.mod_swot02 .swot_wrap > div:nth-child(4){margin-bottom: 0}
 }
 @media all and (max-width:768px) {
-    .mod_swot02 .swot_wrap span{width: 60px;height: 60px;line-height: 60px;font-size: 20px}
+    .mod_swot02 .swot_wrap span{width: 60px;height: 60px;line-height: 60px;font-size: 20px;margin-bottom: 10px;}
 	.mod_swot02 .swot_wrap .swotS .tit:before,
 	.mod_swot02 .swot_wrap .swotW .tit:before,
 	.mod_swot02 .swot_wrap .swotO .tit:before,
 	.mod_swot02 .swot_wrap .swotT .tit:before{background-size: 40px;width: 40px;height: 60px}
+    .mod_swot02 h3{font-size:30px;}
+    .mod_swot02 h3 span{font-size:12px;}
+    .mod_swot02 .swot_wrap .tit{font-size: 20px;}
+    .mod_swot02 .swot_wrap .desc{font-size: 16px;}
 }
 @media all and (max-width:640px) {
-    .mod_swot02 .swot_wrap .tit{font-size: 20px;}
-    .mod_swot02 .swot_wrap .desc{font-size: 16px;color: #666;}
+    .mod_swot02 .swot_wrap .desc{font-size: 14px;}
 }
 @media all and (max-width:480px) {}
 
@@ -665,20 +700,23 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 }
 @media all and (max-width:1024px) {}
 @media all and (max-width:768px) {
-    .mod_swot03 .swot_wrap > div{background: #fff;padding: 30px;width: calc(50% - 5px);margin-right: 10px;margin-top: 10px;border-radius: 10px}
+    .mod_swot03 .swot_wrap > div{background: #fff;padding: 30px;width: calc(50% - 5px);margin-right: 10px;margin-top: 10px;border-radius: 10px;align-items: start;}
 	.mod_swot03{padding: 60px 0}
 	.mod_swot03 .swot_wrap > .swotS{border: 5px solid #ffca61}
-	.mod_swot03 .swot_wrap > .swotW{border: 5px solid #ed9a69}
+	.mod_swot03 .swot_wrap > .swotW{border: 5px solid #ed9a69;}
 	.mod_swot03 .swot_wrap > .swotO{border: 5px solid #ced26a}
 	.mod_swot03 .swot_wrap > .swotT{border: 5px solid #9ebf9f}
 	.mod_swot03 .swot_wrap > div:after{display: none}
 	.mod_swot03 .swot_wrap > div .txt{width: 100%}
+    .mod_swot03 .swot_wrap .tit {font-size: 16px;}
+    .mod_swot03 .swot_wrap .desc{font-size: 14px;}
+    .mod_swot03 h3{font-size:30px;}
+    .mod_swot03 h3 span{font-size:12px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {
     .mod_swot03 .swot_wrap > div {padding: 15px;}
-    .mod_swot03 .swot_wrap .tit {font-size: 16px;}
-    .mod_swot03 .swot_wrap .desc{font-size: 14px;}
+    
 }
 
 
@@ -701,7 +739,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_swot04 .txt dl:nth-child(2n){margin-right: 0}
 .mod_swot04 .txt dl:nth-child(3),
 .mod_swot04 .txt dl:nth-child(4){margin-bottom: 0}
-.mod_swot04 .txt dt {padding:0 0 15px 0;font-size: 27px;font-weight: 700;}
+.mod_swot04 .txt dt {padding:0 0 15px 0;font-size: 27px;font-weight: 700;text-transform: uppercase;}
 .mod_swot04 .txt dd {font-size: 18px;}
 .mod_swot04 .txt .swotS dt{color: #945cdb}
 .mod_swot04 .txt .swotW dt{color: #73a2ea}
@@ -711,7 +749,12 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_swot04 .diagram_area ul li{margin-right: 20px;width: 180px;height: 180px}
 	.mod_swot04 .diagram_area ul li strong{font-size: 40px}
 }
-@media all and (max-width:768px) {}
+@media all and (max-width:768px) {
+    .mod_swot04 h3{font-size:30px;}
+    .mod_swot04 h3 span{font-size:12px;}
+    .mod_swot04 .txt dt {font-size: 20px;}
+    .mod_swot04 .txt dd {font-size: 16px;}
+}
 @media all and (max-width:640px) {
     .mod_swot04 .diagram_area {display: none;}
     .mod_swot04 .txt{padding: 40px;}
@@ -720,8 +763,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_swot04 .txt .container {display: block;}
     .mod_swot04 .txt dl {width: 100%;}
     .mod_swot04 .txt dl + dl {margin-bottom: 30px !important;}
-    .mod_swot04 .txt dt {font-size: 20px;}
-    .mod_swot04 .txt dd {font-size: 16px;}
+    
 }
 
 .mod_swot05 {padding: 100px 0;background: url(./images/swot05_bg.jpg) no-repeat 50%;background-size: cover;}
@@ -736,7 +778,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_swot05 .swot_wrap .diagram_area .swotT{width: 170px;height: 270px; border-radius: 100% 0 0 100% / 80% 0 0 80%;;background: #0053c9;left: 0;top: 170px;}
 .mod_swot05 .swot_wrap .diagram_area .title {font-size: 34px;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);text-align: center;font-weight: 800;}
 .mod_swot05 .swot_wrap .diagram_area .title span {display: block;font-weight: 700;letter-spacing: 7px;color: #ccc;}
-.mod_swot05 .swot_wrap .tit {padding:0 0 10px 0;font-size: 27px;text-transform: capitalize;font-weight: 800;}
+.mod_swot05 .swot_wrap .tit {padding:0 0 10px 0;font-size: 27px;text-transform: capitalize;font-weight: 800;text-transform: uppercase;}
 .mod_swot05 .swot_wrap .desc {font-size: 18px;}
 .mod_swot05 .swot_wrap .txt > div{position: absolute;width: calc(50% - 200px)}
 .mod_swot05 .swot_wrap .txt .swotS{right: 0;top: 0}
@@ -763,6 +805,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	.mod_swot05 .swot_wrap .diagram_area .swotO{width: 210px;height: 110px}
 	.mod_swot05 .swot_wrap .diagram_area .title{font-size: 26px}
 	.mod_swot05 .swot_wrap .diagram_area li:not(.title) p strong{font-size: 35px}
+    .mod_swot05 .swot_wrap .tit {font-size: 20px;}
+    .mod_swot05 .swot_wrap .desc{font-size: 14px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -782,11 +826,16 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_swot06 .swot_wrap > div:nth-child(2n){margin-right: 0}
 
 @media all and (max-width:1024px) {
+    .mod_swot06 .container {padding: 0 30px;}
     .mod_swot06 .swot_wrap div.diagram_area{width: 150px;height: 150px;}
 	.mod_swot06 .swot_wrap .diagram_area strong{font-size: 40px}
 	.mod_swot06 .swot_wrap .txt{width: calc(100% - 180px)}
 }
-@media all and (max-width:768px) {}
+@media all and (max-width:768px) {
+    .mod_swot06 h3{font-size:30px;}
+    .mod_swot06 h3 span{font-size:12px;}
+    .mod_swot06 .swot_wrap .desc{font-size: 14px;}
+}
 @media all and (max-width:640px) {
     .mod_swot06 .swot_wrap > div{display: block;}
 	.mod_swot06 .swot_wrap div.diagram_area{margin: auto;width:130px;height: 130px;}
@@ -842,6 +891,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	.mod_swot07 .swot_wrap .swotW:before,
 	.mod_swot07 .swot_wrap .swotO:before,
 	.mod_swot07 .swot_wrap .swotT:before{font-size: 30px}
+    .mod_swot07 h3{font-size:30px;}
+    .mod_swot07 h3 span{font-size:12px;}
+    .mod_swot07 .swot_wrap .tit {font-size: 20px;}
+    .mod_swot07 .swot_wrap .desc{font-size: 14px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -857,6 +910,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_percent01 .percent_wrap .profit .ico{background: url(./images/mod_percent01_ico03.png) no-repeat center;width: 103px;height: 101px}
 .mod_percent01 .percent_wrap .stable .ico{background: url(./images/mod_percent01_ico04.png) no-repeat center;width: 103px;height: 101px}
 @media all and (max-width:1024px) {
+    .mod_percent01 .container {padding: 0 30px;}
 	.mod_percent01 .percent_wrap > div > div span {font-size: 30px;}
 }
 @media all and (max-width:768px) {
@@ -868,7 +922,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 }
 @media all and (max-width:640px) {
     .mod_percent01{padding: 60px 0}
-	.mod_percent01 .percent_wrap{flex-wrap: wrap}
+	.mod_percent01 .percent_wrap{padding: 40px 30px;flex-wrap: wrap}
 	.mod_percent01 .percent_wrap > div{width: calc(50% - 7.5px)}
 	.mod_percent01 .percent_wrap > div:nth-child(2n){margin-right: 0}
 	.mod_percent01 .percent_wrap > div > div span {font-size: 20px;}
@@ -892,9 +946,9 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_percent02 .percent_wrap > div{padding: 30px;flex-direction: column;text-align: center}
 }
 @media all and (max-width:1024px) {
+    .mod_percent02 .container {padding: 0 30px;}
     .mod_percent02 .percent_wrap > div{padding: 20px;flex-direction: column;text-align: center}
 	.mod_percent02 .percent_wrap > div > div{margin-top: 10px}
-	
 	.mod_percent02 .percent_wrap .scale .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
 	.mod_percent02 .percent_wrap .growth .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
 	.mod_percent02 .percent_wrap .profit .ico{background-size: 50px !important;width: 50px !important;height: 60px !important}
@@ -974,15 +1028,18 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_percent04 .percent_wrap > div:nth-child(4) > div span{font-size: 50px}
 .mod_percent04 .percent_wrap .line_txt {margin: 40px 0 0 0;display: inline-block;position: relative;} 
 .mod_percent04 .percent_wrap .line_txt:after {content: "";display: block;height: 1px;background: #fff;margin: 5px 0 0 0;}
-@media all and (max-width:1260px) {}
+@media all and (max-width:1260px) {
     .mod_percent04 .percent_wrap > div{width: 200px;margin-right: 50px}
 	.mod_percent04 .percent_wrap > div:after{width: 50px;right: -50px}
 	.mod_percent04 .percent_wrap > div:nth-child(4) > div{font-size: 20px;}
 	.mod_percent04 .percent_wrap > div:nth-child(4) > div span{font-size: 30px;}
 	.mod_percent04 .percent_wrap > div:nth-child(4):before{border-left: 130px solid transparent;border-right: 130px solid transparent;border-bottom: 150px solid #527f9e;top: -140px}
+}
+    
 	
 @media all and (max-width:1024px) {
     .mod_percent04{padding: 100px 0 80px 0}
+    .mod_percent04 .container {padding: 0 30px;}
 	.mod_percent04 .percent_wrap > div{width: 150px; margin-right: 30px}
 	.mod_percent04 .percent_wrap > div:after{width: 30px;right: -30px;height: 120px}
 	.mod_percent04 .percent_wrap > div:nth-child(1){height: 200px;margin-top: 100px}
@@ -1035,17 +1092,19 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_percent05 .percent_wrap > div > div{width: 100%;}
 .mod_percent05 .percent_wrap > div > div span{display: block;font-weight: bold;margin-top: 10px}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
+@media all and (max-width:1024px) {
+    .mod_percent05 .container {padding: 0 30px;}
+}
 @media all and (max-width:768px) {
     .mod_percent05{margin: 60px 0}
 	.mod_percent05 .percent_wrap > div{padding: 20px}
 	.mod_percent05 .percent_wrap{height: 350px}
-	.mod_percent05 .percent_wrap .stable{font-size: 2.20px}
-	.mod_percent05 .percent_wrap .stable span{font-size: 2.60px}
+	.mod_percent05 .percent_wrap .stable{font-size: 22px}
+	.mod_percent05 .percent_wrap .stable span{font-size: 26px}
 	.mod_percent05 .percent_wrap .growth{font-size: 24px}
 	.mod_percent05 .percent_wrap .growth span{font-size: 30px}
-	.mod_percent05 .percent_wrap .scale{font-size: 2.20px}
-	.mod_percent05 .percent_wrap .scale span{font-size: 2.60px}
+	.mod_percent05 .percent_wrap .scale{font-size: 22px}
+	.mod_percent05 .percent_wrap .scale span{font-size: 26px}
 	.mod_percent05 .percent_wrap .stable .ico{background-size: 40px;width: 40px;height: 40px}
 	.mod_percent05 .percent_wrap .scale .ico{background-size: 50px;width: 50px;height: 55px}
 	.mod_percent05 .percent_wrap .growth .ico{background-size: 45px;width:45px;height: 50px}
@@ -1054,6 +1113,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 @media all and (max-width:640px) {
     .mod_percent05 .percent_wrap{height: 300px}
     .mod_percent05 .percent_wrap .ico{display: none}
+    .mod_percent05 .percent_wrap .stable span{font-size: 20px}
+    .mod_percent05 .percent_wrap .growth span{font-size: 20px}
+    .mod_percent05 .percent_wrap .scale span{font-size: 20px}
+    .mod_percent05 .percent_wrap .profit span{font-size: 20px}
 }
 
 @media all and (max-width:480px) {}
@@ -1084,18 +1147,17 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	.mod_percent06 .percent_wrap .growth{left: 6em}
 }
 @media all and (max-width:1024px) {
-    .inf_mod_percent.sty04 .percent_wrap{zoom:0.75}
+    .mod_percent06 .container {padding: 0 30px;}
 	.mod_percent06 .percent_wrap{zoom:0.75}
 }
 @media all and (max-width:768px) {
-    .inf_mod_percent.sty04 .percent_wrap{zoom:0.65}
 	.mod_percent06 .percent_wrap{zoom:0.65}
 }
 @media all and (max-width:640px) {
     .mod_percent06 .percent_wrap{zoom:1;display: flex;flex-wrap: wrap;height: auto}
 	.mod_percent06 .percent_wrap > div{position: static;width: calc(50% - 7.5px) !important; margin-right: 15px;margin-top: 15px;padding: 60px;height: auto !important;padding: 40px 20px;font-size: 18px !important;border-radius: 20px}
 	.mod_percent06 .percent_wrap div .ico{display: none}
-	.mod_percent06 .percent_wrap > div span{font-size: 24px !important}
+	.mod_percent06 .percent_wrap > div span{padding: 10px 0 0 0;font-size: 24px !important}
 	.mod_percent06 .percent_wrap > div:nth-child(2n){margin-right: 0;}
 	.mod_percent06 .percent_wrap .growth:before,
     .mod_percent06 .percent_wrap .stable:before {display: none}
@@ -1143,7 +1205,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	.mod_percent07 .percent_wrap > div:nth-child(2){margin-top: 0}
 	.mod_percent07 .percent_wrap .circle{width: 160px;height: 160px;margin: 20px auto 0 auto;background-size: cover !important}
 }
-@media all and (max-width:768px) {}
+@media all and (max-width:768px) {
+    .mod_percent07 h3{font-size:30px;}
+    .mod_percent07 h3 span{font-size:12px;}
+}
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
 
@@ -1180,7 +1245,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture01 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
 .mod_culture01 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_culture01 .culture_wrap{position: relative}
-.mod_culture01 .slick-list {margin:20px 0;}
+.mod_culture01 .slick-list {margin:20px 0;padding: 20px 0;}
 .mod_culture01 .slick-track {height: inherit;display: flex;gap: 20px;align-content: stretch;}
 .mod_culture01 .slick-track .slick-slide {height: inherit;}
 .mod_culture01 .slick-track .slick-slide > div {height: 50%;}
@@ -1245,7 +1310,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture02 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
 .mod_culture02 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_culture02 .culture_wrap{position: relative}
-.mod_culture02 .slick-list {margin:20px 0;}
+.mod_culture02 .slick-list {margin:20px 0;padding: 20px 0;}
 .mod_culture02 .slick-track {height: inherit;display: flex;gap: 20px;align-content: stretch;}
 .mod_culture02 .slick-track .slick-slide {height: inherit;}
 .mod_culture02 .slick-track .slick-slide > div {height: 50%;}
@@ -1297,7 +1362,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture03 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;color:#fff;}
 .mod_culture03 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;color:#fff;}
 .mod_culture03 .culture_wrap{position: relative}
-.mod_culture03 .slick-list {margin:20px 0;}
+.mod_culture03 .slick-list {margin:20px 0;padding: 20px 0;}
 .mod_culture03 .slick-track {height: inherit;display: flex;gap: 20px;align-content: stretch;}
 .mod_culture03 .slick-track .slick-slide {height: inherit;}
 .mod_culture03 .slick-track .slick-slide > div {height: 50%;}
@@ -1331,11 +1396,15 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_culture03 .swiper-wrapper {height: auto;}
 }
 @media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
+@media all and (max-width:768px) {
+    .mod_culture03 .container {padding: 0;background: none;}
+}
 @media all and (max-width:640px) {
     .mod_culture03 h3{margin-bottom:40px;font-size:30px;}
     .mod_culture03 h3 span{font-size:14px;}
     .mod_culture03 .slide_arrow {display: none !important;}
+    .mod_culture03 .slick-track {gap:0;}
+    .mod_culture03 .slick-track > div {margin: 0 20px;}
 }
 @media all and (max-width:480px) {
     .mod_culture03 .container {padding: 0px;background:none;}
@@ -1446,7 +1515,11 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture05 .container .slick-dots li.slick-active{background-color: #ffc600;width:40px;}
 .mod_culture05 .container .slick-dots li button{display:none;}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
+@media all and (max-width:1024px) {
+    .mod_culture05 .container {display: block;}
+    .mod_culture05 .culwel_wrap {width:90%;margin:0 auto;}
+    .mod_culture05 .culwel_wrap > div {background-size: cover;}
+}
 @media all and (max-width:768px) {
     .mod_culture05 h3{margin-bottom:40px;font-size:30px;}
     .mod_culture05 h3 span{font-size:14px;}
@@ -1804,25 +1877,15 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture11 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_culture11 .culwel_wrap {position: relative;background: #f4f4f4;}
 .mod_culture11 .culwel_wrap + .culwel_wrap {margin: 30px 0 0 0;}
-.mod_culture11 .culture_wrap {
-    height: 280px;
-    padding: 0 0 0 320px;
-    align-items: center;
-}
+.mod_culture11 .culture_wrap {height: 280px;padding: 0 0 0 320px;align-items: center;}
 .mod_culture11 .culture_wrap .title {
     width: 280px;
     height: 100%;
-    padding: 9% 0;
     position: absolute;
     left: 0;
     top: 0;
     background: #04a29a;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
 }
-
 .mod_culture11 .culture_wrap .item::before {
     content: "";
     display: block;
@@ -1834,30 +1897,14 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     border-radius: 50%;
     flex-shrink: 0;
 }
-.mod_culture11 .culture_wrap .item {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
-    display: flex;
-}
+.mod_culture11 .culture_wrap .item {position: relative;top: 50%;transform: translateY(-50%);height: auto;display: flex;}
 .mod_culture11 .culture_wrap .item .info .tit {padding: 0 0 15px 0;font-size:24px;font-weight: 800;}
 .mod_culture11 .culture_wrap .dvCulture,
 .mod_culture11 .culture_wrap .dvCulture > .slick-list,
 .mod_culture11 .culture_wrap .dvCulture > .slick-list .slick-track {height: inherit;}
 .mod_culture11 .culture_wrap .item.dvCulture_0:before {background-image: url(./images/mod_culture11_ico01.png);}
 .mod_culture11 .culture_wrap .item.dvCulture_1:before {background-image: url(./images/mod_culture11_ico01.png);}
-
-.mod_culture11 .welfare_wrap:after {
-    width: 330px;
-    height: 310px;
-    content: "";
-    display: block;
-    background: url(./images/mod_culture11_ico02.png) no-repeat;
-    position: absolute;
-    bottom: 0;
-    right: 30px;
-}
+.mod_culture11 .welfare_wrap:after {width: 330px;height: 310px;content: "";display: block;background: url(./images/mod_culture11_ico02.png) no-repeat;position: absolute;bottom: 0;right: 30px;}
 .mod_culture11 .welfare_wrap {padding:0 320px 0 0;position: relative;}
 .mod_culture11 .welfare_wrap > .welfare {padding:50px 0 50px 60px;}
 .mod_culture11 .welfare_wrap .item dl {display: flex;flex-wrap: wrap;}
@@ -1865,16 +1912,13 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture11 .welfare_wrap .title {
     width: 280px;
     height: 280px;
-    padding: 9% 0;
     position: absolute;
     right: 0;
     top: 0;
     background: #2a2b5f;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
 }
+.mod_culture11 .welfare_wrap .title > span,
+.mod_culture11 .culture_wrap .title > span {display: inline-block;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 40px;font-weight: 800;color: #fff;letter-spacing: -4px;}
 .mod_culture11 .welfare_wrap .slick-list {margin:20px 0;}
 .mod_culture11 .welfare_wrap .slick-track {display: flex;gap: 20px;align-content: stretch;}
 .mod_culture11 .welfare_wrap .slick-track .slick-slide {height: inherit;}
@@ -1932,26 +1976,42 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 }
 @media all and (max-width:1024px) {}
 @media all and (max-width:768px) {
+    .mod_culture11 .container {padding: 0 30px;}
     .mod_culture11 .welfare_wrap .item:before {width: 100px;height: 100px;}
     .mod_culture11 .slide_arrow {display: none !important;}
     .mod_culture11 .culwel_wrap .tit, .mod_culture11 .culwel_wrap dt{font-size: 22px}
 	.mod_culture11 .culwel_wrap .desc, .mod_culture11 .culwel_wrap dd{font-size: 18px}
+    .mod_culture11 h3{margin-bottom:40px;font-size:30px;}
+    .mod_culture11 h3 span{font-size:14px;}
+    .mod_culture11 .culture_wrap,
+    .mod_culture11 .welfare_wrap {height: auto;padding: 0;}
+    .mod_culture11 .welfare_wrap .title,
+    .mod_culture11 .culture_wrap .title {position: relative;width: auto;height: auto;text-align: center;line-height: 3;}
+    .mod_culture11 .welfare_wrap .title > span, 
+    .mod_culture11 .culture_wrap .title > span {position: static;transform: none;font-size: 20px;letter-spacing: 0;}
+    .mod_culture11 .culture_wrap .item {padding: 30px;transform: none;}
+    .mod_culture11 .welfare_wrap:after {display: none;}
+    .mod_culture11 .welfare_wrap .item dl {display: block;}
+    .mod_culture11 .welfare_wrap .item dd + dd {margin: 0;}
 }
 @media all and (max-width:640px) {
     .mod_culture11 h3{margin-bottom:40px;font-size:30px;}
     .mod_culture11 h3 span{font-size:14px;}
+    .mod_culture11 .culture_wrap .item .info .tit,
+    .mod_culture11 .welfare_wrap .item dt {font-size: 18px;}
+    .mod_culture11 .culwel_wrap .desc,
+    .mod_culture11 .welfare_wrap .item dd {font-size: 14px;}
     
 }
 @media all and (max-width:480px) {
-    .mod_culture11 .container {padding: 0px;background:none;}
+    .mod_culture11 .container {background:none;}
     .mod_culture11 .slick-track .slick-slide > div + div {padding-top: 40px;}
 }
 
 
-
 .mod_business_area01 {padding:80px 0;background: #3a2fa7;position: relative;}
 .mod_business_area01 .container {padding: 70px;background:#393090;border-radius: 20px;}
-.mod_business_area01 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;color:#fff;}
+.mod_business_area01 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;color:#fff;}
 .mod_business_area01 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;color:#fff;text-transform: uppercase;}
 .mod_business_area01 .bizDiv .slick-track {display: flex;}
 .mod_business_area01 .bizDiv {}
@@ -1984,6 +2044,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_business_area01 .sw_btn_wrap .slick-dots li button{display:none;}
 @media all and (max-width:1260px) {}
 @media all and (max-width:1024px) {
+    .mod_business_area01 {padding:80px 30px;}
     .mod_business_area01 .bizDiv .slick-slide .info > h4 {font-size: 20px;}
 	.mod_business_area01 .bizDiv .slick-slide .info > p {font-size: 14px;}
 }
@@ -1991,6 +2052,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_business_area01 .container {padding: 40px;background: none;}
     .mod_business_area01 .bizDiv .slick-list {margin: 0 -10px;}
     .mod_business_area01 .bizDiv .slick-slide {margin: 0 10px;}
+    .mod_business_area01 h3{font-size:30px;}
+    .mod_business_area01 h3 span{font-size:14px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -1999,7 +2062,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 
 .mod_business_area02 {padding:80px 0;background: #fff;position: relative;}
 .mod_business_area02 .container {}
-.mod_business_area02 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
+.mod_business_area02 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
 .mod_business_area02 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_business_area02 h3 + .s_txt {padding:0 0 50px 0;font-size:18px;color:#333;text-align:center;}
 .mod_business_area02 .bizDiv .slick-track {display: flex;}
@@ -2041,6 +2104,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_business_area02 .container {padding: 40px;background: none;}
     .mod_business_area02 .bizDiv .slick-list {margin: 0 -10px;}
     .mod_business_area02 .bizDiv .slick-slide {margin: 0 10px;}
+    .mod_business_area02 h3{font-size:30px;}
+    .mod_business_area02 h3 span{font-size:14px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -2106,7 +2171,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 
 .mod_business_area04 {padding:80px 0;background: #fff;position: relative;}
 .mod_business_area04 .container {}
-.mod_business_area04 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
+.mod_business_area04 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
 .mod_business_area04 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_business_area04 h3 + .s_txt {padding:0 0 50px 0;font-size:18px;color:#333;text-align:center;}
 .mod_business_area04 .bizDiv .slick-track {display: flex;}
@@ -2147,6 +2212,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_business_area04 .container {padding: 0px 40px;background: none;}
     .mod_business_area04 .bizDiv .slick-list {margin: 0 -10px;}
     .mod_business_area04 .bizDiv .slick-slide {margin: 0 10px;}
+    .mod_business_area04 h3{font-size:30px;}
+    .mod_business_area04 h3 span{font-size:14px;}
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -2196,6 +2263,9 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_business_area05 .container {padding: 0px 40px;background: none;}
     .mod_business_area05 .bizDiv .slick-list {margin: 0 -10px;}
     .mod_business_area05 .bizDiv .slick-slide {margin: 0 10px;}
+    .mod_business_area05 h3 {font-size: 30px;}
+    .mod_business_area05 h3 span {font-size: 12px;}
+    
 }
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
@@ -2421,8 +2491,22 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance01 > div .tab_wrap .conts > div{display:none;width:100%;}
 .mod_finance01 > div .tab_wrap .conts > div:first-child{display:block;}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
+@media all and (max-width:1024px) {
+    .mod_finance01 > div .tab_wrap .tab {width: 200px;}
+    .mod_finance01 > div .tab_wrap .tab > div {padding: 30px 20px;font-size: 20px;}
+    .mod_finance01 > div .tab_wrap .conts {width: calc(100% - 230px);}
+}
+@media all and (max-width:768px) {
+    .mod_finance01 > div {padding: 60px 28px;border-radius:0;}
+    .mod_finance01 > div .tab_wrap {padding: 0;background: none;box-shadow: none;}
+    .mod_finance01 > div .tab_wrap .tab {width: 100%;float: none;display: flex;flex-wrap: wrap;justify-content: space-between;}
+    .mod_finance01 > div .tab_wrap .tab > div {width: 48%;padding: 20px 20px;margin: 0 0 20px 0;font-size: 15px;border-radius: 10px;}
+    .mod_finance01 > div .tab_wrap .tab > div + div {margin-top: 0;}
+    .mod_finance01 > div .tab_wrap .conts {width: 100%;height: auto;}
+    .mod_finance01 .bb > svg {max-height: 300px;}
+    .mod_finance01 h3 {font-size: 30px;}
+    .mod_finance01 h3 span {font-size: 14px;}
+}
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
 
@@ -2464,8 +2548,29 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance02 .tab_wrap .conts .summary > div h4{font-size:20px;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;font-weight: 800;color:#333;}
 .mod_finance02 .bb-chart {stroke: #eee;}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
+@media all and (max-width:1024px) {
+    .mod_finance02 > div .tab_wrap .tab > div {padding: 30px 20px;font-size: 20px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance02 > div {padding: 60px 28px;border-radius:0;}
+    .mod_finance02 > div .tab_wrap {padding: 0;background: none;box-shadow: none;}
+    .mod_finance02 > div .tab_wrap .tab {width: 100%;float: none;display: flex;flex-wrap: wrap;}
+    .mod_finance02 > div .tab_wrap .tab > div {width: 50%;padding: 20px 20px;font-size: 15px;border-radius: 0;border-bottom: 1px solid #ddd;}
+    .mod_finance02 > div .tab_wrap .tab > div + div {margin-top: 0;}
+    .mod_finance02 > div .tab_wrap .tab > div:nth-child(1) {border-radius: 15px 0 0 0;}
+    .mod_finance02 > div .tab_wrap .tab > div:nth-child(2) {border-radius: 0 15px 0 0;}
+    .mod_finance02 > div .tab_wrap .tab > div:nth-child(odd) + div {border-left: 1px solid #ddd;}
+    .mod_finance02 > div .tab_wrap .conts {width: 100%;height: auto;}
+    .mod_finance02 .bb > svg {max-height: 300px;}
+    .mod_finance02 > div .tab_wrap .tab > div.on:after {display:none;}
+    .mod_finance02 h3 {font-size: 30px;}
+    .mod_finance02 h3 span {font-size: 14px;}
+    .mod_finance02 .tab_wrap .conts .summary {flex-wrap: wrap;}
+    .mod_finance02 .tab_wrap .conts .summary > div {flex: 1 1 100%;padding: 20px;flex-shrink: 0;}
+    .mod_finance02 .tab_wrap .conts .summary > div + div {margin: 10px 0 0 0;}
+    .mod_finance02 .tab_wrap .conts .summary > div h4 {margin-bottom: 20px;font-size: 16px;padding: 0 0 20px;}
+    .mod_finance02 > div .tab_wrap .conts > div {width: 100%;}
+}
 @media all and (max-width:640px) {}
 @media all and (max-width:480px) {}
 
@@ -2482,28 +2587,52 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance03 > div .tab_wrap .tab > div{width:100%;background: #fff;font-size: 20px;text-align:center;padding: 20px 20px;cursor:pointer;}
 .mod_finance03 > div .tab_wrap .tab > div + div{border-left: 1px solid #f7873e;}
 .mod_finance03 > div .tab_wrap .tab > div.on{background: #f7873e;color: #fff;font-weight:800;position: relative;}
-.mod_finance03 > div .tab_wrap .conts{position: relative;background-color:#fff;border-radius: 0 0 20px 20px;padding: 77px 48px;height: 524px;} 
+.mod_finance03 > div .tab_wrap .conts{position: relative;background-color:#fff;border-radius: 0 0 20px 20px;padding: 61px 0;height: 524px;} 
 .mod_finance03 .bb > svg{width:100%;max-height: 440px;}
 .mod_finance03 > div .tab_wrap .conts .unit{font-size:14px;text-align:right;color:#666;margin-bottom:24px;}
 .mod_finance03 > div .tab_wrap .conts > div{display:none;}
-.mod_finance03 .tab_wrap .conts > div:first-child{display:flex;}
-.mod_finance03 .tab_wrap .conts .summary {width: 100%;display:flex;justify-content:space-evenly;}
+.mod_finance03 .tab_wrap .conts > div:first-child{display:block;}
+.mod_finance03 .tab_wrap .conts .summary {width: 100%;}
 .mod_finance03 .tab_wrap .conts .summary > div{
-	flex:1 1 30%;
-    border:2px solid #e8e8e8;
-    border-radius:8px;
-    padding:40px;
-    text-align:center;
+	padding: 20px 0;
+	display: flex;
+	flex: 1 30%;
+	align-items: center;
+	background: #f4f4f4;
+	text-align:
+	center;
     color:#6c6c6c;
     font-size:1.8rem;
 }
-.mod_finance03 .tab_wrap .conts .summary > div + div{margin-left:32px;}
-.mod_finance03 .tab_wrap .conts .summary > div h4{font-size:20px;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;font-weight: 800;color:#333;}
+.mod_finance03 .tab_wrap .conts .summary > div > div {width: 100%;padding: 0 40px;}
+.mod_finance03 .tab_wrap .conts .summary > div + div{margin-top:15px;}
+.mod_finance03 .tab_wrap .conts .summary > div h4{width: 250px;padding: 20px 0;font-size:20px;font-weight: 800;color:#333;flex-shrink: 0;border-right: 1px solid #ddd;}
 .mod_finance03 .bb-chart {stroke: #eee;}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
-@media all and (max-width:640px) {}
+@media all and (max-width:1024px) {
+    .mod_finance03 > div .tab_wrap .tab > div {font-size: 16px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance03 > div {padding: 60px 28px;border-radius:0;}
+    .mod_finance03 > div .tab_wrap {padding: 0;}
+    .mod_finance03 > div .tab_wrap .tab {width: 100%;float: none;display: flex;flex-wrap: wrap;border-radius: 0;border: none;}
+    .mod_finance03 > div .tab_wrap .tab > div {width: 50%;padding: 20px 20px;font-size: 15px;border-radius: 0;border-bottom: 1px solid #f7873e;}
+    .mod_finance03 > div .tab_wrap .tab > div + div {margin-top: 0;border-left: none;}
+    .mod_finance03 > div .tab_wrap .tab > div:nth-child(1) {border-radius: 15px 0 0 0;}
+    .mod_finance03 > div .tab_wrap .tab > div:nth-child(2) {border-radius: 0 15px 0 0;}
+    .mod_finance03 > div .tab_wrap .tab > div:nth-child(odd) + div {border-left: 1px solid #f7873e;}
+    .mod_finance03 > div .tab_wrap .conts {width: 100%;height: auto;padding: 40px;}
+    .mod_finance03 .bb > svg {max-height: 300px;}
+    .mod_finance03 .tab_wrap .conts .summary > div h4 {width: 160px;font-size: 16px;padding: 20px;}
+    .mod_finance03 > div .tab_wrap .conts > div {width: 100%;}
+    .mod_finance03 h3 {font-size: 30px;}
+    .mod_finance03 h3 span {font-size: 14px;}
+}
+@media all and (max-width:640px) {
+    .mod_finance03 .tab_wrap .conts .summary > div {display: block;}
+    .mod_finance03 .tab_wrap .conts .summary > div h4 {width: 100%;padding: 0px 20px 10px 20px;font-size: 14px;text-align: left;border-right: none;}
+    .mod_finance03 .tab_wrap .conts .summary > div > div {text-align: left;padding: 0 20px;}
+}
 @media all and (max-width:480px) {}
 
 
@@ -2536,9 +2665,29 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance04 .bb-chart {stroke: #eee;}
 @media all and (max-width:1260px) {}
 @media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
-@media all and (max-width:640px) {}
-@media all and (max-width:480px) {}
+@media all and (max-width:768px) {
+    .mod_finance04 .container {padding:0 30px;}
+    .mod_finance04 > div .tab_wrap {padding: 0;}
+    .mod_finance04 > div .tab_wrap .tab {width: 100%;position: relative;margin: 0 0 30px 0;}
+    .mod_finance04 > div .tab_wrap .tab h2, .mod_finance04 > div .tab_wrap .tab h2 em {padding-bottom: 0;}
+    .mod_finance04 > div .tab_wrap .tab h2 em {display: inline-block;}
+    .mod_finance04 > div .tab_wrap .tab .btn_g {margin: 0;position: absolute;bottom: 10px;right: 0;}
+}
+@media all and (max-width:640px) {
+    .mod_finance04 > div .tab_wrap .tab p {font-size: 12px;}
+    .mod_finance04 > div .tab_wrap .tab h2, .mod_finance04 > div .tab_wrap .tab h2 em {padding-bottom: 0;font-size: 30px;}
+    .mod_finance04 > div .tab_wrap .tab .btn_g button {width: 30px;height: 30px;}
+    .mod_finance04 > div .tab_wrap .tab .btn_g button.prev {}
+    .mod_finance04 > div .tab_wrap .tab .btn_g button.next {}
+    .mod_finance04 .tab_wrap .conts .summary {flex-wrap: wrap;margin: 50px 0 0 0;}
+    .mod_finance04 .tab_wrap .conts .summary > div {flex: 1 1 100%;background: #eee;border-radius: 0;}
+    .mod_finance04 .tab_wrap .conts .summary > div + div {margin: 20px 0 0 0;}
+    .mod_finance04 .tab_wrap .conts .summary > div h4 {padding: 0 0 20px 0;margin-bottom: 20px;}
+}
+@media all and (max-width:480px) {
+    .mod_finance04 .tab_wrap .conts .summary > div h4 {font-size: 16px;}
+    .mod_finance04 .tab_wrap .conts .summary > div h4 + div span {font-size: 14px;}
+}
 
 
 
@@ -2560,7 +2709,52 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance05 > div .tab_wrap .conts .unit{font-size:12px;text-align:right;color:#666;margin-bottom:12px;}
 .mod_finance05 .bb-chart {stroke: #eee;}
 @media all and (max-width:1260px) {}
-@media all and (max-width:1024px) {}
-@media all and (max-width:768px) {}
+@media all and (max-width:1024px) {
+    .mod_finance05 > div .tab_wrap {padding: 0px 50px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance05 > div {padding: 60px 30px;}
+    .mod_finance05 > div .tab_wrap {padding: 0px 30px;}
+    .mod_finance05 > div .tab_wrap .conts {height: auto;padding: 60px 10px 30px 10px;}
+    .mod_finance05 h3 {font-size: 30px;}
+    .mod_finance05 h3 span {font-size: 14px;}
+}
 @media all and (max-width:640px) {}
-@media all and (max-width:480px) {}
+@media all and (max-width:480px) {
+    .mod_finance05 .tab_wrap .conts .legend i{width:12px;height:12px;}
+    .mod_finance05 .tab_wrap .conts .legend ul li {font-size: 12px;}
+}
+
+.mod_finance06 {padding:80px 0;background: #f4f4f4;}
+.mod_finance06 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
+.mod_finance06 .bb line,
+.mod_finance06 .bb path {stroke:#eee;}
+.mod_finance06 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
+.mod_finance06 > div {background-color: #ebebeb;padding:60px 48px;border-radius:16px;}
+.mod_finance06 > div .tab_wrap{padding: 0px 130px;background: #fff;border-radius: 20px;box-shadow: 1px 1px 10px rgba(0,0,0,.1);}
+.mod_finance06 .tab_wrap .conts .legend ul{display:flex;justify-content:flex-end;}
+.mod_finance06 .tab_wrap .conts .legend ul li{margin-left:16px;line-height:1.4rem;font-size:14px;}
+.mod_finance06 .tab_wrap .conts .legend i{display:inline-block;width:16px;height:16px;background-color:#999;border-radius:8px;}
+.mod_finance06 .tab_wrap .conts .legend .lg_capital i{background-color:#999;}
+.mod_finance06 .tab_wrap .conts .legend .lg_sales i{background-color:#ffd55f;}
+.mod_finance06 .tab_wrap .conts .legend .lg_profit i{background-color:#0971ce;}
+.mod_finance06 > div .tab_wrap .conts{position: relative;background-color:#fff;border-radius: 0 0 20px 20px;padding: 60px 48px;height: 524px;} 
+.mod_finance06 .bb > svg{width:100%;max-height: 440px;}
+.mod_finance06 > div .tab_wrap .conts .unit{font-size:12px;text-align:right;color:#666;margin-bottom:12px;}
+.mod_finance06 .bb-chart {stroke: #eee;}
+@media all and (max-width:1260px) {}
+@media all and (max-width:1024px) {
+    .mod_finance06 > div .tab_wrap {padding: 0px 50px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance06 > div {padding: 60px 30px;}
+    .mod_finance06 > div .tab_wrap {padding: 0px 30px;}
+    .mod_finance06 > div .tab_wrap .conts {height: auto;padding: 60px 10px 30px 10px;}
+    .mod_finance06 h3 {font-size: 30px;}
+    .mod_finance06 h3 span {font-size: 14px;}
+}
+@media all and (max-width:640px) {}
+@media all and (max-width:480px) {
+    .mod_finance06 .tab_wrap .conts .legend i{width:12px;height:12px;}
+    .mod_finance06 .tab_wrap .conts .legend ul li {font-size: 12px;}
+}

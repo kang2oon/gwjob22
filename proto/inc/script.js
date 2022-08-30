@@ -525,32 +525,32 @@ $(document).ready(function(){
                         arrows: true,
                         infinite: false,
                         adaptiveHeight: false,
-                        responsive: [
-                            {
-                                breakpoint: 1024,
-                                settings: {
-                                    rows: 1,
-                                    slidesToShow: 3,
-                                    slidesToScroll: 3,
-                                }
-                            },
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 2,
-                                    dots: true,
-                                }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    dots: true,
-                                }
-                            }
-                        ]
+                        // responsive: [
+                        //     {
+                        //         breakpoint: 1024,
+                        //         settings: {
+                        //             rows: 1,
+                        //             slidesToShow: 3,
+                        //             slidesToScroll: 3,
+                        //         }
+                        //     },
+                        //     {
+                        //         breakpoint: 768,
+                        //         settings: {
+                        //             slidesToShow: 2,
+                        //             slidesToScroll: 2,
+                        //             dots: true,
+                        //         }
+                        //     },
+                        //     {
+                        //         breakpoint: 480,
+                        //         settings: {
+                        //             slidesToShow: 1,
+                        //             slidesToScroll: 1,
+                        //             dots: true,
+                        //         }
+                        //     }
+                        // ]
                     });
                 }
                 culture11_culture_slide();
@@ -730,12 +730,12 @@ $(document).ready(function(){
                     $(".mod_finance01 .conts > div").hide();
                     $(".mod_finance01 .conts > ." + item).show();
                     setTimeout(function() {
-                        chart2.resize();
-                        chart3.resize();
-                        chart4.resize();
-                    }, 100);	
+                        finance01_chart1.resize();
+                        finance01_chart2.resize();
+                        finance01_chart3.resize();
+                    }, 300);	
                 });
-                var chart2 = bb.generate({
+                var finance01_chart1 = bb.generate({
                     bindto: ".mod_finance01 #graph_fiCapital",
                     data: {
                         type: "bar",
@@ -777,7 +777,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart3 = bb.generate({
+                var finance01_chart2 = bb.generate({
                     bindto: ".mod_finance01 #graph_fiSales",
                     data: {
                         type: "bar",
@@ -819,7 +819,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart4 = bb.generate({
+                var finance01_chart3 = bb.generate({
                     bindto: ".mod_finance01 #graph_fiProfit",
                     data: {
                         type: "bar",
@@ -870,12 +870,12 @@ $(document).ready(function(){
                     $(".mod_finance02 .conts > div").hide();
                     $(".mod_finance02 .conts > ." + item).show();
                     setTimeout(function() {
-                        chart2.resize();
-                        chart3.resize();
-                        chart4.resize();
+                        finance02_chart1.resize();
+                        finance02_chart2.resize();
+                        finance02_chart3.resize();
                     }, 100);	
                 });
-                var chart2 = bb.generate({
+                var finance02_chart1 = bb.generate({
                     bindto: ".mod_finance02 #graph_fiCapital",
                     data: {
                         type: "line",
@@ -917,7 +917,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart3 = bb.generate({
+                var finance02_chart2 = bb.generate({
                     bindto: ".mod_finance02 #graph_fiSales",
                     data: {
                         type: "line",
@@ -959,7 +959,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart4 = bb.generate({
+                var finance02_chart3 = bb.generate({
                     bindto: ".mod_finance02 #graph_fiProfit",
                     data: {
                         type: "line",
@@ -1010,12 +1010,12 @@ $(document).ready(function(){
                     $(".mod_finance03 .conts > div").hide();
                     $(".mod_finance03 .conts > ." + item).show();
                     setTimeout(function() {
-                        chart2.resize();
-                        chart3.resize();
-                        chart4.resize();
+                        finance03_chart1.resize();
+                        finance03_chart2.resize();
+                        finance03_chart3.resize();
                     }, 100);	
                 });
-                var chart2 = bb.generate({
+                var finance03_chart1 = bb.generate({
                     bindto: ".mod_finance03 #graph_fiCapital",
                     data: {
                         type: "bar",
@@ -1065,7 +1065,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart3 = bb.generate({
+                var finance03_chart2 = bb.generate({
                     bindto: ".mod_finance03 #graph_fiSales",
                     data: {
                         type: "bar",
@@ -1115,7 +1115,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart4 = bb.generate({
+                var finance03_chart3 = bb.generate({
                     bindto: ".mod_finance03 #graph_fiProfit",
                     data: {
                         type: "bar",
@@ -1190,13 +1190,13 @@ $(document).ready(function(){
                     $('.mod_finance04 .conts > div').hide();
                     $('.mod_finance04 .conts > div.' +classArr[finance04Cnt]).show();
                     setTimeout(function() {
-                        chart2.resize();
-                        chart3.resize();
-                        chart4.resize();
+                        finance04_chart1.resize();
+                        finance04_chart2.resize();
+                        finance04_chart3.resize();
                     }, 100);	
                 });
 
-                var chart2 = bb.generate({
+                var finance04_chart1 = bb.generate({
                     bindto: ".mod_finance04 #graph_fiCapital",
                     data: {
                         type: "line",
@@ -1246,7 +1246,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart3 = bb.generate({
+                var finance04_chart2 = bb.generate({
                     bindto: ".mod_finance04 #graph_fiSales",
                     data: {
                         type: "line",
@@ -1296,7 +1296,7 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                var chart4 = bb.generate({
+                var finance04_chart3 = bb.generate({
                     bindto: ".mod_finance04 #graph_fiProfit",
                     data: {
                         type: "line",
