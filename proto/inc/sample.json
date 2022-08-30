@@ -194,44 +194,44 @@
         {
             "title" : "Electronic Warfare<br/>전자전 시스템",
             "desc" : "전자전 시스템은 적 레이더, 미사일 등에서 방사되는 전자파를 탐지, 분석, 식별, 경고, 공격, 방어하는 무기체계로 ㈜빅텍은 해군과 공군에 다양한 전자전 장비를 납품해왔습니다.",
-            "img" : "/images/@img_biz1_1238139826.png"
+            "img" : "http://placeimg.com/640/480/animals"
         },
         {
             "title" : "Military Power Supply<br/>군용 전원",
             "desc" : "전술장비의 심장이 되는 군용 전원, 빅텍은 각종 전투체계를 위한 맞춤형 전원부터 고전압-고주파 기술이 융합된 HVPS를 제공하며 군용 전원 분야를 이끌어왔습니다.",
-            "img" : "/images/@img_biz2_1238139826.png"
+            "img" : "http://placeimg.com/640/480/arch"
         },
         {
             "title" : "ISR, Communication<br/>감시/정찰/통신",
             "desc" : "(주)빅텍은 군의 눈과 귀 역할을 담당하는 다양한 감시/정찰/통신 시스템을 제공하며, 군의 보다 빠른 정보획득과 의사결정을 지원하고 있습니다. ",
-            "img" : "/images/@img_biz3_1238139826.png"
+            "img" : "http://placeimg.com/640/480/nature"
         },
         {
             "title" : "Bike Sharing<br/>공공자전거 시스템",
             "desc" : "친환경적이고 편리한 도시생활을 지원하는 공공자전거 시스템, (주)빅텍의 공공자전거 시스템은 서울시 따릉이를 비롯하여 전국에서 새로운 교통수단이 되고 있습니다.",
-            "img" : "/images/@img_biz4_1238139826.png"
+            "img" : "http://placeimg.com/640/480/tech"
         }
     ],
     "product" : [
         {
             "title" : "ACES-I(소형 함정용 전자전장비)",
             "desc" : "대함 유도무기, 레이다 등에서 방사되는 신호를 실시간으로 탐지/분석/식별/경보를 수행하며 한국 해군에 전력화되어 운용 중입니다.",
-            "img" : "/images/@img_pd1_1238139826.jpg"
+            "img" : "http://placeimg.com/640/480/animals"
         },
         {
             "title" : "KF-21 AESA RADAR 전원공급장치",
             "desc" : "KF-21은 차세대 한국형 전투기이며, KF-21의 눈 역할을 하는 AESA RADAR에 적용되는 전원공급장치를 생산합니다.",
-            "img" : "/images/@img_pd2_1238139826.jpg"
+            "img" : "http://placeimg.com/640/480/arch"
         },
         {
             "title" : "피아식별장비(IFF) Mode5 Transponder",
             "desc" : "피아식별장비는 적과 아군을 구분하기 위한 장비이며, Mode 5로 성능이 개량된 피아식별장비에 적용되는 Transponder를 기술협력을 통해 생산하고 있습니다.",
-            "img" : "/images/@img_pd3_1238139826.jpg"
+            "img" : "http://placeimg.com/640/480/nature"
         },
         {
             "title" : "공공자전거 시스템",
             "desc" : "편리하게 대여/반납이 가능한 공공자전거 시스템으로 서울시, 대전시, 여수시 등 다양한 지자체에 공급되어 시민의 교통수단이 되고 있습니다.",
-            "img" : "/images/@img_pd4_1238139826.jpg"
+            "img" : "http://placeimg.com/640/480/tech"
         }
     ],
     "keyTask" : [

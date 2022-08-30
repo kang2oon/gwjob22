@@ -21,23 +21,26 @@ h2{font-size:24px;font-weight:500;}
 .step{padding:8px 0;}
     .step+.step{margin-top:16px;}
 .module_wrap{margin-top:32px;}
-    .tab_wrap{margin:0 -.5% 16px;}
-    .tab_wrap > div{float:left;padding:8px 16px;text-align:center;width:19%;margin:.5%;border:1px solid #ccc;cursor:pointer;}
-    .tab_wrap > div.active{background-color:#ccc;}
-    .tcont_wrap > div{display:none;}
-    .tcont_wrap > div.active{display:block;}
-    .tcont_wrap .desc{padding:24px;margin:16px auto;background-color:#f9f9f9;border:1px solid #d4d4d4;border-radius:8px;}
+    .mod_tab_wrap{margin:0 -.5% 16px;}
+    .mod_tab_wrap > div{float:left;padding:8px 16px;text-align:center;width:19%;margin:.5%;border:1px solid #ccc;cursor:pointer;background-color:#fff;}
+    .mod_tab_wrap > div.active{background-color:#ccc;}
+    /* .tcont_wrap > div{display:none;}
+    .tcont_wrap > div.active{display:block;} */
+    .tcont_wrap > div > h3{margin-top:64px;}
+    .tcont_wrap > div > h3.first{margin-top:32px;}
+    .tcont_wrap > div > h3 > span{font-weight:600;font-size:24px;display:inline-block;box-shadow:inset 0 -16px 0 rgba(250,190,15,.5);padding:0 4px;}
+    .tcont_wrap > div > .desc{padding:24px;margin:16px auto;background-color:#f9f9f9;border:1px solid #d4d4d4;border-radius:8px;}
     .tcont_wrap .desc .class{display:inline-block;padding:2px 6px;margin-right:8px;background-color:#009c7c;font-size:14px;border-radius:4px;color:#fff;}
     .container.mod_nm{margin:8px auto;}
     .mod_nm.gap{margin-top:40px;}
     .mod_nm span{display:inline-block;padding:4px 8px;margin-right:8px;background-color:#fabe0f;font-size:14px;border-radius:4px;}
-#mod_select.fixed{position:sticky;top:0;background-color:#fff;z-index:1000;width:100%;}
-    #mod_select.fixed .tab_wrap{width:calc(1200px + 1%);margin:0 auto;}
+#mod_select.fixed{position:sticky;top:0;background-color:rgba(255,255,255,.5);z-index:1000;width:100%;}
+    #mod_select.fixed .mod_tab_wrap{width:calc(1200px + 1%);margin:0 auto;}
 .footer{text-align:center;background-color:#161616;color:#fff;padding:40px 0;margin-top:40px;}
 
 @media all and (max-width:1024px) {
-    .container, #mod_select.fixed .tab_wrap{width:calc(100% - 56px);}
-    .tab_wrap > div{width:32.333333%;}
+    .container, #mod_select.fixed .mod_tab_wrap{width:calc(100% - 56px);}
+    .mod_tab_wrap > div{width:32.333333%;}
 }
 
 @media all and (max-width:768px) { }
@@ -45,5 +48,5 @@ h2{font-size:24px;font-weight:500;}
 @media all and (max-width:640px) { }
 
 @media all and (max-width:480px) { 
-    .tab_wrap > div{width:49%;}
+    .mod_tab_wrap > div{width:49%;}
 }
