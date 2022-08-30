@@ -31,7 +31,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .container-fluid{position:relative;width:100%;}
 .container{position:relative;width:1200px;margin:0 auto;}
 
-.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
     .mod_history01 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history01 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history01 .history > div::after{content:"";display:block;width:24px;height:100%;background-color:#e4e4e4;position:absolute;left:50%;transform:translateX(-50%);top:0;}
@@ -75,7 +75,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history01 .history > div:nth-child(even) > span::after{right:10px;left:auto;}
     }
 
-.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
     .mod_history02 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history02 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history02 .history .slick-slide > span{
@@ -102,7 +102,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     @media all and (max-width:640px) {}
     @media all and (max-width:480px) {}
 
-.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
     .mod_history03 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history03 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history03 .history > div{display:flex;justify-content:space-between;flex-wrap:wrap;}
@@ -120,7 +120,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history03 .history > div > ul{width:100%;margin-left:0;}
     }
 
-.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:40px;}
     .mod_history04 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history04 .history_wrap{position:relative;width:1200px;margin:0 auto;}
     .mod_history04 .history_wrap .thumb{float:left;width:560px;position:relative;}
@@ -335,7 +335,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     }
     .mod_interview04 .container .iv_cont > div{height: 530px;display:none;border-radius: 20px;border: 10px solid #fff;}
     .mod_interview04 .container .iv_cont > div.active{display:block;}
-    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom: -80px;right: 0;max-width:240px;}
+    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom: -80px;right: -24px;max-width:240px;}
     .mod_interview04 .container .iv_cont > div .interview{height: 100%;padding: 50px;}
     .mod_interview04 .container .iv_cont > div .interview .q{color: #fad529;font-weight: 800;font-size:20px;}
     .mod_interview04 .container .iv_cont > div .interview .q::before{content:"Q. ";}
@@ -381,7 +381,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview05 .tabs li a {display: block;width: 100%;height: 100%;padding: 10px 20px;color: #00aeef;}
     .mod_interview05 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 60px;}
     .mod_interview05 .tab_content .slick-slide > div + div {margin-top:20px;}
-    .mod_interview05 .tab_content img{position: absolute;right: 0;bottom: 0}
+    .mod_interview05 .tab_content img{position: absolute;right: 0;bottom: 0;max-width:240px;}
     .mod_interview05 .q{font-size: 24px;margin-bottom: 10px;padding-left: 25px;font-weight: 800;position: relative;}
     .mod_interview05 .a{color: #666;width: calc(100% - 200px);word-break: keep-all;font-size: 16px;}
     .mod_interview05 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
@@ -453,7 +453,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
     .mod_interview07 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_interview07 .container{display: flex;}
-    .mod_interview07 .container > div{width: 33.333%;background: #e7eef0;border-right: 2px dashed #dcdcdc;padding: 40px;position: relative;}
+    .mod_interview07 .container > div{width: 33.333%;background:#e7eef0;border-right:2px dashed #dcdcdc;padding:40px 40px 128px;position:relative;}
     .mod_interview07 .container > div:last-child{border-right: 0}
     .mod_interview07 .container h3{text-align: center;font-size: 30px;margin-bottom: 40px;position: relative;z-index: 2}
     .mod_interview07 .container > div:nth-child(1){border-bottom: 3px solid #6986e4}
@@ -462,7 +462,8 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 .container > div:nth-child(1) h3:after{content: '';display: block;width: 180px;height: 12px;background: #6986e4;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(2) h3:after{content: '';display: block;width: 180px;height: 12px;background: #5ee6c2;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(3) h3:after{content: '';display: block;width: 180px;height: 12px;background: #fce073;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
-    .mod_interview07 img{position: absolute;bottom: -80px;left: 50%;transform: translateX(-50%)}
+    .mod_interview07 .photo{position:absolute;bottom:-80px;left:50%;transform:translateX(-50%);width:160px;height:160px;overflow:hidden;border-radius:50%;}
+    /* .mod_interview07 img{position: absolute;bottom: -80px;left: 50%;transform: translateX(-50%)} */
     .mod_interview07 .swiper{overflow: hidden;padding-bottom: 50px}
     .mod_interview07 .swiper-wrapper{height: 400px;padding-bottom: 50px}
     .mod_interview07 .swiper-slide{height: calc(100%/3)}

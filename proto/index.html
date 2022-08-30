@@ -70,7 +70,8 @@
                 <div id="history">
                     <h3 class="container first"><span>연혁 모듈</span></h3>
                     <div class="container desc">
-                        연혁 모듈은 <span class="class">.history</span>Class를 변수명으로 하위에 데이터를 호출하는 구조입니다.
+                        연혁 모듈은 <span class="class">.history</span>Class를 변수명으로 하위에 데이터를 호출하는 구조입니다.<br/>
+                        년도, 월, 내용은 자동 출력되나, 연혁 모듈 4와 같이 이미지 영역은 별도 작업 영역입니다. 
                     </div>
                     <div class="container mod_nm"><span>.mod_history01</span>연혁 모듈 1</div>
                     <div class="mod_history01">
@@ -127,8 +128,9 @@
                 <div id="info">
                     <h3 class="container"><span>기업정보 모듈</span></h3>
                     <div class="container desc">
-                        기업정보 모듈은 3가지 데이터를 호출하는 구조입니다.<br/>
-                        비전 : <span class="class">.vision</span> / 미션 : <span class="class">.mission</span> / 슬로건 : <span class="class">.slogan</span>
+                        기업정보 모듈은 3가지 데이터를 호출하는 구조입니다. 다음에 명시된 클래스를 기입해야 정상적인 데이터 호출이 됩니다.<br/>
+                        비전 : <span class="class">.vision</span> / 미션 : <span class="class">.mission</span> / 슬로건 : <span class="class">.slogan</span><br/>
+                        상기 3개의 데이터는 DB에서 자동으로 호출하지만, 기업 모듈 1의 배경 이미지, 기업 모듈 2, 3의 앞 뒤 이미지는 별도 구성입니다.
                     </div>
                     <div class="container mod_nm"><span>.mod_info01</span>기업정보 모듈 1</div>
                     <div class="mod_info01">
@@ -220,7 +222,11 @@
                 <div id="interview">
                     <h3 class="container"><span>인터뷰 모듈</span></h3>
                     <div class="container desc">
-                        인터뷰 모듈은 
+                        인터뷰 모듈은 CEO, 인사담당자, 재직자로 구분하여 클래스를 정확히 명시해 주셔야 올바른 데이터가 출력됩니다.<br/>
+                        인터뷰 모듈 4의 배경 이미지는 별도 구성입니다. 이외 모듈별 인터뷰와 별도의 멘트가 적용된 부분도 별도 구성 사항입니다.<br/>
+                        [CEO] 사진 : <span class="class">.ivCeoPhoto</span> / 인터뷰 : <span class="class">.ivCeo</span><br/>
+                        [인사담당자] 사진 : <span class="class">.ivMngPhoto</span> / 인터뷰 : <span class="class">.ivMng</span><br/>
+                        [재직자] 사진 : <span class="class">.ivEmpPhoto</span> / 인터뷰 : <span class="class">.ivEmp</span><br/>
                     </div>
                     <div class="container mod_nm"><span>.mod_interview01</span>인터뷰 모듈 1</div>
                     <div class="mod_interview01">
@@ -480,7 +486,10 @@
                 <div id="swot">
                     <h3 class="container"><span>SWOT 모듈</span></h3>
                     <div class="container desc">
-                        SWOT 모듈은 
+                        SWOT 모듈은 S,W,O,T 각각 별도의 클래스로 구성되어 있습니다. <br/>
+                        각각 하위에 desc 클래스가 존재하는 구조이니, 구성에 착오없으시길 바랍니다.<br/>
+                        S : <span class="class">.swotS .desc</span> / W : <span class="class">.swotW .desc</span> / O : <span class="class">.swotO .desc</span> / S : <span class="class">.swotT .desc</span><br/>
+                        각 모듈에 사용되는 아이콘 이미지 및 배경 이미지 등은 별도 구성입니다. 
                     </div>
                     <div class="container mod_nm"><span>.mod_swot01</span>SWOT 모듈 1</div>
                     <div class="mod_swot01">
@@ -777,7 +786,9 @@
                 <div id="percent">
                     <h3 class="container first"><span>백분위 모듈</span></h3>
                     <div class="container desc">
-                        백분위 모듈은 
+                        백분위 모듈은 총 5가지 종류의 데이터가 존재합니다.<br/>
+                        각 모듈에 사용되는 아이콘 이미지 및 배경 이미지 등은 필요 시 별도 구성입니다.<br/>
+                        활동성 : <span class="class">.bpActivity</span> / 수익성 : <span class="class">.bpProfitability</span> / 안정성 : <span class="class">.bpStability</span> / 성장성 : <span class="class">.bpGrowthability</span> / 규모 : <span class="class">.bpScale</span>
                     </div>
                     <div class="container mod_nm"><span>.mod_percent01</span>백분위 모듈 1</div>
                     <div class="mod_percent01">
@@ -1044,7 +1055,9 @@
                 <div id="culture">
                     <h3 class="container first"><span>복리후생 모듈</span></h3>
                     <div class="container desc">
-                        복리후생 모듈은
+                        복리후생 모듈은 조직문화와 복리후생으로 구분되어 있습니다.<br/>
+                        각 단위별 아이콘이나 배경 이미지의 경우 별도 구성해 주시기 바랍니다.<br/>
+                        복리후생 : <span class="class">.welfare</span> / 조직문화 : <span class="class">.dvCulture</span>
                     </div>
                     <div class="container mod_nm"><span>.mod_culture01</span>복리후생 모듈 1</div>
                     <div class="mod_culture01">
@@ -1312,7 +1325,10 @@
                 <div id="business">
                     <h3 class="container first"><span>사업영역 모듈</span></h3>
                     <div class="container desc">
-                        사업영역 모듈은 
+                        사업영역 모듈은 주요상품과 혼용하여 사용될 수 있습니다.<br/>
+                        사업영역 대신 주요상품을 표시하길 원하는 경우 타이틀 텍스트 수정 및 데이터 출력용 클래스명을 변경하시면 됩니다.<br/>
+                        사업영역이나 주요상품의 이미지는 데이터로 불러오나, 배경 이미지가 있는 경우 별도 구성하시면 됩니다.<br/>
+                        사업영역 : <span class="class">.bizDiv</span> / 주요상품 : <span class="class">.product</span>
                     </div>
                     <div class="container mod_nm"><span>.mod_business_area01</span>사업영역 모듈 1</div>
                     <div class="mod_business_area01">
@@ -1425,7 +1441,7 @@
                 <div id="talent">
                     <h3 class="container first"><span>인재상 모듈</span></h3>
                     <div class="container desc">
-                        인재상 모듈은 
+                        인재상 모듈은 <span class="class">.talent</span> 클래스로 구성 시 데이터가 자동으로 출력됩니다.
                     </div>
                     <div class="container mod_nm"><span>.mod_talent01</span>인재상 모듈 1</div>
                     <div class="mod_talent01">
@@ -1590,7 +1606,7 @@
                 <div id="finance">
                     <h3 class="container first"><span>재무정보 모듈</span></h3>
                     <div class="container desc">
-                        재무정보 모듈은 
+                        재무정보 모듈은 아직 제작 진행 중입니다.
                     </div>
                     <div class="container mod_nm"><span>.mod_finance01</span>재무정보 모듈 1</div>
                     <div class="mod_finance01">

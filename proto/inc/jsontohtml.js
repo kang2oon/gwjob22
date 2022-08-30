@@ -209,14 +209,14 @@ xmlhttp.onload = function() {
     // 조직문화
     var dvCultureCnt = myObj.dvCulture.length;
     var dvCultureWrap = myObj.dvCulture;
-    var dvCulture = "<div class='swiper-wrapper'>";
+    var dvCulture = "";
     for(var i=0; i<dvCultureCnt; i++){
         var title = dvCultureWrap[i].title;
         var desc = dvCultureWrap[i].desc;
-        dvCulture += "<div class='swiper-slide'><div>";
+        dvCulture += "<div>";
         dvCulture += "<div class='tit'>"+title+"</div>";
         dvCulture += "<div class='desc'>"+desc+"</div>";
-        dvCulture += "</div></div>";
+        dvCulture += "</div>";
     }
     $(".dvCulture").html(dvCulture);
     // 인재상
