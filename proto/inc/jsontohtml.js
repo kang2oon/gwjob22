@@ -213,10 +213,11 @@ xmlhttp.onload = function() {
     for(var i=0; i<dvCultureCnt; i++){
         var title = dvCultureWrap[i].title;
         var desc = dvCultureWrap[i].desc;
-        dvCulture += "<div>";
+        dvCulture += "<div class='item dvCulture_" + i + "'>";
+        dvCulture += "<div class='info'>";
         dvCulture += "<div class='tit'>"+title+"</div>";
         dvCulture += "<div class='desc'>"+desc+"</div>";
-        dvCulture += "</div>";
+        dvCulture += "</div></div>";
     }
     $(".dvCulture").html(dvCulture);
     // 인재상
@@ -270,9 +271,16 @@ xmlhttp.onload = function() {
         var title = bizDivWrap[i].title;
         var desc = bizDivWrap[i].desc;
         var img = bizDivWrap[i].img;
-        bizDiv += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
+        //bizDiv += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
+        //bizDiv += "<h4>"+title+"</h4>";
+        //bizDiv += "<p>"+desc+"</p>"
+        //bizDiv += "</div>";
+        bizDiv += "<div class='item'>";
+        bizDiv += "<div class='thumb'><img src='"+baseUrl+img+"' alt='"+title+"'></div>";
+        bizDiv += "<div class='info'>";
         bizDiv += "<h4>"+title+"</h4>";
         bizDiv += "<p>"+desc+"</p>"
+        bizDiv += "</div>";
         bizDiv += "</div>";
     }
     $(".bizDiv").html(bizDiv);
@@ -284,9 +292,16 @@ xmlhttp.onload = function() {
         var title = productWrap[i].title;
         var desc = productWrap[i].desc;
         var img = productWrap[i].img;
-        product += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
+        //product += "<div><img src='"+baseUrl+img+"' alt='"+title+"'>";
+        //product += "<h4>"+title+"</h4>";
+        //product += "<p>"+desc+"</p>"
+        //product += "</div>";
+        product += "<div class='item'>";
+        product += "<div class='thumb'><img src='"+baseUrl+img+"' alt='"+title+"'></div>";
+        product += "<div class='info'>";
         product += "<h4>"+title+"</h4>";
         product += "<p>"+desc+"</p>"
+        product += "</div>";
         product += "</div>";
     }
     $(".product").html(product);
