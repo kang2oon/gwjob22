@@ -5,7 +5,7 @@ $(document).ready(function(){
         if( $(document).scrollTop() > navOffset.top ){	
             $('#mod_select').addClass('fixed');
         } else {
-            $('#mod_select').removeClass('fixed');
+            $('#mod_select, #mod_select2').removeClass('fixed');
         }
     });
 

@@ -785,7 +785,7 @@
                     </div>
                 </div>
                 <div id="percent">
-                    <h3 class="container first"><span>백분위 모듈</span></h3>
+                    <h3 class="container"><span>백분위 모듈</span></h3>
                     <div class="container desc">
                         백분위 모듈은 총 5가지 종류의 데이터가 존재합니다.<br/>
                         각 모듈에 사용되는 아이콘 이미지 및 배경 이미지 등은 필요 시 별도 구성입니다.<br/>
@@ -1054,7 +1054,7 @@
                     </div>
                 </div>
                 <div id="culture">
-                    <h3 class="container first"><span>복리후생 모듈</span></h3>
+                    <h3 class="container"><span>복리후생 모듈</span></h3>
                     <div class="container desc">
                         복리후생 모듈은 조직문화와 복리후생으로 구분되어 있습니다.<br/>
                         각 단위별 아이콘이나 배경 이미지의 경우 별도 구성해 주시기 바랍니다.<br/>
@@ -1324,7 +1324,7 @@
                     </div>
                 </div>
                 <div id="business">
-                    <h3 class="container first"><span>사업영역 모듈</span></h3>
+                    <h3 class="container"><span>사업영역 모듈</span></h3>
                     <div class="container desc">
                         사업영역 모듈은 주요상품과 혼용하여 사용될 수 있습니다.<br/>
                         사업영역 대신 주요상품을 표시하길 원하는 경우 타이틀 텍스트 수정 및 데이터 출력용 클래스명을 변경하시면 됩니다.<br/>
@@ -1440,7 +1440,7 @@
                     </div>
                 </div>
                 <div id="talent">
-                    <h3 class="container first"><span>인재상 모듈</span></h3>
+                    <h3 class="container"><span>인재상 모듈</span></h3>
                     <div class="container desc">
                         인재상 모듈은 <span class="class">.talent</span> 클래스로 구성 시 데이터가 자동으로 출력됩니다.
                     </div>
@@ -1463,9 +1463,11 @@
                     </div>
                 </div>
                 <div id="strategy">
-                    <h3 class="container first"><span>취업전략 모듈</span></h3>
+                    <h3 class="container"><span>취업전략 모듈</span></h3>
                     <div class="container desc">
-                        취업전략 모듈은 
+                        취업전략 모듈은 자기소개서 문항별 가이드, 최근 면접 질문, 가산점 요인, 최근 입사자 합격 스펙, 면접꿀팁으로 구성되어 데이터를 자동으로 출력합니다.<br/>
+                        자기소개서 문항별 가이드 : <span class="class">.guide_wrap</span> / 최근 면접 질문 : <span class="class">.rq_text</span> / 
+                        가산점 요인 : <span class="class">.add_point_wrap</span> / 최근 입사자 합격 스펙 : <span class="class">.spec_wrap</span> / 면접꿀팁 : <span class="class">.interview_tip_wrap</span>
                     </div>
                     <div class="container mod_nm"><span>.mod_strategy01</span>취업전략 모듈 1</div>
                     <div class="mod_strategy01">
@@ -1592,7 +1594,6 @@
                                         </div>
                                     </div>
                                 </div>
-                
                             </div>
                         </div>
                     </div>
@@ -1600,12 +1601,10 @@
                         <div class="preview">HTML 미리보기</div>
                         <pre class="line-numbers" data-src="./module/mod_strategy01.html"></pre>
                         <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
-                        <div class="preview">JS 미리보기</div>
-                        <pre class="line-numbers" data-src="./module/mod_strategy01.js"></pre>
                     </div>
                 </div>
                 <div id="finance">
-                    <h3 class="container first"><span>재무정보 모듈</span></h3>
+                    <h3 class="container"><span>재무정보 모듈</span></h3>
                     <div class="container desc">
                         재무정보 모듈은 아직 제작 진행 중입니다.
                     </div>
@@ -1853,7 +1852,33 @@
     </div>
     <div class="container-fluid step">
         <div class="container">
-            <h2><span>STEP.4</span> 디자인과 비교 검수</h2>
+            <h2><span>STEP.4</span> 모듈 미사용 데이터 호출</h2>
+            <div class="desc">
+                <ol>
+                    <li>상단 모듈을 사용하지 않는 디자인 영역에서의 데이터를 호출하는 경우는 하단의 코드를 참고하여 클래스를 추가할 수 있습니다. </li>
+                </ol>
+            </div>
+        </div>
+        <div class="add_mod">
+           <h3 class="container first"><span>기업 기본정보</span></h3>
+           <div class="container desc">
+                기업의 기본정보는 기업명, 사업자등록번호, 기업형태, 업종, 대표자명, 전화번호, 우편번호 및 주소, 홈페이지, 기업로고의 정보를 데이터로 출력합니다.<br/>
+                기업명 : <span class="class">.comName</span> / 사업자등록번호 : <span class="class">.comNum</span> /  기업형태 : <span class="class">.comForm</span> /
+                업종 : <span class="class">.incCate</span> / 대표자명 : <span class="class">.ceo</span> / 전화번호 : <span class="class">.tel</span> / 
+                전체주소 : <span class="class">.address</span> / 주소만 : <span class="class">.comAddress</span> / 기업로고 : <span class="class">.imgCi</span> /
+                기업대표이미지 : <span class="class">.imgCom</span> / 홈페이지 : <span class="class">.site</span> / 홈페이지 바로가기 : <span class="class">.siteGo</span>
+            </div>
+            <div class="container">
+                <div class="preview">HTML 미리보기</div>
+                <pre class="line-numbers" data-src="./module/mod_basic.html"></pre>
+                <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
+            </div>
+            <!-- -->
+        </div>
+    </div>
+    <div class="container-fluid step">
+        <div class="container">
+            <h2><span>STEP.5</span> 디자인과 비교 검수</h2>
             <div class="desc">
                 <ol>
                     <li>마크업 완료된 파일을 미리보기하여 디자인 파일과 같은 형태인지 확인한다.</li>
@@ -1864,7 +1889,7 @@
     </div>
     <div class="container-fluid step">
         <div class="container">
-            <h2><span>STEP.5</span> 파일 제출 및 관리자 페이지 등록</h2>
+            <h2><span>STEP.6</span> 파일 제출 및 관리자 페이지 등록</h2>
             <div class="desc">
                 <ol>
                     <li>작업완료된 파일을 담당자에게 제출한다. (마크업 파일 및 이미지 포함)</li>

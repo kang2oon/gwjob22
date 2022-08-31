@@ -241,11 +241,12 @@ xmlhttp.onload = function() {
     // 핵심가치
     var kvCnt = myObj.keyValue.length;
     var kvWrap = myObj.keyValue;
-    var keyValue = "<ul>";
+    var keyValue = "<dl>";
     for(var i=0; i<kvCnt; i++){
-        keyValue += "<li>"+kvWrap[i]+"</li>";
+        keyValue += "<dt>"+kvWrap[i].title+"</dt>";
+        keyValue += "<dd>"+kvWrap[i].desc+"</dd>";
     }
-    keyValue += "</ul>";
+    keyValue += "</dl>";
     $(".keyValue").html(keyValue);
     // SWOT
     var swotWrap = myObj.swot[0];
@@ -513,5 +514,57 @@ xmlhttp.onload = function() {
         $(".bpScale").html(bpScale);
     }else{
         $(".bpScale").html("정보없음");
-    }    
+    }   
+    // 자기소개서 문항별 가이드
+    var guideCnt = myObj.guide.length;
+    var guideWrap = myObj.guide;
+    var guide = "";
+    for(var i=0; i<guideCnt; i++){
+        guide += "<div class='item'>";
+        guide += "<div class='q'>"+guideWrap[i].q+"</div>";
+        guide += "<div class='a'>"+guideWrap[i].a+"</div>";
+        guide += "</div>";
+    }
+    $(".guide_wrap").html(guide);
+    // 최근 면접 질문
+    var rqCnt = myObj.recentQ.length;
+    var rqWrap = myObj.recentQ;
+    var recentQ = "";
+    for(var i=0; i<rqCnt; i++){
+        recentQ += "<li>"+rqWrap[i]+"</li>";
+    }
+    $(".rq_text").html(recentQ);
+    // 가산점 요인
+    var addPointCnt = myObj.addPoint.length;
+    var addPointWrap = myObj.addPoint;
+    var addPoint = "";
+    for(var i=0; i<addPointCnt; i++){
+        addPoint += "<li>";
+        addPoint += "<strong class='tit'>"+addPointWrap[i].tit+"</strong>";
+        addPoint += "<p class='desc'>"+addPointWrap[i].desc+"</p>";
+        addPoint += "</li>";
+    }
+    $(".add_point_wrap").html(addPoint);
+    // 최근 입사자 합격 스펙
+    var specCnt = myObj.spec.length;
+    var specWrap = myObj.spec;
+    var spec = "";
+    for(var i=0; i<specCnt; i++){
+        spec += "<li>";
+        spec += "<strong class='tit'>"+specWrap[i].tit+"</strong>";
+        spec += "<p class='desc'>"+specWrap[i].desc+"</p>";
+        spec += "</li>";
+    }
+    $(".spec_wrap").html(spec);
+    // 면접 꿀팁
+    var interviewTipCnt = myObj.interviewTip.length;
+    var interviewTipWrap = myObj.interviewTip;
+    var interviewTip = "";
+    for(var i=0; i<interviewTipCnt; i++){
+        interviewTip += "<div class='item'>";
+        interviewTip += "<div class='q'>"+interviewTipWrap[i].q+"</div>";
+        interviewTip += "<div class='a'>"+interviewTipWrap[i].a+"</div>";
+        interviewTip += "</div>";
+    }
+    $(".interview_tip_wrap").html(interviewTip);
 }
