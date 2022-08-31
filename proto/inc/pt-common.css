@@ -28,6 +28,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .code-toolbar pre span{font-family:'dotum' !important;}
 /****************** 여기까지 초기화 ******************/
 
+.bb *{font-size:12px;}
 .container-fluid{position:relative;width:100%;}
 .container{position:relative;width:1200px;margin:0 auto;}
 
