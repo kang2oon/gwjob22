@@ -1,0 +1,409 @@
+
+/* font import */
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+@import url('https://webfontworld.github.io/gonggames/EsaManru.css');
+
+*{
+    font-family: 'scoredream';
+}
+img {
+    max-width: 100%;
+}
+.bgSkyblue {
+	background-color: #39aaff;
+}
+.bgBlue {
+    background-color: #0a1d7c;
+}
+.bgOrange {
+    background-color: #ff8f34;
+}
+.oneStopWrap em {
+    font-style: normal;
+}
+.oneStopWrap .innerSection {
+    position: relative;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.oneStopWrap .event01::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background: url(../images/event/ev03/ev03_bg.png) top center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.oneStopWrap .event01 {
+    padding: 30px 0 45px;
+}
+.oneStopWrap .logoWrap .logoList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.oneStopWrap .title {
+    display: block;
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.oneStopWrap .event01 .title {
+	margin: 0 auto;
+	padding-top: 10px;
+	text-decoration: underline;
+    text-underline-position: under;
+}
+.oneStopWrap ul.eventList {
+    padding: 26px 60px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px 0;
+}
+.oneStopWrap ul.eventList li:nth-child(1),
+.oneStopWrap ul.eventList li:nth-child(3) {
+    width: 600px;
+}
+.oneStopWrap ul.eventList li .textWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0 10px;
+}
+.oneStopWrap ul.eventList li strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    padding: 10px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.oneStopWrap ul.eventList li p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    word-break: keep-all;
+}
+.oneStopWrap .event03 {
+    position: relative;
+    padding: 72px 0 0;
+}
+.oneStopWrap .event03::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 730px;
+    background: url(../images/event/ev03/ev03_bg02.png) top center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.oneStopWrap .title.sub {
+    margin-bottom: 65px;
+    color: #02269a;
+    font-size: 45px;
+    font-family: EsaManru;
+    font-weight: bold;
+}
+.oneStopWrap ul.eventGift {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    max-width: 100%;
+}
+.oneStopWrap ul.eventGift li .giftWrap {
+    position: relative;
+    max-width: 300px;
+}
+.oneStopWrap ul.eventGift li .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-size: 25px;
+    font-style: initial;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.oneStopWrap ul.eventGift li strong {
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #5ab8ff;
+    border-radius: 40px;
+}
+.oneStopWrap .txt {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.oneStopWrap .txt > em {
+    font-weight: 600;
+}
+.oneStopWrap .moveLink {
+    margin: 44px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    height: 60px;
+    color: #fff !important;
+    font-size: 25px;
+    font-weight: 600;
+    background: #60a827;
+    border-radius: 22px;
+    text-shadow: 2px 2px 1px #0e4f07, 2px 1px 1px #0e4f07;
+    box-shadow: 2px 3px 1px #0e4f07, 3px 1px 1px #0e4f07;
+}
+.oneStopWrap .event04 {
+    position: relative;
+    padding: 70px 0 100px;
+    background-color: #39aaff;
+    z-index: 1;
+}
+.oneStopWrap .event04::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1267px;
+    background: url(../images/event/ev03/ev03_bg04.png) top center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.oneStopWrap .stepBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.oneStopWrap .stepTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.oneStopWrap .stepTitle strong {
+    margin: 16px 0 30px;
+    font-size: 25px;
+    color: #fff;
+}
+.oneStopWrap .stepItem {
+    display: flex;
+    gap: 0 16px;
+}
+.oneStopWrap .stepItem span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.oneStopWrap .stepItem span strong {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.oneStopWrap .tipWrap {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.oneStopWrap .tipWrap .tipBox {
+    padding: 22px 0;
+    min-width: 190px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+}
+.oneStopWrap .tipWrap ol.winningTipList li {
+    list-style: decimal;
+    font-size: 16px;
+    font-weight: 500;
+}
+.oneStopWrap .tipWrap ol.winningTipList {
+    padding: 12px 20px 12px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    width: calc(100% - 210px);
+    background: #fff;
+    border-radius: 10px;
+}
+.oneStopWrap .eventWarning {
+    padding: 40px 0;
+}
+.oneStopWrap .eventWarning strong {
+    margin: 0 0 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.oneStopWrap ul.warningList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+}
+.oneStopWrap ul.warningList li {
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+.oneStopWrap ul.warningList li::before {
+    content: "-";
+    margin-left: -10px;
+    margin-right: 5px;
+}
+
+@media all and (max-width:1024px) {
+	.innerSection {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    .oneStopWrap .event01 .title {
+        font-size: 22px;
+    }
+    .oneStopWrap ul.eventGift li strong {
+        font-size: 14px;
+    }
+    .oneStopWrap ul.eventList li {
+        width: 100% !important;
+    }
+}
+
+@media all and (max-width:768px) {
+	.oneStopWrap .event03 {
+        padding: 36px 0 20px;
+    }
+    .oneStopWrap .event03::after {
+        height: 100%;
+    }
+    .oneStopWrap .title.sub {
+        margin-bottom: 32px;
+        font-size: 22px;
+    }
+    .oneStopWrap ul.eventGift {
+        flex-direction: column;
+        gap: 0;
+    }
+    .oneStopWrap ul.eventGift li {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .oneStopWrap ul.eventGift li .badge {
+        top: -5px;
+        left: -5px;
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+    .oneStopWrap .event04 {
+        padding: 30px 0 40px;
+    }
+    .oneStopWrap .stepTitle i img {
+        max-width: 80px;
+    }
+    .oneStopWrap .stepTitle strong {
+        margin: 8px 0 15px;
+        font-size: 18px;
+    }
+    .oneStopWrap .stepBox {
+        margin-bottom: 20px;
+    }
+    .oneStopWrap .stepItem span strong {
+        font-size: 16px;
+    }
+	
+}
+
+@media all and (max-width:640px) {
+    .forMobile {
+        display: none;
+    }
+	.oneStopWrap .logoList img {
+        max-width: 80%;
+    }
+    .oneStopWrap .event01 .title {
+        font-size: 16px;
+        word-break: keep-all;
+    }
+    .oneStopWrap ul.eventList {
+        padding: 13px 0px;
+    }
+    .oneStopWrap ul.eventList li strong {
+        min-width: 100px;
+        font-size: 14px;
+    }
+    .oneStopWrap ul.eventList li p {
+        font-size: 14px;
+    }
+    .oneStopWrap .txt {
+        font-size: 16px;
+    }
+	.oneStopWrap .moveLink {
+        margin: 30px auto;
+        max-width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .oneStopWrap .stepItem {
+        gap: 16px 0;
+        flex-direction: column;
+    }
+    .oneStopWrap .tipWrap {
+        flex-direction: column;
+        gap: 0;
+    }
+    .oneStopWrap .tipWrap .tipBox {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px 10px 0 0;
+    }
+    .oneStopWrap .tipWrap ol.winningTipList {
+        border-radius: 0 0 10px 10px;
+        padding: 20px 10px 20px 30px;
+        gap: 5px 0;
+        width: 100%;
+    }
+    .oneStopWrap .tipWrap ol.winningTipList li {
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    .oneStopWrap .eventWarning strong {
+        margin: 0 0 10px;
+        font-size: 18px;
+    }
+    .oneStopWrap ul.warningList li {
+        padding-left: 10px;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:480px) {
+
+}
