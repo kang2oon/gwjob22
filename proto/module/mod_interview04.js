@@ -1,12 +1,16 @@
-$('.mod_interview04 .interview').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots: true,
-    arrows: false,
-    infinite: false,
-    adaptiveHeight: false,
-});
+interview04 = $('.mod_interview04 .interview');
+function interview04_slide(){
+    interview04.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        arrows: false,
+        infinite: false,
+        adaptiveHeight: false,
+    });
+}
+interview04_slide();
 
 var interview04Cnt = 0;
 $('.mod_interview04 .iv_tab .btn_g button').click(function(){
