@@ -5,7 +5,7 @@ $(document).ready(function(){
         if( $(document).scrollTop() > navOffset.top ){	
             $('#mod_select').addClass('fixed');
         } else {
-            $('#mod_select, #mod_select2').removeClass('fixed');
+            $('#mod_select').removeClass('fixed');
         }
     });
 
@@ -525,32 +525,6 @@ $(document).ready(function(){
                         arrows: true,
                         infinite: false,
                         adaptiveHeight: false,
-                        // responsive: [
-                        //     {
-                        //         breakpoint: 1024,
-                        //         settings: {
-                        //             rows: 1,
-                        //             slidesToShow: 3,
-                        //             slidesToScroll: 3,
-                        //         }
-                        //     },
-                        //     {
-                        //         breakpoint: 768,
-                        //         settings: {
-                        //             slidesToShow: 2,
-                        //             slidesToScroll: 2,
-                        //             dots: true,
-                        //         }
-                        //     },
-                        //     {
-                        //         breakpoint: 480,
-                        //         settings: {
-                        //             slidesToShow: 1,
-                        //             slidesToScroll: 1,
-                        //             dots: true,
-                        //         }
-                        //     }
-                        // ]
                     });
                 }
                 culture11_culture_slide();
@@ -1166,9 +1140,6 @@ $(document).ready(function(){
                     }
                 });
 
-
-
-
                 var finance04Cnt = 0;
                 $('.mod_finance04 .tab .btn_g button').click(function(){
                     var classArr = ["summary","capital","sales","profit"];
@@ -1347,9 +1318,6 @@ $(document).ready(function(){
                     }
                 });
 
-
-
-
                 setTimeout(function() {
                     chart5_finance05.resize();
                 }, 300);
@@ -1404,17 +1372,229 @@ $(document).ready(function(){
                         show: false
                     }
                 });
-                
 
-                
+                setTimeout(function() {
+                    chart_finance06.resize();
+                }, 300);
+
+                var chart_finance06 = bb.generate({
+                    bindto: ".mod_finance06 #graph_three",
+                    data: {
+                        type: "bar",
+                        columns: [
+                            ["자본금", 150, 50, 50],
+                            ["매출액", 200, 500, 350],
+                            ["당기순이익", 208, 48, 120]
+                        ],
+                        groups: [
+                            [
+                                "자본금",
+                                "매출액",
+                                "당기순이익"
+                            ]
+                        ],
+                        colors: {
+                            자본금: "#d84059",
+                            매출액: "#ce1030",
+                            당기순이익: "#9b0c24"
+                        }
+                    },
+                    padding: {
+                        top: 20,
+                        left: 40
+                    },
+                    grid: {
+                        x: {
+                            show: true
+                        },
+                        y: {
+                            show: true
+                        }
+                    },
+                    axis: {
+                        x: {
+                            type: "category",
+                            categories: [2021, 2020, 2019],
+                            padding: {
+                                left: .2,
+                                right: .2
+                            }
+                        }
+                    },
+                    bar: {
+                        width: {
+                            max: 50
+                        },
+                        padding: 3
+                    },
+                    legend: {
+                        show: false
+                    }
+                });
 
 
-                
-                
-    
-    
-    
-    
+                $(".mod_finance07 .tab > div").click(function() {
+                    var item = $(this).attr("data-tab");
+                    $(".mod_finance07 .tab > div").removeClass("on");
+                    $(this).addClass("on");
+                    $(".mod_finance07 .conts > div").hide();
+                    $(".mod_finance07 .conts > ." + item).show();
+                    setTimeout(function() {
+                        finance07_chart1.resize();
+                        finance07_chart2.resize();
+                        finance07_chart3.resize();
+                    }, 100);	
+                });
+                var finance07_chart1 = bb.generate({
+                    bindto: ".mod_finance07 #graph_fiCapital",
+                    data: {
+                        type: "bar",
+                        columns: [
+                            ["자본금", 50, 50, 50]
+                        ],
+                        colors: {
+                            자본금: "#527f9e",
+                        },
+                        labels: {
+                            colors: "white",
+                            centered: true
+                        },
+                    },
+                    padding: {
+                        top: 20,
+                        left: 40
+                    },
+                    grid: {
+                        x: {
+                            show: true
+                        },
+                        y: {
+                            show: true
+                        }
+                    },
+                    axis: {
+                        x: {
+                            type: "category",
+                            categories: [2021, 2020, 2019],
+                            padding: {
+                                left: .2,
+                                right: .2
+                            }
+                        },
+                        rotated: true
+                    },
+                    bar: {
+                        width: {
+                            max: 20
+                        },
+                        radius: {
+                            ratio: 0.1
+                        }
+                    },
+                    legend: {
+                        show: false
+                    }
+                });
+                var finance07_chart2 = bb.generate({
+                    bindto: ".mod_finance07 #graph_fiSales",
+                    data: {
+                        type: "bar",
+                        columns: [
+                            ["매출액", 3103, 2920, 2767]
+                        ],
+                        colors: {
+                            매출액: "#65b3bf"
+                        },
+                        labels: {
+                            colors: "white",
+                            centered: true
+                        },
+                    },
+                    padding: {
+                        top: 20,
+                        left: 40
+                    },
+                    grid: {
+                        x: {
+                            show: true
+                        },
+                        y: {
+                            show: true
+                        }
+                    },
+                    axis: {
+                        x: {
+                            type: "category",
+                            categories: [2021, 2020, 2019],
+                            padding: {
+                                left: .2,
+                                right: .2
+                            }
+                        },
+                        rotated: true
+                    },
+                    bar: {
+                        width: {
+                            max: 20
+                        },
+                        radius: {
+                            ratio: 0.1
+                        }
+                    },
+                    legend: {
+                        show: false
+                    }
+                });
+                var finance07_chart3 = bb.generate({
+                    bindto: ".mod_finance07 #graph_fiProfit",
+                    data: {
+                        type: "bar",
+                        columns: [
+                            ["당기순이익", 208, 48, 50]
+                        ],
+                        colors: {
+                            당기순이익: "#64b18c"
+                        },
+                        labels: {
+                            colors: "white",
+                            centered: true
+                        },
+                    },
+                    padding: {
+                        top: 20,
+                        left: 40
+                    },
+                    grid: {
+                        x: {
+                            show: true
+                        },
+                        y: {
+                            show: true
+                        }
+                    },
+                    axis: {
+                        x: {
+                            type: "category",
+                            categories: [2021, 2020, 2019],
+                            padding: {
+                                left: .2,
+                                right: .2
+                            }
+                        },
+                        rotated: true
+                    },
+                    bar: {
+                        width: {
+                            max: 20
+                        },
+                        radius: {
+                            ratio: 0.1
+                        }
+                    },
+                    legend: {
+                        show: false
+                    }
+                });
             }
         });
     },400);
