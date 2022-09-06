@@ -58,18 +58,18 @@
     <div class="module-wrap com_navi">
       <div class="innerSection">
         <ul class="navi">
-          <li><a data-tab="summary" href="#summary" class="active">기업개요</a></li>
-          <li><a data-tab="industry" href="#industry">산업 내 위치</a></li>
-          <li><a data-tab="finance" href="#finance">재무정보</a></li>
-          <li><a data-tab="view" href="#view">기업전경</a></li>
-          <li><a data-tab="business" href="#business">사업영역</a></li>
-          <li><a data-tab="product" href="#product">주요상품</a></li>
-          <li><a data-tab="culture" href="#culture">기업문화/복리후생</a></li>
-          <li><a data-tab="talent" href="#talent">인재상</a></li>
-          <li><a data-tab="interview" href="#interview">인터뷰</a></li>
-          <li><a data-tab="info" href="#info">취업정보</a></li>
-          <li><a data-tab="incruit" href="#incruit">채용공고</a></li>
-          <li><a data-tab="location" href="#location">기업위치</a></li>
+          <li data-tab="summary" class="active">기업개요</li>
+          <li data-tab="industry">산업 내 위치</li>
+          <li data-tab="finance">재무정보</li>
+          <li data-tab="view">기업전경</li>
+          <li data-tab="business">사업영역</li>
+          <li data-tab="product">주요상품</li>
+          <li data-tab="culture">기업문화/복리후생</li>
+          <li data-tab="talent">인재상</li>
+          <li data-tab="interview">인터뷰</li>
+          <li data-tab="info">취업정보</li>
+          <li data-tab="incruit">채용공고</li>
+          <li data-tab="location">기업위치</li>
         </ul>
       </div>
     </div>
@@ -86,9 +86,9 @@
           }
         });
 
-        $("ul.navi > li > a").click(function () {
+        $("ul.navi > li").click(function () {
           var items = $(this).attr("data-tab");
-          $("ul.navi > li > a").removeClass("active");
+          $("ul.navi > li").removeClass("active");
           $(this).addClass("active");
           if ($(".com_navi, .com_navi_header").hasClass("fixed")) {
             $("html, body").animate(
