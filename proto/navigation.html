@@ -1,0 +1,133 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title class="comName">기업명</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.kldp.org/fonts/Free/S-Core/css/scdream.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.1.2/billboard.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://gwjob.kgoon.pw/proto/inc/pt-common.css" rel="stylesheet" />
+    <style>
+      /* 기업별 스타일을 추가해주세요 */
+    
+    
+      @media all and (max-width:1024px) { }
+    
+      @media all and (max-width:768px) { }
+    
+      @media all and (max-width:640px) { }
+    
+      @media all and (max-width:480px) { }
+    
+    </style>
+    <script src="//code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- contents -->
+    <div class="module-wrap com_mod_header">
+      <div class="innerSection">
+        <div class="com_logo">
+          <img
+            src="https://gwjob.kr/page/gwjob/images/renew/common/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="com_info">
+          <div class="info">
+            <dl>
+              <dt>업종</dt>
+              <dd>업종</dd>
+            </dl>
+            <a href="javascript:;" class="copy_url">페이지 URL 복사</a>
+          </div>
+          <div class="com_tag">
+            <ul>
+              <li>#태그</li>
+              <li>#태그</li>
+              <li>#태그</li>
+              <li>#태그</li>
+              <li>#태그</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-wrap com_navi">
+      <div class="innerSection">
+        <ul class="navi">
+          <li>
+            <a data-tab="summary" href="#summary" class="active">기업개요</a>
+          </li>
+          <li>
+            <a data-tab="industry" href="#industry">산업 내 위치</a>
+          </li>
+          <li>
+            <a data-tab="finance" href="#finance">재무정보</a>
+          </li>
+          <li>
+            <a data-tab="view" href="#view">기업전경</a>
+          </li>
+          <li>
+            <a data-tab="business" href="#business">사업영역</a>
+          </li>
+          <li>
+            <a data-tab="product" href="#product">주요상품</a>
+          </li>
+          <li>
+            <a data-tab="culture" href="#culture">기업문화/복리후생</a>
+          </li>
+          <li>
+            <a data-tab="talent" href="#talent">인재상</a>
+          </li>
+          <li>
+            <a data-tab="interview" href="#interview">인터뷰</a>
+          </li>
+          <li>
+            <a data-tab="info" href="#info">취업정보</a>
+          </li>
+          <li>
+            <a data-tab="incruit" href="#incruit">채용공고</a>
+          </li>
+          <li>
+            <a data-tab="location" href="#location">기업위치</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- contents -->
+
+    <script>
+      $(document).ready(function () {
+        var navOffset = $(".com_navi").offset();
+        $(window).scroll(function () {
+          if ($(document).scrollTop() > 30) {
+            $(".com_navi, .com_mod_header").addClass("fixed");
+          } else {
+            $(".com_navi, .com_mod_header").removeClass("fixed");
+          }
+        });
+
+        $("ul.navi > li > a").click(function () {
+          var items = $(this).attr("data-tab");
+          $("ul.navi > li > a").removeClass("active");
+          $(this).addClass("active");
+          if ($(".com_navi, .com_mod_header").hasClass("fixed")) {
+            $("html, body").animate(
+              { scrollTop: $("#" + items + "").offset().top - 171 },
+              "500"
+            );
+          } else {
+            $("html, body").animate(
+              { scrollTop: $("#" + items + "").offset().top - 422 },
+              "500"
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
