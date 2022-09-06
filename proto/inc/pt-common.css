@@ -32,7 +32,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .container-fluid{position:relative;width:100%;}
 .container{position:relative;width:1200px;margin:0 auto;}
 
-.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history01 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:48px;}
     .mod_history01 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history01 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history01 .history > div::after{content:"";display:block;width:24px;height:100%;background-color:#e4e4e4;position:absolute;left:50%;transform:translateX(-50%);top:0;}
@@ -76,7 +76,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history01 .history > div:nth-child(even) > span::after{right:10px;left:auto;}
     }
 
-.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history02 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:48px;}
     .mod_history02 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history02 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history02 .history .slick-slide > span{
@@ -103,7 +103,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     @media all and (max-width:640px) {}
     @media all and (max-width:480px) {}
 
-.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history03 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:48px;}
     .mod_history03 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history03 .history{position:relative;width:1200px;margin:0 auto;}
     .mod_history03 .history > div{display:flex;justify-content:space-between;flex-wrap:wrap;}
@@ -121,7 +121,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
         .mod_history03 .history > div > ul{width:100%;margin-left:0;}
     }
 
-.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;}
+.mod_history04 h3{font-weight:600;font-size:40px;text-align:center;margin-bottom:48px;}
     .mod_history04 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_history04 .history_wrap{position:relative;width:1200px;margin:0 auto;}
     .mod_history04 .history_wrap .thumb{float:left;width:560px;position:relative;}
@@ -345,7 +345,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     }
     .mod_interview04 .container .iv_cont > div{height: 530px;display:none;border-radius: 20px;border: 10px solid #fff;}
     .mod_interview04 .container .iv_cont > div.active{display:block;}
-    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom: -80px;right: 0;}
+    .mod_interview04 .container .iv_cont > div .photo{position: absolute;bottom:-80px;right:-80px;max-width:400px;}
     .mod_interview04 .container .iv_cont > div .interview{height: 100%;padding: 50px;}
     .mod_interview04 .container .iv_cont > div .interview .q{color: #fad529;font-weight: 800;font-size:20px;}
     .mod_interview04 .container .iv_cont > div .interview .q::before{content:"Q. ";}
@@ -400,7 +400,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview05 .tabs li a {display: block;width: 100%;height: 100%;padding: 10px 20px;color: #00aeef;}
     .mod_interview05 .tab_content {width: calc(100% - 270px);position: relative;overflow-x: hidden;min-height: 500px;padding-bottom: 60px;}
     .mod_interview05 .tab_content .slick-slide > div + div {margin-top:20px;}
-    .mod_interview05 .tab_content img{position: absolute;right: 0;bottom: 0}
+    .mod_interview05 .tab_content img{position:absolute;right:0;bottom:0;max-width:400px;}
     .mod_interview05 .q{font-size: 24px;margin-bottom: 10px;padding-left: 25px;font-weight: 800;position: relative;}
     .mod_interview05 .a{color: #666;width: calc(100% - 200px);word-break: keep-all;font-size: 16px;}
     .mod_interview05 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
@@ -477,7 +477,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 h3{margin-bottom:50px;font-weight:600;font-size:40px;text-align:center;}
     .mod_interview07 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
     .mod_interview07 .container{display: flex;}
-    .mod_interview07 .container > div{width: 33.333%;background: #e7eef0;border-right: 2px dashed #dcdcdc;padding: 40px;position: relative;}
+    .mod_interview07 .container > div{width:33.333%;background:#e7eef0;border-right:2px dashed #dcdcdc;padding:40px 40px 160px;position:relative;}
     .mod_interview07 .container > div:last-child{border-right: 0}
     .mod_interview07 .container h3{text-align: center;font-size: 30px;margin-bottom: 40px;position: relative;z-index: 2}
     .mod_interview07 .container > div:nth-child(1){border-bottom: 3px solid #6986e4}
@@ -486,23 +486,16 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_interview07 .container > div:nth-child(1) h3:after{content: '';display: block;width: 180px;height: 12px;background: #6986e4;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(2) h3:after{content: '';display: block;width: 180px;height: 12px;background: #5ee6c2;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
     .mod_interview07 .container > div:nth-child(3) h3:after{content: '';display: block;width: 180px;height: 12px;background: #fce073;position: absolute;bottom: 0px;left: 50%;transform: translateX(-50%);z-index: -1}
-    .mod_interview07 img{position: absolute;bottom: -80px;left: 50%;transform: translateX(-50%)}
-    .mod_interview07 .swiper{overflow: hidden;padding-bottom: 50px}
+    .mod_interview07 .photo{position:absolute;bottom:-80px;left:50%;transform:translateX(-50%);width:160px;height:160px;border-radius:50%;overflow:hidden;}
+    /*.mod_interview07 .swiper{overflow: hidden;padding-bottom: 50px}
     .mod_interview07 .swiper-wrapper{height: 400px;padding-bottom: 50px}
-    .mod_interview07 .swiper-slide{height: calc(100%/3)}
+    .mod_interview07 .swiper-slide{height: calc(100%/3)}*/
     .mod_interview07 .q{font-size: 18px;font-weight:600;margin-bottom: 10px;position: relative;padding-left: 25px}
     .mod_interview07 .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
     .mod_interview07 .a{font-size: 14px;color: #555;}
+    .mod_interview07 .container .interview{position:static;}
     .mod_interview07 .container .slick-arrow{
-        position:absolute;
-        left:50%;
-        bottom: -40px;
-        border:none;
-        font-size:0;
-        width:30px;
-        height:30px;
-        opacity:.7;
-        z-index:1;
+        position:absolute;left:50%;bottom:100px;border:none;font-size:0;width:30px;height:30px;opacity:.7;z-index:1;transform:translateX(-50%);
     }
     .mod_interview07 .container .slick-arrow.slick-disabled{opacity:.1;}
     .mod_interview07 .container .slick-arrow.slick-prev{margin-left: -20px;background:url(./images/arrow_prev_g.png) no-repeat 50% 50%;}
@@ -932,9 +925,9 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 
 
 
-.mod_percent02{padding: 80px 0;}
+.mod_percent02{padding: 80px 0;background:#fff;}
 .mod_percent02 .percent_wrap{display: flex;}
-.mod_percent02 .percent_wrap > div{padding: 40px;width: calc(25% - 11.25px);margin-right: 15px;border: 1px solid #ccc;border-radius: 15px;display: flex;font-size: 18px;color: #999;align-items: center;justify-content: space-between;text-align: right;}
+.mod_percent02 .percent_wrap > div{padding: 40px;width: calc(25% - 11.25px);margin-right: 15px;border: 1px solid #ccc;background:#fff;border-radius: 15px;display: flex;font-size: 18px;color: #999;align-items: center;justify-content: space-between;text-align: right;}
 .mod_percent02 .percent_wrap > div > div span{color: #a82024;font-size: 25px;display: block;font-weight: 800;}
 .mod_percent02 .percent_wrap > div .ico{width: 50%;}
 .mod_percent02 .percent_wrap > div:last-child{margin-right: 0}
@@ -1009,7 +1002,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_percent04{padding: 200px 0 80px 0}
 .mod_percent04 .percent_wrap{display: flex;justify-content: center;align-items: flex-start}
 .mod_percent04 .percent_wrap > div{width: 220px;border-radius: 5px;position: relative;margin-right: 88px;}
-.mod_percent04 .percent_wrap > div:after{content: '';display: block;width: 88px;height: 206px;background: #333;transform: skewY(45deg);position: absolute;right: -88px;top: 29px;}
+.mod_percent04 .percent_wrap > div:after{content: '';display: block;width: 88px;height: 206px;background: #333;transform: skewY(45deg);position: absolute;right: -88px;top: 50px;}
 .mod_percent04 .percent_wrap > div:last-child:after{display: none}
 .mod_percent04 .percent_wrap > div:last-child{margin-right: 0}
 .mod_percent04 .percent_wrap > div > div{text-align: center;color: #fff;position: absolute;top: 50%;left:0;width: 100%;transform: translateY(-50%)}
@@ -1024,10 +1017,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_percent04 .percent_wrap > div:nth-child(3) div{font-size: 20px;}
 .mod_percent04 .percent_wrap > div:nth-child(3) > div span{font-size: 30px;}
 .mod_percent04 .percent_wrap > div:nth-child(4){height: 450px;background: #527f9e;}
-.mod_percent04 .percent_wrap > div:nth-child(4):before{content: '';display: block;border-bottom: 180px solid rgba(10,55,80,1);border-left: 180px solid transparent;border-right: 180px solid transparent;position: absolute;top: -160px;left: 50%;transform: translateX(-50%)}
+.mod_percent04 .percent_wrap > div:nth-child(4):before{content: '';display: block;border-bottom: 180px solid #527f9e;border-left: 180px solid transparent;border-right: 180px solid transparent;position: absolute;top: -160px;left: 50%;transform: translateX(-50%)}
 .mod_percent04 .percent_wrap > div:nth-child(4) > div{font-size: 38px;}
 .mod_percent04 .percent_wrap > div:nth-child(4) > div span{font-size: 50px}
-.mod_percent04 .percent_wrap .line_txt {margin: 40px 0 0 0;display: inline-block;position: relative;} 
+.mod_percent04 .percent_wrap .line_txt {margin: 40px 0 0 0;display: inline-block;position: relative;font-size: 16px;} 
 .mod_percent04 .percent_wrap .line_txt:after {content: "";display: block;height: 1px;background: #fff;margin: 5px 0 0 0;}
 @media all and (max-width:1260px) {
     .mod_percent04 .percent_wrap > div{width: 200px;margin-right: 50px}
@@ -1492,7 +1485,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_culture05 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
 .mod_culture05 .container{display: flex;}
 .mod_culture05 .culwel_wrap{width: 50%;}
-.mod_culture05 .culwel_wrap > div{padding: 50px;position: relative}
+.mod_culture05 .culwel_wrap > div{padding: 50px;position: relative;background-size: cover;}
 .mod_culture05 .culwel_wrap .swiper{overflow: hidden}
 .mod_culture05 .culwel_wrap .title{display: inline-block;font-size: 18px;font-weight: bold;margin-bottom: 20px;color: #fff;position: relative;}
 .mod_culture05 .culwel_wrap .title::after {
@@ -2543,7 +2536,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     padding:40px;
     text-align:center;
     color:#6c6c6c;
-    font-size:1.8rem;
+    font-size:1.80px;
 }
 .mod_finance02 .tab_wrap .conts .summary > div + div{margin-left:32px;}
 .mod_finance02 .tab_wrap .conts .summary > div h4{font-size:20px;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;font-weight: 800;color:#333;}
@@ -2603,7 +2596,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 	text-align:
 	center;
     color:#6c6c6c;
-    font-size:1.8rem;
+    font-size:1.80px;
 }
 .mod_finance03 .tab_wrap .conts .summary > div > div {width: 100%;padding: 0 40px;}
 .mod_finance03 .tab_wrap .conts .summary > div + div{margin-top:15px;}
@@ -2660,7 +2653,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance04 > div .tab_wrap .conts > div{display:none;}
 .mod_finance04 .tab_wrap .conts > div:first-child{display:flex;}
 .mod_finance04 .tab_wrap .conts .summary {width: 100%;margin: 110px 0 0 0;display:flex;justify-content:space-evenly;}
-.mod_finance04 .tab_wrap .conts .summary > div{flex:1 1 30%;border-radius:8px;	padding: 10px;text-align:center;color:#6c6c6c;font-size:1.8rem;}
+.mod_finance04 .tab_wrap .conts .summary > div{flex:1 1 30%;border-radius:8px;	padding: 10px;text-align:center;color:#6c6c6c;font-size:1.80px;}
 .mod_finance04 .tab_wrap .conts .summary > div + div{margin-left:32px;}
 .mod_finance04 .tab_wrap .conts .summary > div h4{font-size:20px;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;font-weight: 800;color:#333;}
 .mod_finance04 .bb-chart {stroke: #eee;}
@@ -2700,7 +2693,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .mod_finance05 > div {background-color: #ebebeb;padding:60px 48px;border-radius:16px;}
 .mod_finance05 > div .tab_wrap{padding: 0px 130px;background: #fff;border-radius: 20px;box-shadow: 1px 1px 10px rgba(0,0,0,.1);}
 .mod_finance05 .tab_wrap .conts .legend ul{display:flex;justify-content:flex-end;}
-.mod_finance05 .tab_wrap .conts .legend ul li{margin-left:16px;line-height:1.4rem;font-size:14px;}
+.mod_finance05 .tab_wrap .conts .legend ul li{margin-left:16px;line-height:14px;font-size:14px;}
 .mod_finance05 .tab_wrap .conts .legend i{display:inline-block;width:16px;height:16px;background-color:#999;border-radius:8px;}
 .mod_finance05 .tab_wrap .conts .legend .lg_capital i{background-color:#999;}
 .mod_finance05 .tab_wrap .conts .legend .lg_sales i{background-color:#ffd55f;}
@@ -2726,20 +2719,20 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_finance05 .tab_wrap .conts .legend ul li {font-size: 12px;}
 }
 
-.mod_finance06 {padding:80px 0;background: #f4f4f4;}
+.mod_finance06 {padding:80px 0;background: #fff;}
 .mod_finance06 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
 .mod_finance06 .bb line,
-.mod_finance06 .bb path {stroke:#eee;}
+.mod_finance06 .bb path {stroke:#e3e3e3;}
 .mod_finance06 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
-.mod_finance06 > div {background-color: #ebebeb;padding:60px 48px;border-radius:16px;}
-.mod_finance06 > div .tab_wrap{padding: 0px 130px;background: #fff;border-radius: 20px;box-shadow: 1px 1px 10px rgba(0,0,0,.1);}
+.mod_finance06 > div {background-color: #f7d9de;padding:60px 48px;border-radius:16px;}
+.mod_finance06 > div .tab_wrap{padding: 0px 130px;background: #f4f4f4;border-radius: 20px;box-shadow: 1px 1px 10px rgba(0,0,0,.1);}
 .mod_finance06 .tab_wrap .conts .legend ul{display:flex;justify-content:flex-end;}
-.mod_finance06 .tab_wrap .conts .legend ul li{margin-left:16px;line-height:1.4rem;font-size:14px;}
+.mod_finance06 .tab_wrap .conts .legend ul li{margin-left:16px;line-height:14px;font-size:14px;}
 .mod_finance06 .tab_wrap .conts .legend i{display:inline-block;width:16px;height:16px;background-color:#999;border-radius:8px;}
-.mod_finance06 .tab_wrap .conts .legend .lg_capital i{background-color:#999;}
-.mod_finance06 .tab_wrap .conts .legend .lg_sales i{background-color:#ffd55f;}
-.mod_finance06 .tab_wrap .conts .legend .lg_profit i{background-color:#0971ce;}
-.mod_finance06 > div .tab_wrap .conts{position: relative;background-color:#fff;border-radius: 0 0 20px 20px;padding: 60px 48px;height: 524px;} 
+.mod_finance06 .tab_wrap .conts .legend .lg_capital i{background-color:#d84059;}
+.mod_finance06 .tab_wrap .conts .legend .lg_sales i{background-color:#ce1030;}
+.mod_finance06 .tab_wrap .conts .legend .lg_profit i{background-color:#9b0c24;}
+.mod_finance06 > div .tab_wrap .conts{position: relative;border-radius: 0 0 20px 20px;padding: 60px 48px;height: 524px;} 
 .mod_finance06 .bb > svg{width:100%;max-height: 440px;}
 .mod_finance06 > div .tab_wrap .conts .unit{font-size:12px;text-align:right;color:#666;margin-bottom:12px;}
 .mod_finance06 .bb-chart {stroke: #eee;}
@@ -2760,43 +2753,179 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_finance06 .tab_wrap .conts .legend ul li {font-size: 12px;}
 }
 
-/* navi */
-.module-wrap.com_mod_header {position: relative;top: 0;left: 0;padding: 2rem 0;display: flex;align-items: center;font-family: "S-CoreDream", sans-serif !important;width: 100%;z-index: 2000;}
-.module-wrap.com_mod_header.fixed {position: fixed;top: 0;background: #fff;}
-.module-wrap.com_mod_header > .innerSection {margin: 0 auto;display: flex;align-items: center;width: 100%;max-width: 1400px;}
-.module-wrap.com_mod_header .com_logo {min-width: 36rem;height: 40px;}
-.module-wrap.com_mod_header .com_logo > img {height: inherit;object-fit: cover;}
-.module-wrap.com_mod_header .com_info {width: calc(100% - 36rem);}
-.module-wrap.com_mod_header .com_info .info {display: flex;justify-content: space-between;}
-.module-wrap.com_mod_header .com_info .info dl {display: flex;align-items: center;gap: 0 10px;width: calc(100% - 160px);}
-.module-wrap.com_mod_header .com_info .info dl dt {font-size: 1.6rem;}
-.module-wrap.com_mod_header .com_info .info dl dd {display: block;width: calc(100% - 50px);font-family: "S-CoreDream", sans-serif !important;font-size: 2rem;font-weight: 500;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.module-wrap.com_mod_header .com_info .copy_url {display: flex;align-items: center;gap: 0 15px;font-family: "S-CoreDream", sans-serif !important;font-size: 1.4rem !important;font-weight: 500;}
-.module-wrap.com_mod_header .com_info .copy_url:hover {text-decoration: none;}
-.module-wrap.com_mod_header .com_info .copy_url::after {content: "→";display: flex;justify-content: center;align-items: center;color: #6a6a6a;width: 3rem;height: 3rem;border-radius: 30px;border: 1px solid #474747;}
-.module-wrap.com_mod_header .com_tag {margin: 1.5rem 0 0;padding: 7px 10px;background: #f3f3f3;width: 100%;}
-.module-wrap.com_mod_header .com_tag ul {display: flex;flex-wrap: wrap;gap: 5px 18px;}
-.module-wrap.com_mod_header .com_tag ul li {color: #666;font-family: "S-CoreDream", sans-serif !important;font-size: 1.4rem;}
 
-.module-wrap.com_navi {position: relative;width: 100%;z-index: 2000;}
-.module-wrap.com_navi.fixed {position: fixed;left: 0;top: 123px;background: #fff;}
-.module-wrap.com_navi > .innerSection {padding: 0;margin: 0 auto;width: 100%;max-width: 1400px;}
-.module-wrap ul.navi {display: flex;flex-wrap: nowrap;overflow-x: auto;}
-.module-wrap ul.navi li {width: auto;}
-.module-wrap ul.navi li a {padding: 1rem 2.665rem;display: block;color: #666;font-size: 1.6rem;border: 1px solid #ddd;border-right: none;white-space: nowrap;font-family: "S-CoreDream", sans-serif !important;}
-.module-wrap ul.navi li:last-child a {border-right: 1px solid #ddd;}
-.module-wrap ul.navi li a.active {background: linear-gradient(90deg,rgba(97, 118, 252, 1) 0%,rgba(47, 73, 241, 1) 100%);color: #fff;font-weight: 500;border: 1px solid #5f74fb;}
-.module-wrap ul.navi li a:hover {font-weight: 500;}
 
-@media all and (max-width: 1024px) {}
-@media all and (max-width: 768px) {
-    .module-wrap.com_mod_header.fixed > .innerSection {padding: 0 20px;}
-    .module-wrap.com_navi.fixed {top: 105px;}
+
+.mod_finance07 {padding:80px 0;background: #fff;}
+.mod_finance07 h3{margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
+.mod_finance07 .bb line,
+.mod_finance07 .bb path {stroke:#eee;}
+.mod_finance07 h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
+.mod_finance07 > div {background-color: #d4dde3;padding:60px 48px;border-radius:16px;}
+.mod_finance07 > div .tab_wrap{padding: 90px 130px;background: #fff;border-radius: 20px;box-shadow: 1px 1px 10px rgba(0,0,0,.1);}
+.mod_finance07 > div .tab_wrap .tab{display: flex;overflow: hidden;justify-content: space-between;}
+.mod_finance07 > div .tab_wrap .tab > div{width: 24%;background: #ccc;font-size: 20px;text-align:center;padding: 15px 20px;cursor:pointer;border-radius: 10px;color: #fff;}
+.mod_finance07 > div .tab_wrap .tab > div.on{background: #527f9e;color: #fff;font-weight:800;position: relative;}
+.mod_finance07 > div .tab_wrap .conts{position: relative;padding:32px 0;height: 524px;} 
+.mod_finance07 .bb > svg{width:100%;max-height: 440px;}
+.mod_finance07 > div .tab_wrap .conts .unit{font-size:14px;text-align:right;color:#666;margin-bottom:24px;}
+.mod_finance07 > div .tab_wrap .conts > div{display:none;}
+.mod_finance07 .tab_wrap .conts > div:first-child{display:flex;}
+.mod_finance07 .tab_wrap .conts .summary {width: 100%;display:flex;justify-content:space-evenly;}
+.mod_finance07 .tab_wrap .conts .summary > div{
+	flex:1 1 30%;
+    border:2px solid #e8e8e8;
+    border-radius:8px;
+    padding:40px;
+    text-align:center;
+    color:#6c6c6c;
+    font-size:1.80px;
 }
-@media all and (max-width: 640px) {
-    .module-wrap.com_navi.fixed {top: 148px;}
-    .module-wrap.com_mod_header > .innerSection {flex-direction: column;padding: 0 15px !important;}
-    .module-wrap.com_mod_header .com_logo {min-width: 100%;width: 100%;height: 30px;}
-    .module-wrap.com_mod_header .com_info {margin: 2rem 0 0;width: 100%;}
+.mod_finance07 .tab_wrap .conts .summary > div + div{margin-left:32px;}
+.mod_finance07 .tab_wrap .conts .summary > div h4{font-size:20px;padding:0 0 32px;border-bottom:1px solid #e8e8e8;margin-bottom:32px;font-weight: 800;color:#333;}
+.mod_finance07 .bb-chart {stroke: #eee;}
+@media all and (max-width:1260px) {}
+@media all and (max-width:1024px) {
+    .mod_finance07 > div .tab_wrap .tab > div {font-size: 16px;}
 }
-@media all and (max-width: 480px) {}
+@media all and (max-width:768px) {
+    .mod_finance07 > div {padding: 60px 28px;border-radius:0;}
+    .mod_finance07 > div .tab_wrap {padding: 0;}
+    .mod_finance07 > div .tab_wrap .tab {width: 100%;float: none;display: flex;flex-wrap: wrap;border-radius: 0;border: none;}
+    .mod_finance07 > div .tab_wrap .tab > div {width: 50%;padding: 20px 20px;font-size: 15px;border-radius: 0;border-bottom: 1px solid #f7873e;}
+    .mod_finance07 > div .tab_wrap .tab > div + div {margin-top: 0;border-left: none;}
+    .mod_finance07 > div .tab_wrap .tab > div:nth-child(1) {border-radius: 15px 0 0 0;}
+    .mod_finance07 > div .tab_wrap .tab > div:nth-child(2) {border-radius: 0 15px 0 0;}
+    .mod_finance07 > div .tab_wrap .tab > div:nth-child(odd) + div {border-left: 1px solid #f7873e;}
+    .mod_finance07 > div .tab_wrap .conts {width: 100%;height: auto;padding: 40px;}
+    .mod_finance07 .bb > svg {max-height: 300px;}
+    .mod_finance07 .tab_wrap .conts .summary {flex-wrap: wrap;}
+    .mod_finance07 .tab_wrap .conts .summary > div {flex: 1 1 100%;padding: 20px;flex-shrink: 0;}
+    .mod_finance07 .tab_wrap .conts .summary > div h4 {font-size: 16px;padding: 20px;}
+    .mod_finance07 .tab_wrap .conts .summary > div + div {margin: 10px 0 0 0;}
+    .mod_finance07 > div .tab_wrap .conts > div {width: 100%;}
+    .mod_finance07 h3 {font-size: 30px;}
+    .mod_finance07 h3 span {font-size: 14px;}
+}
+@media all and (max-width:640px) {
+    .mod_finance07 .tab_wrap .conts .summary > div {display: block;}
+    .mod_finance07 .tab_wrap .conts .summary > div h4 {width: 100%;padding: 0px 20px 10px 20px;font-size: 14px;text-align: left;border-right: none;}
+    .mod_finance07 .tab_wrap .conts .summary > div > div {text-align: left;padding: 0 20px;}
+}
+@media all and (max-width:480px) {}
+
+
+
+.mod_finance08 {margin: 80px 0}
+.mod_finance08 h3{font-size: 40px;line-height: 1.2;font-weight: 400;color:#999;}
+.mod_finance08 h3 span{font-size: 40px;color: #04a29a;}
+.mod_finance08 .container{display: flex;align-items: center;justify-content: space-between;}
+.mod_finance08 .tit_wrap{padding-bottom: 10px}
+.mod_finance08 .tit_wrap > h3 span {display: block;position: relative;}
+.mod_finance08 .tit_wrap > h3 span:after{content: '';display: block;max-width: 500px;width: 100%;height: 2px;background: #04a29a;margin: 10px 0;}
+.mod_finance08 .cnt-container .tit_wrap{max-width: 400px;width: 100%}
+.mod_finance08 .conts_wrap{display: flex;justify-content: space-between}
+.mod_finance08 .conts_wrap > div:first-child{margin-left: 0}
+.mod_finance08  .conts_wrap > div{display: flex;flex-direction: column;align-items: center;justify-content: center;width: 240px;height: 240px;border-radius: 50%;background: #04a29a;margin-left: -30px;color: #fff}
+.mod_finance08 .conts_wrap > div:nth-child(even){border: 1px solid #04a29a;background: rgba(255, 255, 255, 0.83);color: #04a29a}
+.mod_finance08 .conts_wrap .tit{font-size: 23px}
+.mod_finance08 .conts_wrap > div > div{font-size: 40px;font-weight: 800;}
+@media all and (max-width:1260px) {}
+@media all and (max-width:1024px) {
+    .mod_finance08 h3{font-size: 40px}
+	.mod_finance08 .conts_wrap > div{width: 200px;height: 200px;}
+	.mod_finance08 .conts_wrap > div > div{font-size: 26px}
+	.mod_finance08 .conts_wrap .tit{font-size: 20px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance08 h3{font-size: 36px}
+    .mod_finance08 .container{display: block;padding:0 40px;}
+	.mod_finance08 .conts_wrap{display: block;    padding: 60px 40px 0 40px;}
+	.mod_finance08 .conts_wrap > div:nth-child(1){margin-top: 0}
+	.mod_finance08 .conts_wrap > div{margin: -20px auto auto auto !important}
+}
+@media all and (max-width:640px) {}
+@media all and (max-width:480px) {}
+
+
+
+
+.mod_finance09 {padding: 80px 0;background:#fff;}
+.mod_finance09 .percent_wrap{display: flex;padding: 80px 130px;border: 1px solid #ccc;border-radius: 15px;overflow: hidden;justify-content: space-between;text-align: center;}
+.mod_finance09 .percent_wrap > div {margin-right: 15px;background:#fff;}
+.mod_finance09 .percent_wrap .ico + div {color: #ff4f3e;font-size: 50px;display: block;font-weight: 800;}
+.mod_finance09 .percent_wrap > div:last-child{margin-right: 0}
+.mod_finance09 .percent_wrap .ico {width: 125px;height: 125px;display: block;margin: 0 0 20px 0;}
+.mod_finance09 .percent_wrap .scale .ico{background: url(./images/mod_finance09_ico01.png) no-repeat center;}
+.mod_finance09 .percent_wrap .growth .ico{background: url(./images/mod_finance09_ico02.png) no-repeat center;}
+.mod_finance09 .percent_wrap .profit .ico{background: url(./images/mod_finance09_ico03.png) no-repeat center;}
+.mod_finance09 .percent_wrap .stable .ico{background: url(./images/mod_finance09_ico04.png) no-repeat center;}
+@media all and (max-width:1260px) {
+    .mod_finance09 .percent_wrap > div{padding: 30px;flex-direction: column;text-align: center}
+}
+@media all and (max-width:1024px) {
+    .mod_finance09 .container {padding: 0 30px;}
+    .mod_finance09 .percent_wrap {padding: 40px 80px;}
+    .mod_finance09 .percent_wrap > div{padding: 20px;flex-direction: column;text-align: center}
+    .mod_finance09 .percent_wrap .ico + div {font-size: 30px;}
+	.mod_finance09 .percent_wrap .scale .ico{background-size: 100% !important;width: 90px !important;height: 90px !important}
+	.mod_finance09 .percent_wrap .growth .ico{background-size: 100% !important;width: 90px !important;height: 90px !important}
+	.mod_finance09 .percent_wrap .profit .ico{background-size: 100% !important;width: 90px !important;height: 90px !important}
+	.mod_finance09 .percent_wrap .stable .ico{background-size: 100% !important;width: 90px !important;height: 90px !important}
+}
+@media all and (max-width:768px) {
+    .mod_finance09{padding: 60px 0}
+	.mod_finance09 .percent_wrap{flex-wrap: wrap}
+	.mod_finance09 .percent_wrap > div:nth-child(1),
+	.mod_finance09 .percent_wrap > div:nth-child(2){margin-top: 0}
+	.mod_finance09 .percent_wrap > div:nth-child(2n){margin-right: 0}
+}
+@media all and (max-width:640px) {}
+@media all and (max-width:480px) {}
+
+
+
+.mod_finance10 {padding: 80px 0;background: #f4f4f4;}
+.mod_finance10 > h3 {margin-bottom:50px;font-weight:800;font-size:40px;text-align:center;}
+.mod_finance10 > h3 span{display:block;font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;text-transform: uppercase;}
+.mod_finance10 .container {position: relative;height: 440px;}
+.mod_finance10 .container > h3{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);text-align: center;font-size: 40px;background: url(./images/mod_finance10_bg.png) no-repeat 50% 0%;width: 530px;height: 100%;display: flex;align-items: center;justify-content: center}
+.mod_finance10 .conts_wrap{display: flex;justify-content: space-between;flex-wrap: wrap;height: 100%}
+.mod_finance10 .conts_wrap:after{content: '';display: block;clear: both}
+.mod_finance10 .conts_wrap > div {width: calc(50% - 290px);margin-right: 580px;text-align: center;}
+.mod_finance10 .conts_wrap > div:nth-child(2n){margin-right: 0}
+.mod_finance10 .conts_wrap > div > div{font-size: 40px;font-weight: 800;}
+.mod_finance10 .conts_wrap .tit{font-size: 18px;color: #666;}
+.mod_finance10 .conts_wrap > div:nth-child(1):before{content: '';display: block;float: left;background: url(./images/mod_finance10_ico01.png) no-repeat;width: 144px;height: 145px;}
+.mod_finance10 .conts_wrap > div:nth-child(2):before{content: '';display: block;float: left;background: url(./images/mod_finance10_ico02.png) no-repeat;width: 144px;height: 145px;}
+.mod_finance10 .conts_wrap > div:nth-child(3):before{content: '';display:block;float: left;background: url(./images/mod_finance10_ico03.png) no-repeat;width: 144px;height: 145px;}
+.mod_finance10 .conts_wrap > div:nth-child(4):before{content: '';display: block;float: left;background: url(./images/mod_finance10_ico04.png) no-repeat;width: 144px;height: 145px;}
+@media all and (max-width:1260px) {
+    .mod_finance10 .container > h3 {position: static;transform: none;margin: auto;height: 530px}
+	.mod_finance10 .container{height: auto}
+	.mod_finance10 .conts_wrap{height: auto;}
+	.mod_finance10 .conts_wrap > div{width: calc(50% - 15px);margin-right: 30px;margin-top: 40px}
+}
+@media all and (max-width:1024px) {
+    .mod_finance10 .container {padding:0 30px;}
+}
+@media all and (max-width:768px) {
+    .mod_finance10 .container > h3 {background-size: 400px !important;width: 400px;height: 400px;font-size: 40px}
+	.mod_finance10 .conts_wrap > div:nth-child(1):before{background-size: 100px !important;width: 100px;height: 101px}
+	.mod_finance10 .conts_wrap > div:nth-child(2):before{background-size: 100px !important;width: 100px;height: 101px}
+	.mod_finance10 .conts_wrap > div:nth-child(3):before{background-size: 100px !important;width: 100px;height: 101px}
+	.mod_finance10 .conts_wrap > div:nth-child(4):before{background-size: 100px !important;width: 100px;height: 101px}
+	.mod_finance10 .conts_wrap > div > div{font-size: 36px}
+    .mod_finance10 > h3 {font-size: 30px;}
+    .mod_finance10 > h3 span {font-size: 14px;}
+}
+@media all and (max-width:640px) {
+    .mod_finance10 .container > h3 {width: 280px;height: 280px;background-size: 280px !important;font-size: 25px}
+	.mod_finance10 .conts_wrap{display: block;}
+	.mod_finance10 .conts_wrap > div{width: 100%;margin-right: 0;text-align: left}
+	.mod_finance10 .conts_wrap > div:nth-child(1):before{margin-right: 2rem}
+	.mod_finance10 .conts_wrap > div:nth-child(2):before{margin-right: 2rem}
+	.mod_finance10 .conts_wrap > div:nth-child(3):before{margin-right: 2rem}
+	.mod_finance10 .conts_wrap > div:nth-child(4):before{margin-right: 2rem}
+}
+@media all and (max-width:480px) {}
