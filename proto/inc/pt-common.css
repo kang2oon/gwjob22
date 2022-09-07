@@ -2969,3 +2969,126 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .module-wrap.com_navi_header .com_info {margin: 2rem 0 0;width: 100%;}
 }
 @media all and (max-width: 480px) {}
+
+/*2021*/
+ /* 채용공고 */
+ /* 채용공고 히든처리*/
+.com_mod_recruit #recruitArea,
+.com_mod_recruit .otherRecruit{display:none;}
+.com_mod_recruit .recruit_source{text-align:right;padding-bottom:10px;color:#999;font-size:1.4rem;}
+.com_mod_recruit .recruit_source img{max-height:16px;}
+.com_mod_recruit.sty01{padding:80px 0;}
+    .com_mod_recruit.sty01 .bg_bot{position:absolute;bottom:0;width:100%;background:#2b71b9;height:280px;}
+    .com_mod_recruit.sty01 h3{font-size:32px;margin:0 0 40px;}
+    .com_mod_recruit.sty01 .tb_recruit{width:100%;margin-bottom:60px;background: #fff}
+    .com_mod_recruit.sty01 .tb_recruit th{border:2px #000;border-style:solid none;font-size:16px;padding:24px;}
+    .com_mod_recruit.sty01 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:14px;padding:16px;text-align:center;}
+    .com_mod_recruit.sty01 .tb_recruit td .apply{color:#da0020;padding:8px 16px;border:1px solid #da0020;margin-left:16px;}
+	.com_mod_recruit.sty01 .box_recruit_wrap{overflow-x:hidden;}
+	.com_mod_recruit.sty01 .box_recruit_wrap .swiper-pagination{bottom:-48px;}
+	.com_mod_recruit.sty01 .box_recruit_wrap .swiper-pagination .swiper-pagination-bullet{width:16px;height:16px;}
+	.com_mod_recruit.sty01 .box_recruit_wrap .swiper-pagination .swiper-pagination-bullet-active{background:#fff;}
+    .com_mod_recruit.sty01 .box_recruit{border:1px solid #2971b9;background:#fff;padding:40px;}
+    .com_mod_recruit.sty01 .box_recruit h4{position:relative;font-size:20px;}
+    .com_mod_recruit.sty01 .box_recruit h4 .period{position:absolute;top:3px;right:0;font-size:14px;font-weight:400;color:#666;}
+    .com_mod_recruit.sty01 .box_recruit hr{width:100%;margin:30px 0;border:1px #000;border-style:solid none;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap{display:flex;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap > div{flex:1;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap > div + div{border-left:1px solid #dcdcdc;padding-left:30px;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap h5{font-size:16px;margin:0 0 16px;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl{font-size:14px;color:#666;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt, 
+	.com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{float:left;margin-bottom:8px;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt{width:15%;}
+    .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:85%;}
+/* 채용공고 스타일 2*/
+.com_mod_recruit.sty02{margin-top: 8rem;padding-bottom:8.0rem;}
+.com_mod_recruit.sty02 .apply{height: auto !important}
+.com_mod_recruit.sty02 .qm_btn{color: #fff;border: 1px solid #fff;background: transparent}
+    .com_mod_recruit.sty02 .bg_bot{position:absolute;bottom:0;width:100%;background:url(../images/jp_md02_bg.png) no-repeat;width: 100%;height: 658px;}
+    .com_mod_recruit.sty02 h3{font-size:3.2rem;margin:0 0 40px;}
+    .com_mod_recruit.sty02 .tb_recruit{width:100%;margin-bottom:60px;table-layout: fixed}
+    .com_mod_recruit.sty02 .tb_recruit th{font-size:2.0rem;padding:24px;background: #f0f0f0;border-top: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;}
+    .com_mod_recruit.sty02 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:1.7rem;padding:2.0rem;text-align:center;background: #fff}
+    .com_mod_recruit.sty02 .tb_recruit td .apply{color:#fff;padding:8px 16px;border:1px solid #da0020;margin-left:16px;background: #ff1c31;border-radius: 10px}
+    .com_mod_recruit.sty02 .box_recruit{border:2px solid #437cff;background:#fff;padding:40px;}
+    .com_mod_recruit.sty02 .box_recruit h4{position:relative;font-size:2.2rem;}
+    .com_mod_recruit.sty02 .box_recruit h4 .period{position:absolute;top:3px;right:0;font-size:14px;font-weight:400;color:#666;}
+    .com_mod_recruit.sty02 .box_recruit hr{width:100%;margin:30px 0;border:1px #000;border-style:solid none;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap{display:flex;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap > div{flex:1;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap > div + div{border-left:1px solid #dcdcdc;padding-left:30px;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap h5{font-size:2.0rem;margin:0 0 16px;color: #ff1c31;}
+	.com_mod_recruit.sty02 .box_recruit .detail_wrap h5:before{content: '▶';display: inline;margin-right: 5px}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap dl{font-size:1.8rem;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap dl dt, 
+	.com_mod_recruit.sty02 .box_recruit .detail_wrap dl dd{float:left;margin-bottom:15px;}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap dl dt{width:20%;color: #000;font-weight: 500}
+    .com_mod_recruit.sty02 .box_recruit .detail_wrap dl dd{width:80%;color:#666;}
+/* 채용공고 스타일 3*/
+.com_mod_recruit.sty03{padding:80px 0;}
+    .com_mod_recruit.sty03 h3{font-size:32px;margin:0 0 40px;}
+    .com_mod_recruit.sty03 .tb_recruit{width:100%;margin-bottom:60px;}
+    .com_mod_recruit.sty03 .tb_recruit th{border:2px #000;border-style:solid none;font-size:16px;padding:24px;}
+    .com_mod_recruit.sty03 .tb_recruit td{border:1px #dcdcdc;border-style:none none solid;font-size:14px;padding:16px;text-align:center;}
+    .com_mod_recruit.sty03 .tb_recruit td .apply{color:#fff;padding:8px 16px;background: #0086f9;margin-left:16px;}
+    .com_mod_recruit.sty03 .box_recruit{border:1px solid #000;background:#fff;padding:40px;}
+    .com_mod_recruit.sty03 .box_recruit h4{position:relative;font-size:20px;}
+    .com_mod_recruit.sty03 .box_recruit h4 .period{position:absolute;top:3px;right:0;font-size:14px;font-weight:400;color:#666;}
+    .com_mod_recruit.sty03 .box_recruit hr{width:100%;margin:30px 0;border:1px #000;border-style:solid none;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap{display:flex;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap > div{flex:1;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap > div + div{border-left:1px solid #dcdcdc;padding-left:30px;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap h5{font-size:16px;margin:0 0 16px;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap dl{font-size:14px;color:#666;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap dl dt, 
+	.com_mod_recruit.sty03 .box_recruit .detail_wrap dl dd{float:left;margin-bottom:8px;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap dl dt{width:15%;}
+    .com_mod_recruit.sty03 .box_recruit .detail_wrap dl dd{width:85%;}
+/* 기업뉴스 */
+.com_mod_news.sty01{padding:80px 0;}
+    .com_mod_news.sty01 .news_row{padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid #dcdcdc;}
+    .com_mod_news.sty01 .news_row a.tit{font-size:18px;color:#000;font-weight:500;}
+    .com_mod_news.sty01 .news_row .desc{margin:20px 0 32px;color:#666;font-size:14px;}
+    .com_mod_news.sty01 .news_row .reg_date{color:#666;font-size:14px;}
+    .com_mod_news.sty01 .paging_wrap{display:flex;align-items:center;justify-content:center;}
+    .com_mod_news.sty01 .paging_wrap a{display:inline-block;width:48px;height:48px;text-align:center;line-height:48px;font-size:12px;}
+    .com_mod_news.sty01 .paging_wrap a.current{background-color:#000;color:#fff;border-radius:50%;}
+    .com_mod_news.sty01 .paging_wrap .prev, .com_mod_news.sty01 .paging_wrap .next{text-indent:-999999px;}
+    .com_mod_news.sty01 .paging_wrap .prev{background-image:url(/images/ico_paging.png);background-position:-48px 0;background-repeat:no-repeat;}
+    .com_mod_news.sty01 .paging_wrap .prev.disable{background-position:0 0;}
+    .com_mod_news.sty01 .paging_wrap .next{background-image:url(/images/ico_paging.png);background-position:-144px 0;background-repeat:no-repeat;}
+    .com_mod_news.sty01 .paging_wrap .next.disable{background-position:-96px 0;}
+.com_mod_news.sty02{padding:80px 0;}
+    .com_mod_news.sty02 .news_row{padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid #dcdcdc;display: flex;}
+	.com_mod_news.sty02 .news_row .img {width: 400px;height: 220px;border-radius: 10px;overflow: hidden}
+	.com_mod_news.sty02 .news_row .txt {width: calc(100% - 430px);margin-left: 30px;display: flex;flex-direction:column}
+.com_mod_news.sty02 .news_row .txt .reg_date{margin-top: auto}
+    .com_mod_news.sty02 .news_row a.tit{font-size:2.2rem;color:#000;font-weight:500;}
+    .com_mod_news.sty02 .news_row .desc{margin:20px 0 32px;color:#666;font-size:1.8rem;overflow: hidden; text-overflow: ellipsis;line-height: 1.6; height: 4.8em;display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+    .com_mod_news.sty02 .news_row .reg_date{color:#666;font-size:1.8rem}
+    .com_mod_news.sty02 .paging_wrap{display:flex;align-items:center;justify-content:center;}
+    .com_mod_news.sty02 .paging_wrap a{display:inline-block;text-align:center;font-size:1.8rem;padding: 10px 5px;margin: 0 15px ;color: #666666}
+    .com_mod_news.sty02 .paging_wrap a.current{color: #ff1c31;font-weight: bold;border-bottom: 3px solid #ff1c31}
+	.com_mod_news.sty02 .paging_wrap .prev,
+	.com_mod_news.sty02 .paging_wrap .next,
+	.com_mod_news.sty02 .paging_wrap .first,
+	.com_mod_news.sty02 .paging_wrap .last {text-indent: -9999px;width: 17px}
+ 	.com_mod_news.sty02 .paging_wrap .first{background: url(../images/jp_paging_first.png) no-repeat center}
+    .com_mod_news.sty02 .paging_wrap .prev{background: url(../images/jp_paging_prev.png) no-repeat center}
+    .com_mod_news.sty02 .paging_wrap .next{background: url(../images/jp_paging_next.png) no-repeat center}
+    .com_mod_news.sty02 .paging_wrap .last{background: url(../images/jp_paging_last.png) no-repeat center}
+/* 동영상 */
+.comMov{position:relative;width:100%;height:auto;padding-top:56.25%;border-radius:24px;overflow:hidden;}
+    .comMov iframe{z-index:1;top:0;left:0;position:absolute;width:100%;height:100%;}
+
+/*채용 공고 > 채용절차*/
+.com_mod_recruit .job_step{margin: 8.0rem 0;display: flex;justify-content:space-between}
+.com_mod_recruit .job_step p {color: #fff;font-size: 2.0rem;text-align: center;margin-top: 1.5rem;}
+.com_mod_recruit .job_step span{text-align: center;color:#eee;font-size: 1.8rem;font-weight: 500;text-align: center;display: block;}
+.com_mod_recruit .job_step > div:nth-child(1) span:before{content: '';display: block;width: 140px;height: 140px;border-radius: 50%;margin: auto; background: url(../images/jp_md02_ico01.png) #fff no-repeat center;margin-bottom: 1rem}
+.com_mod_recruit .job_step > div:nth-child(2) span:before{content: '';display: block;width: 140px;height: 140px;border-radius: 50%;margin: auto; background: url(../images/jp_md02_ico02.png) #fff no-repeat center;margin-bottom: 1rem}
+.com_mod_recruit .job_step > div:nth-child(3) span:before{content: '';display: block;width: 140px;height: 140px;border-radius: 50%;margin: auto; background: url(../images/jp_md02_ico03.png) #fff no-repeat center;margin-bottom: 1rem}
+.com_mod_recruit .job_step > div:nth-child(4) span:before{content: '';display: block;width: 140px;height: 140px;border-radius: 50%;margin: auto; background: url(../images/jp_md02_ico04.png) #fff no-repeat center;margin-bottom: 1rem}
+.com_mod_recruit .job_step >div:after{content: ''; display: block;text-indent: -9999px;background: url(../images/jp_md02_arrow.png) no-repeat center;width: 30px;margin: 0 40px}
+.com_mod_recruit  .big_btn{position: relative;}
