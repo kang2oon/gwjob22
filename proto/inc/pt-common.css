@@ -9,7 +9,7 @@ a{text-decoration:none;color:inherit;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
 kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, select, table, caption,
 tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video, a, button, option, textarea{margin:0;padding:0;border:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+time, mark, audio, video, a, button, option, textarea{margin:0;padding:0;border:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;line-height: initial;}
 a, a:hover, a:link, a:visited, a:active{text-decoration:none;color:#1b1b1b;word-wrap:break-word;}
 table{border-collapse:collapse;}
 label, legend{display:inline-block;text-decoration:none;}
@@ -3210,7 +3210,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 .module-wrap.com_navi_header .com_tag ul li {color: #666;font-family: "S-CoreDream", sans-serif !important;font-size: 1.4rem;}
 
 .module-wrap.com_navi {position: relative;width: 100%;z-index: 2000;}
-.module-wrap.com_navi.fixed {position: fixed;left: 0;top: 122px !important;background: #fff;}
+.module-wrap.com_navi.fixed {position: fixed !important;left: 0;top: 122px !important;background: #fff;}
 .module-wrap.com_navi > .innerSection {padding: 0;margin: 0 auto;width: 100%;max-width: 1400px;}
 .module-wrap.com_navi ul.navi {display: flex;flex-wrap: nowrap;overflow-x: auto;}
 .module-wrap.com_navi ul.navi li a {width: auto;padding: 1rem 2.665rem;display: block;color: #666;font-size: 1.6rem;border: 1px solid #ddd;border-right: none;white-space: nowrap;font-family: "S-CoreDream", sans-serif !important;cursor: pointer;}
@@ -3221,10 +3221,10 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 @media all and (max-width: 1024px){}
 @media all and (max-width: 768px){
     .module-wrap.com_navi_header.fixed > .innerSection {padding: 0 20px;}
-    .module-wrap.com_navi.fixed {top: 105px;}
+    .module-wrap.com_navi.fixed {top: 105px !important;}
 }
 @media all and (max-width: 640px){
-    .module-wrap.com_navi.fixed {top: 148px;}
+    .module-wrap.com_navi.fixed {top: 148px !important;}
     .module-wrap.com_navi_header > .innerSection {flex-direction: column;padding: 0 15px !important;}
     .module-wrap.com_navi_header .com_logo {min-width: 100%;width: 100%;height: 30px;}
     .module-wrap.com_navi_header .com_info {margin: 2rem 0 0;width: 100%;}
