@@ -3166,7 +3166,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
 /* 지도 */
 .com_mod_map{height:720px;}
 .com_mod_map #map{height:720px;background-image:url(/images/@bg_smp_map.png);background-position:50% 50%;}
-.com_mod_map .map_info_wrap{position:absolute;top:0;left:0;background-color:#fff;z-index:100;}
+.com_mod_map .map_info_wrap{position:absolute;top:0;left:0;background-color:#fff;z-index:100;max-width:390px;}
 .com_mod_map .map_info_wrap .com_info{padding:20px;background-color:#258fff;color:#fff;}
 .com_mod_map .map_info_wrap .com_info .comName{display:inline-block;font-size:20px;font-weight:700;line-height:26px;}
 .com_mod_map .map_info_wrap .com_info .find_road{
