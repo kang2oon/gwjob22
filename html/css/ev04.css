@@ -115,11 +115,10 @@
 	.ev04_wrap .ev04_section01{padding-top: 30px}
 	.ev04_wrap .ev04_section01 .imgTit img{width: 400px}
 	.ev04_wrap .ev04_section01 .date p{font-size: 16px}
-	.ev04_wrap .ev04_section01{padding-bottom: 900px}
 	.ev04_wrap .ev04_section01 .white_box .circle{width: 150px;height: 150px;font-size: 16px;bottom: -140px}
 	.ev04_wrap .ev04_section01:after{top: 450px}
+	.ev04_wrap .ev04_section02{margin-top: 80px}
 	
-	.ev04_wrap .ev04_section02{margin-top: -560px}
 	.ev04_wrap .note .kakao .kakao_header{font-size: 22px}
 	.ev04_wrap .note .kakao .kakao_header img{width: 50px;}
 	.ev04_wrap .note .cont{padding: 20px}
@@ -161,8 +160,6 @@
 	.ev04_wrap .note .line{height: 50px;width: 15px;top: -45px}
 	
 	.ev04_wrap .ev04_section03 .item:nth-child(2) .btn_wrap a{margin-right: 0}
-	.ev04_wrap .ev04_section01{background: url(../images/ev04/bg_header.png) #ffba84 no-repeat center}
-	.ev04_wrap{background: #e58551}
 }
 
 @media all and (max-width:640px) {
@@ -182,6 +179,7 @@
 
 
 @media all and (max-width:480px) {
+	.ev04_wrap .ev04_section01:after{display: none}
 	.ev04_wrap .f25 {font-size: 16px}
 	.ev04_wrap .f30 {font-size: 18px}
 	.ev04_wrap .f50 {font-size: 20px}
