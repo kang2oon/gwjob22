@@ -28,7 +28,7 @@
 .ev04_wrap .note .line02{right: 60px}
 .ev04_wrap .note .white_box:last-child{margin-bottom: 0}
 .ev04_wrap .note .kakao .kakao_header{background: #fae300;padding: 10px;text-align: center;color: #391b1b;font-weight: 500;display: flex;align-content: center;align-items: center;justify-content: center;font-size: 30px;border-radius: 20px 20px 0 0}
-.ev04_wrap .note .kakao .kakao_header:before{content: '';display: inline-block;background: url(../images/ev04/kaka_ico.png) no-repeat;width: 80px;height: 74px;margin-right: 20px}
+.ev04_wrap .note .kakao .kakao_header img{margin-right: 20px}
 .ev04_wrap .note .cont{padding: 30px 50px}
 .ev04_wrap .note .kakao .sb{display: inline-block;background: #2e86f3;color: #fff;padding:15px 50px;border-radius: 30px;font-weight: 500;position: relative; }
 .ev04_wrap .note .kakao .sb:after{content: '';display: block;background: url(../images/ev04/sb.png) no-repeat;width: 29px;height: 19px;position: absolute;right: 30px;bottom: -15px}
@@ -121,7 +121,7 @@
 	
 	.ev04_wrap .ev04_section02{margin-top: -560px}
 	.ev04_wrap .note .kakao .kakao_header{font-size: 22px}
-	.ev04_wrap .note .kakao .kakao_header:before{width: 50px;background-size: 50px;height: 50px}
+	.ev04_wrap .note .kakao .kakao_header img{width: 50px;}
 	.ev04_wrap .note .cont{padding: 20px}
 	
 	.ev04_wrap .ev_tit span{font-size: 30px;padding: 5px 50px}
@@ -139,7 +139,20 @@
 	
 	.ev04_wrap .ev04_section03 .btn_wrap a{padding: 10px 20px;font-size: 18px}
 	.ev04_wrap .ev04_section03 .item:nth-child(2) .btn_wrap a:nth-child(2){margin-top: 0}
+	.ev04_wrap .ev_cont{padding: 20px}
+	.ev04_wrap .ev_cont p {word-break: keep-all}
 	
+	.ev04_wrap .bg_gray:after{width: 90px;background-size: 90px;height: 90px;bottom: -89px}
+	.ev04_wrap .white_box:before{width: calc(100% + 10px);height: calc(100% + 10px);border-radius: 20px}
+	.ev04_wrap .white_box{border-radius: 15px}
+	.ev04_wrap .ev04_section03 .white_box h4{border-radius: 15px 15px 0 0}
+	.ev04_wrap .bg_gray{border-radius: 0 0 15px 15px}
+	
+	.ev04_wrap .ev04_section03 h3{margin-top: 80px;margin-bottom: 30px;}
+	.ev04_wrap .ev04_section03 h3{font-size: 26px}
+	.ev04_wrap .ev04_section03 .white_box h4{font-size: 18px;padding: 10px 20px}
+	.ev04_wrap .ev04_section03 .white_box .desc p{font-size: 15px}
+	.ev04_wrap{padding-bottom: 50px}
 }
 
 @media all and (max-width:640px) {
@@ -149,17 +162,19 @@
 	.ev04_wrap .ev04_section01:after{background-size: 470px;width: 470px;height: 220px;top: 550px}
 	.ev04_wrap .note .kakao .sb{padding: 10px 40px}
 	.ev04_wrap .note .kakao .blue{margin-top: 30px}
-	.ev04_wrap .note .kakao .kakao_header{display: block;font-size: 18px}
-	.ev04_wrap .note .kakao .kakao_header:before{display: block;margin: 0 auto 10px auto}
+	.ev04_wrap .note .kakao .kakao_header{font-size: 18px}
+	.ev04_wrap .note .kakao .kakao_header span{word-break: keep-all}
 	.ev04_wrap .note .kakao .sb{padding: 5px 30px;}
 	.ev04_wrap .note .kakao .blue{word-break: keep-all}
+	.ev04_wrap .note .kakao .kakao_header{text-align: left;font-size: 16px}
+	.ev04_wrap .note .kakao .kakao_header img{width: 35px}
 }
 
 
 @media all and (max-width:480px) {
 	.ev04_wrap .f25 {font-size: 16px}
-	.ev04_wrap .f30 {font-size: 20px}
-	.ev04_wrap .f50 {font-size: 22px}
+	.ev04_wrap .f30 {font-size: 18px}
+	.ev04_wrap .f50 {font-size: 20px}
 	.ev04_wrap .ev04_section01 .imgTit img{width: 300px}
 	.ev04_wrap .ev04_section01 .date{display: block;text-align: center}
 	.ev04_wrap .ev04_section01 .date p:nth-child(2){display: none;}
@@ -177,4 +192,7 @@
 	.ev04_contact .inner .txt{font-size: 16px}
 	.ev04_contact .inner .logo img{margin-bottom: 10px}
 	.ev04_contact .inner .logo img:last-child{margin-bottom: 0}
+	
+	.ev04_wrap .ev04_section03 .btn_wrap a{font-size: 15px}
+	.ev04_wrap .ev04_footer li{font-size: 14px}
 }
