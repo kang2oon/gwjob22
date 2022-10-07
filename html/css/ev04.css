@@ -8,7 +8,7 @@
 .ev04_wrap .mt50 {margin-top: 50px}
 .ev04_wrap .blue{color: #2e86f3}
 
-.ev04_wrap{background: url(../images/ev04/ev04_bg02.png) #e48450  no-repeat top -150px left ; font-family: 'SCoreDream',sans-serif;line-height: 1.5;padding-bottom: 80px}
+.ev04_wrap{background: url(../images/ev04/ev04_bg02.png) #e48450  no-repeat top -150px center ; font-family: 'SCoreDream',sans-serif;line-height: 1.5;padding-bottom: 80px}
 .ev04_wrap .ev04_section01 {padding: 100px 0}
 .ev04_wrap .ev04_section01:after{content: '';display: block;background: url(../images/ev04/person.png) no-repeat;width: 776px;height: 369px;position: absolute;left: 50%;transform: translateX(-50%);top:690px}
 .ev04_wrap .ev04_section01 .imgTit{text-align: center;}
