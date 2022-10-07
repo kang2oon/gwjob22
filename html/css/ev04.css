@@ -83,7 +83,6 @@
 	.ev04_wrap .ev04_section01 .imgTit img{width: 500px}
 	.ev04_wrap .ev04_section01 .date p{font-size: 20px}
 	.ev04_wrap .ev04_section01 .white_box .circle{width: 180px;height: 180px;font-size: 20px}
-	.ev04_wrap .ev04_section01{padding-bottom: 900px}
 	.ev04_wrap .ev04_section01:after{background-size: 600px;width: 600px;height: 280px;top: 650px}
 	
 	.ev04_wrap .note .kakao .kakao_header{font-size: 28px}
@@ -113,7 +112,7 @@
 	.ev04_wrap .f30 {font-size: 22px}
 	.ev04_wrap .f50 {font-size: 30px}
 	.ev04_wrap .mt50{margin-top: 30px}
-	.ev04_wrap .ev04_section01{padding-top: 50px}
+	.ev04_wrap .ev04_section01{padding-top: 30px}
 	.ev04_wrap .ev04_section01 .imgTit img{width: 400px}
 	.ev04_wrap .ev04_section01 .date p{font-size: 16px}
 	.ev04_wrap .ev04_section01{padding-bottom: 900px}
@@ -170,7 +169,7 @@
 	.ev04_wrap .f25 {font-size: 16px}
 	.ev04_wrap .f30 {font-size: 20px}
 	.ev04_wrap .f50 {font-size: 26px}
-	.ev04_wrap .ev04_section01:after{background-size: 470px;width: 470px;height: 220px;top: 550px}
+	.ev04_wrap .ev04_section01:after{background-size: 470px;width: 470px;height: 220px;top: 500px}
 	.ev04_wrap .note .kakao .sb{padding: 10px 40px}
 	.ev04_wrap .note .kakao .blue{margin-top: 30px}
 	.ev04_wrap .note .kakao .kakao_header{font-size: 18px}
@@ -189,7 +188,7 @@
 	.ev04_wrap .ev04_section01 .imgTit img{width: 300px}
 	.ev04_wrap .ev04_section01 .date{display: block;text-align: center}
 	.ev04_wrap .ev04_section01 .date p:nth-child(2){display: none;}
-	.ev04_wrap .ev04_section01:after{background-size: 400px;width: 400px;height: 350px;top: 580px}
+	.ev04_wrap .ev04_section01:after{background-size: 320px;width:320px;height: 150px;top: 650px}
 	
 	.ev04_wrap .ev_tit span{font-size: 22px;margin-bottom: 20px}
 	
