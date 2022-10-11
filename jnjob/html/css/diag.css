@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a{text-decoration: none;color: inherit}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table caption{text-indent: -99999px;height: 0;width: 0;overflow: hidden}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: "Noto Sans KR", sans-serif ;
+}
+
+
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 700;
+	src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 500;
+	src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 300;
+	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.inner{max-width: 1200px;width: calc(100% - 40px);margin: auto}
+.tct{text-align: center}
+.tlt{text-align: left}
+.trt{text-align: right}
+.f20{font-size: 20px}
+.f18{font-size: 18px}
+.f14{font-size: 14px}
+.f13{font-size: 13px}
+.pb0{padding-bottom: 0}
+.bold{font-weight: bold}
+.diag_select{ -webkit-appearance: none;  -moz-appearance: none;    appearance: none;    background: url(../images/diag/arrow.png) no-repeat right 20px center #fff;padding: 15px 40px 15px 20px;border: 1px solid #d1d1d1 ;border-radius: 10px;font-size: 16px;font-weight: 600}
+.diag_select::-ms-expand {display: none;}
+.ref_list li{font-size: 13px;color: #787878;position: relative;padding-left: 20px;margin-bottom: 10px}
+.ref_list li:before{content: '※';display: block;position: absolute;left: 0;top: 0}
+.ref_list li:last-child{margin-bottom: 0}
+
+/* 버튼 style */
+.btn_style01{display: inline-block;padding: 10px 45px;background: #eee;}
+.btn_style01.btn_blue{background: #05a1ff;color: #fff;font-size: 18px} 
+.btn_style02{display: inline-block;padding: 8px 30px;font-size: 13px;background: #eee;border: 1px solid;border: 1px solid #e2e2e2;color: #133c72}
+.gray_blue{}
+
+/* table style */
+.table_style01 th{background: #f7f7f8;}
+.table_style01 th,
+.table_style01 td{border:1px solid #bfbfbf;padding: 10px 20px;color: #787878}
+
+/* 사전진단 서비스 */
+.before_diag {margin-bottom: 100px}
+.before_diag .bd_visual{font-family: 'Gmarket Sans',sans-serif;position: relative;}
+.before_diag .bd_visual:before {content: '';display: block;background: url(../images/diag/bd_top_img.png) no-repeat;width: 635px;height: 612px;position: absolute;left: 0;}
+.before_diag .bd_visual .bd_top{background:  #9dd2f2;padding: 80px 0 50px 0;padding-left: 700px}
+.before_diag .bd_visual .top_tit{margin-bottom: 50px;position: relative;}
+.before_diag .bd_visual .top_tit:before{content: '';display: block;width: 123px;height: 34px; background: url(../images/diag/bd_top.png) no-repeat;position: absolute;left: -130px;top: -10px}
+.before_diag .bd_visual .top_tit p{font-size: 22px;margin-bottom: 10px}
+.before_diag .bd_visual .top_tit h3{font-size: 100px;font-weight: bold;color: #133c72;text-shadow: 5px 5px 0 #5aa3da}
+.before_diag .bd_visual .top_tit h3 span{color: #fff}
+.before_diag .bd_visual .bd_top ul li{background: #2a5c90;padding: 10px 10px 10px 55px;border-radius: 30px;color: #fff;width: 630px;margin-bottom: 10px;position: relative;box-sizing: border-box;word-break: keep-all}
+.before_diag .bd_visual .bd_top ul li:last-child{margin-bottom: 0}
+.before_diag .bd_visual .bd_top ul li:before{content: '';display: block;background: url(../images/diag/check.png) no-repeat;width: 39px;height: 32px;position: absolute;left: 15px;top: 0}
+.before_diag .bd_visual .bd_bottom{background: url(../images/diag/bd_top02.png) no-repeat #3f88e9 top 30px left;padding: 80px 0 50px 0}
+.before_diag .bd_visual .bd_bottom h3{font-size: 32px;text-align: center;font-weight: bold;color: #fff;margin-bottom: 30px}
+.before_diag .bd_visual .bd_bottom h3 span{color: #f7ec34}
+.before_diag .bd_visual .bd_bottom .item_wrap{display: flex;justify-content: center;text-align: center;color: #fff;}
+.before_diag .bd_visual .bd_bottom .item_wrap .item{margin-right: 50px}
+.before_diag .bd_visual .bd_bottom .item_wrap .item:last-child{margin-right: 0}
+.before_diag .bd_visual .bd_bottom .item_wrap .img{height: 207px;display: flex;justify-content: center;align-items: center;margin-bottom: 20px;}
+.before_diag .bd_exp {background: #f9f9f9;padding: 80px 0 50px 0}
+.before_diag .bd_exp .in{max-width: 672px;margin: auto;width: calc(100% - 40px)}
+.before_diag .bd_exp .select_area{display: flex;justify-content:center;margin: 30px 0}
+.before_diag .bd_exp .select_area li{margin-right: 15px}
+.before_diag .bd_exp .select_area li:last-child{margin-right: 0}
+.before_diag .bd_exp .select_area .diag_select{width: 214px; }
+
+/*diag_list*/
+.before_diag .diag_list{margin: 80px 0 50px 0}
+.before_diag .diag_list .diag_list_area{display: flex;margin-bottom: 50px;padding-bottom: 50px;border-bottom: 1px dotted #f1f1f1}
+.before_diag .diag_list .diag_list_area:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.before_diag .diag_list .diag_list_area .tit {width: 200px;font-size: 17px;font-weight: bold;color: #133c72;padding-top: 10px}
+.before_diag .diag_list .diag_list_area .cont_wrap {width: calc(100% - 200px);display: flex;flex-wrap: wrap;flex-direction:column;}
+.before_diag .diag_list .diag_list_area .cont {display: flex;align-items: center;margin-bottom:30px}
+.before_diag .diag_list .diag_list_area .cont:last-child{margin-bottom: 0}
+.before_diag .diag_list .diag_list_area .txt {width: calc(100% - 200px);color: #787878}
+.before_diag .diag_list .diag_list_area .btn_wrap {width: 280px;}
+.before_diag .diag_list .btn_wrap ul{display: flex;}
+.before_diag .diag_list .btn_wrap ul li:first-child{margin-right: 10px}
+.before_diag .diag_list .btn_radio{position: relative;width: calc(50% - 5px);}
+.before_diag .diag_list .btn_radio input{height: 35px;width: 100%; opacity: 0;cursor: pointer}
+.before_diag .diag_list .btn_radio label{position: absolute;top: 0; left: 0;color: #949494;width: 100%;height: 100%;font-size:14px;background: #fff;border: 1px solid #d1d1d1;display: flex;align-items: center;justify-content: center;border-radius:10px;cursor: pointer}
+.before_diag .btn_wrap ul .btn_radio input:checked +  label {background: #133c72;font-weight: bold;color: #fff;border: 1px solid #133c72}
+.before_diag .btn_wrap.tct{margin-top: 70px}
+
+/* 팝업 */
+.diag_pop{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none}
+.result_pop{max-width: 780px;width:calc(100% - 60px)}
+.diag_pop .dp_top{background: #133c72;color: #fff;padding: 15px 30px}
+.diag_pop .dp_cont{background: #fff;border: 1px solid rgba(0, 0, 0, 0.22);border-top: 0;padding: 40px}
+
+/* 사전진단결과 팝업*/
+.diag_pop.result_pop .result_table{display: flex;text-align: center;margin-bottom: 10px}
+.diag_pop.result_pop .result_table:last-child{margin-bottom: 0}
+.diag_pop.result_pop .result_table .tit{width: 140px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold}
+.diag_pop.result_pop .result_table .table_style01{width: 100%}
+.diag_pop.result_pop .result_table table{width: 100%}
+.diag_pop.result_pop .dp_cont > div:nth-child(odd) .tit{background: #133c72;color: #fff}
+.diag_pop.result_pop .dp_cont > div:nth-child(even) .tit{background: #05a1ff;color: #fff}
+
+
+@media all and (max-width:1600px){
+	/*사전진단*/
+	.before_diag .bd_visual:before{width: 450px;background-size: 450px;height: 430px}
+	.before_diag .bd_visual .bd_top{padding-left: 500px}
+	.before_diag .bd_visual .top_tit h3{font-size: 90px}
+	.before_diag .bd_visual .bd_top ul li{width: 500px}
+}
+
+@media all and (max-width:1200px){
+	/*사전진단*/
+	.before_diag .bd_visual:before{background-size: 300px;width: 300px;height: 290px}
+	.before_diag .bd_visual .bd_top{padding-left: 300px}
+	
+}
+
+@media all and (max-width:1024px){
+	/*사전진단*/
+	.before_diag .bd_visual:before{background-size: 200px;width: 200px;height: 190px;}
+	.before_diag .bd_visual .bd_top{padding-left: 0;padding-top: 200px}
+	.before_diag .bd_visual .top_tit{margin-bottom: 30px}
+	.before_diag .bd_visual .top_tit p{font-size: 18px}
+	.before_diag .bd_visual .top_tit h3{font-size: 60px}
+	.before_diag .diag_list .diag_list_area{display: block;}
+	.before_diag .diag_list .diag_list_area .tit{width: 100%;padding-top: 0;margin-bottom: 20px}
+	.before_diag .diag_list .diag_list_area .cont_wrap{width: 100%;}
+	.before_diag .diag_list .diag_list_area .cont{margin-bottom: 10px}
+	.before_diag .diag_list .btn_radio input{height: 30px;}
+	
+}
+
+@media all and (max-width:768px){
+	.f20{font-size: 17px}
+	.f18{font-size: 15px}
+	.f14{font-size: 13px}
+	.f13{font-size: 13px}
+	.btn_style01.btn_blue{font-size: 15px;padding: 10px 30px}
+	/*사전진단*/
+	.before_diag .bd_visual:before{background-size: 150px;width: 150px;height: 140px;}
+	.before_diag .bd_visual .bd_top{padding-top: 160px}
+	.before_diag .bd_visual .top_tit p{font-size: 16px}
+	.before_diag .bd_visual .top_tit h3{font-size: 40px}
+	.before_diag .bd_visual .bd_top ul li{max-width: 500px;width: 100%;padding: 10px 10px 10px 45px}
+	.before_diag .bd_visual .bd_top ul li:before{background-size: 25px;width: 25px;height: 20px;top: 5px}
+	
+	.before_diag .bd_visual .bd_bottom h3{font-size: 26px;margin-bottom: 15px}
+	.before_diag .bd_visual .bd_bottom .item_wrap {flex-direction: column;}
+	.before_diag .bd_visual .bd_bottom .item_wrap  .item{margin-bottom: 30px;margin-right: 0}
+	.before_diag .bd_visual .bd_bottom .item_wrap  .item:last-child{margin-bottom: 0}
+	.before_diag .bd_exp .select_area li{width: calc(33.333% - 10px)}
+	.diag_select{font-size: 15px;background-size: 13px;padding: 15px 30px 15px 15px}
+	.before_diag .bd_exp .select_area .diag_select{max-width: 100%;width: 100%}
+	.before_diag .diag_list .diag_list_area .txt{padding-right: 20px}
+	.before_diag .diag_list .diag_list_area .btn_wrap{width: 200px}
+	.before_diag .diag_list .diag_list_area{margin-bottom: 30px;padding-bottom: 30px}
+	
+}
+
+@media all and (max-width:480px){
+	/*사전진단*/
+	.before_diag .bd_visual:before{display: none}
+	.before_diag .bd_visual .bd_top{padding-top:50px}
+	.before_diag .bd_visual .top_tit h3{font-size: 30px}
+	.before_diag .bd_visual .bd_bottom{padding: 50px 0}
+	.before_diag .bd_visual .bd_bottom h3{font-size: 22px;word-break: keep-all}
+	.before_diag .bd_exp{padding: 50px 0}
+	.before_diag .diag_list{margin: 50px 0}
+	.before_diag .bd_exp .select_area{display: block}
+	.before_diag .bd_exp .select_area li{width: 100%;margin-right: 0;margin-bottom: 10px}
+	.before_diag .bd_exp .select_area li:last-child{margin-bottom: 0}
+	.before_diag {margin-bottom: 50px}
+	.before_diag .diag_list .diag_list_area .btn_wrap{width: 100px}
+	.before_diag .diag_list .diag_list_area .txt{width: calc(100% - 100px)}
+	.before_diag .diag_list .diag_list_area .tit{margin-bottom: 15px}
+	.before_diag .diag_list .btn_radio label{border-radius: 5px;height: 30px;font-size: 13px}
+	.before_diag .diag_list .diag_list_area{margin-bottom: 20px;padding-bottom: 20px
+	.before_diag .btn_wrap.tct{margin-top: 50px}
+	
+}
