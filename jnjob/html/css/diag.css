@@ -78,7 +78,7 @@ body {
 
 /* 사전진단 서비스 */
 .before_diag {margin-bottom: 100px}
-.before_diag .bd_visual{font-family: 'Gmarket Sans',sans-serif;position: relative;}
+.before_diag .bd_visual{font-family: 'GmarketSans',sans-serif;position: relative;}
 .before_diag .bd_visual:before {content: '';display: block;background: url(../images/diag/bd_top_img.png) no-repeat;width: 635px;height: 612px;position: absolute;left: 0;}
 .before_diag .bd_visual .bd_top{background:  #9dd2f2;padding: 80px 0 50px 0;padding-left: 700px}
 .before_diag .bd_visual .top_tit{margin-bottom: 50px;position: relative;}
