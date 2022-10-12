@@ -1995,6 +1995,7 @@ button{display:inline-block;background:transparent;font-size:inherit;font-weight
     .mod_culture11 .welfare_wrap .item dt {font-size: 18px;}
     .mod_culture11 .culwel_wrap .desc,
     .mod_culture11 .welfare_wrap .item dd {font-size: 14px;}
+    .mod_culture11 .welfare_wrap .item:before {content: none;}
     
 }
 @media all and (max-width:480px) {
