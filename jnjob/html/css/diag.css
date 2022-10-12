@@ -63,6 +63,9 @@ body {
 .mt100{margin-top: 100px}
 .mt5 {margin-top: 5px}
 .mt10{margin-top: 10px}
+.mt20{margin-top: 20px}
+.mt30{margin-top: 30px}
+.mt70{margin-top: 70px}
 .bold{font-weight: 600}
 .bold02{font-weight: 500}
 .diag_wrap .blue{color: #003d92}
@@ -89,6 +92,25 @@ body {
 .diag_wrap .table_style01 th{background: #f7f7f8;}
 .diag_wrap .table_style01 th,
 .diag_wrap .table_style01 td{border:1px solid #bfbfbf;padding: 10px 20px;color: #787878;font-size: 13px}
+.diag_wrap .table_style02{width: 100%}
+.diag_wrap .table_style02 thead .border{border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;} 
+.diag_wrap .table_style02 thead .border th{padding: 10px;font-size: 12px;color: #787878;font-weight: 400}
+.diag_wrap .table_style02 thead .q{text-align: left;padding-bottom: 15px} 
+.diag_wrap .table_style02 tbody td{padding: 20px;font-size: 14px;color: #787878;}
+.diag_wrap .table_style02 tbody tr:nth-child(odd){background: #f9f9f9}
+
+/* 라디오 버튼 */
+.checks {width: 30px;height: 30px;}
+.checks label {font-size: 14px;color: #949494;font-weight: bold;vertical-align: middle;position: absolute;z-index: 999;display: flex;width: 30px;display: block;text-align: center;line-height: 30px;}
+.checks input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;
+}
+.checks input[type="radio"]+label {display: inline-block;position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;
+}
+.checks input[type="radio"]+label:before {content: '';position: absolute;left: 0px;top: 0px;width: 30px;height: 30px;text-align: center;background: #fff;border: 1px solid rgba(102, 102, 102, 0.7);border-radius: 100%;box-shadow: none;z-index: -1;box-sizing: border-box}
+.checks input[type="radio"]:checked+label:before {background: #fff;border-color: #05a1ff;} 
+.checks input[type="radio"]:checked+label:after {content: '';position: absolute;top: 0;left: 0;width: 30px;height: 30px;background: #05a1ff;z-index: -1;border-radius: 100%;box-shadow: none;
+}
+.checks input[type="radio"]:checked+label{color: #fff}
 
 .diag_wrap .bg_gray{background: #f9f9f9;border: 1px solid #d4d4d4;padding: 40px;border-radius: 5px}
 .diag_wrap .white_box{padding: 40px 30px;border: 1px solid #d4d4d4;border-radius: 15px}
@@ -220,6 +242,18 @@ body {
 .jt_pop .job_type_wrap .job_type_area .txt .f16{font-weight: bold;margin-bottom: 3px}
 .jt_pop .job_type_wrap .cont_hide{display: none}
 
+/* 직업선호도 진단하기 */
+.job_diag .bg_gray.jd_visual{background: url(../images/diag/job_img03.png) no-repeat #f9f9f9 right center;}
+.job_diag .bg_gray.jd_visual .txt{width: 470px}
+
+/* 진단 table */
+.diag_wrap .jc_list .tit{font-size: 16px;font-weight: bold;margin-bottom: 10px}
+.diag_wrap .jc_list .desc{font-size: 12px;color: #787878;}
+.diag_wrap .jc_list .checks{margin: auto}
+.diag_wrap .diag_btn{margin-bottom: 100px}
+.diag_btn a{margin-right: 15px}
+.diag_btn a:last-child{margin-right: 0}
+.diag_btn a.btn_style03{padding: 8px 50px}
 
 @media all and (max-width:1600px){
 	/*사전진단*/
@@ -265,7 +299,7 @@ body {
 	.f16{font-size: 14px}
 	.f14{font-size: 13px}
 	.f13{font-size: 13px}
-	.btn_style01.btn_blue{font-size: 15px;padding: 10px 30px}
+	.btn_style01.btn_blue{font-size: 14px !important;padding: 8px 30px}
 	.diag_wrap .btn_style03{font-size: 13px;padding: 10px 20px}
 	.diag_wrap .bg_gray{padding: 20px}
 	.diag_wrap .white_box{padding: 20px}

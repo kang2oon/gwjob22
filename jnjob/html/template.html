@@ -8,57 +8,195 @@
 </head>
 
 <body>
-<div class="diag_wrap inner">
-<h3 style="margin-top: 20px;margin-bottom: 10px">버튼</h3>
+	<div class="diag_wrap inner">
+		<h3 style="margin-top: 20px;margin-bottom: 10px">버튼</h3>
 		<a href="#" class="btn_blue btn_style01">
 			버튼
 		</a>
-			<a href="#" class="gray_blue btn_style02">
+		<a href="#" class="gray_blue btn_style02">
 			버튼
 		</a>
 		<a href="#" class="gray_blue btn_style03">
 			버튼
 		</a>
 		<a href="#" class="btn_style04">진단 홈으로 →</a>
-		
+
 		<h3 style="margin-top: 20px;margin-bottom: 10px">table style</h3>
 		<div class="table_style01">
-						<table>
-							<caption>직무/직종진단</caption>
-							<tr>
-								<th>진단목적</th>
-								<td>직업(직무, 직종)에 대한 이해도 파악</td>
-							</tr>
-							<tr>
-								<th>진단결과</th>
-								<td class="normal">NORMAL</td>
-							</tr>
-							<tr>
-								<th>추천 서비스</th>
-								<td>
-									<div class="btn_wrap">
-										<a href="#" class="btn_style02">직업상담신청</a>
-										<a href="#" class="btn_style02">전문상담사 연결</a>
-									</div>
-								</td>
-							</tr>
+			<table>
+				<caption>직무/직종진단</caption>
+				<tr>
+					<th>진단목적</th>
+					<td>직업(직무, 직종)에 대한 이해도 파악</td>
+				</tr>
+				<tr>
+					<th>진단결과</th>
+					<td class="normal">NORMAL</td>
+				</tr>
+				<tr>
+					<th>추천 서비스</th>
+					<td>
+						<div class="btn_wrap">
+							<a href="#" class="btn_style02">직업상담신청</a>
+							<a href="#" class="btn_style02">전문상담사 연결</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<h3 style="margin-top: 20px;margin-bottom: 10px">팝업</h3>
+		<!--진단결과 팝업-->
+		<div class="diag_pop" style="display: block;transform: translate(0);left: 0;top: 0;position: relative;">
+			<div class="dp_top">
+				<p>직업선호도 유형별 특성</p>
+				<a href="#" class="close" onclick="close_pop()">닫기</a>
+			</div>
+			<div class="dp_cont">
+				<p>팝업cont</p>
+			</div>
+		</div>
+		<!--//진단결과 팝업-->
+
+		<h4 class="square_tit">타이틀</h4>
+		
+		<h4 style="margin-top: 50px;margin-bottom: 10px">진단 영역</h4>
+				<div class="jc_list">
+					<div class="item">
+						<table class="table_style02">
+							<thead>
+								<tr>
+									<th colspan="5" class="q">
+										<p class="tit">Q. [활동] 당신은 어떤 활동을 좋아합니까?</p>
+										<p class="desc">“매우 그렇다 ~ 매우 그렇지 않다” 까지 자신에게 맞는 부분에 체크 해주세요</p>
+									</th>
+								</tr>
+								<tr class="border">
+									<th scope="col"></th>
+									<th scope="col">매우 그렇다</th>
+									<th scope="col">그렇다</th>
+									<th scope="col">보통이다</th>
+									<th scope="col">그렇지 않다</th>
+
+									<th scope="col">매우 그렇지 않다</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd"><span>1</span></label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02">2</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03">3</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04">4</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05">5</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td>1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd"><span>1</span></label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02">2</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03">3</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04">4</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05">5</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td>1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd"><span>1</span></label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02">2</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03">3</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04">4</label>
+										</div>
+									</td>
+									<td>
+										<div class="checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05">5</label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
-					
-					<h3 style="margin-top: 20px;margin-bottom: 10px">팝업</h3>
-							<!--진단결과 팝업-->
-			<div class="diag_pop" style="display: block;transform: translate(0);left: 0;top: 0;position: relative;">
-				<div class="dp_top">
-					<p>직업선호도 유형별 특성</p>
-					<a href="#" class="close" onclick="close_pop()">닫기</a>
+
 				</div>
-				<div class="dp_cont">
-					<p>팝업cont</p>
-				</div>
-			</div>
-			<!--//진단결과 팝업-->
 				
-				<h4 class="square_tit">타이틀</h4>
-					</div>
+				
+				
+				<div class="diag_btn tct mt70">
+					<a href="#" class="btn_style04">← 이전 단계 </a>
+					<a href="#" class="btn_style04">다음 단계 →</a>
+					<a href="#" class="btn_style03">결과 보기 →</a>
+				
+				</div>
+	</div>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </body></html>
