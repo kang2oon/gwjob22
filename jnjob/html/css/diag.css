@@ -163,7 +163,7 @@ body {
 .not_scroll {width: 100%;height: 100%;overflow: hidden;}
 
 .diag_pop.w900{width: 900px;}
-.diag_pop{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;}
+.diag_pop{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;z-index: 999}
 .result_pop{max-width: 780px;width:calc(100% - 60px)}
 .diag_pop .dp_top{background: #133c72;color: #fff;padding: 15px 30px;display: flex;align-items: center;}
 .diag_pop .dp_top .close{background: url(../images/diag/close_btn.png) no-repeat;text-indent: -9999px;width: 17px;height: 17px;margin-left: auto}
@@ -243,7 +243,7 @@ body {
 
 /* 직업선호도 진단하기 */
 .job_diag .bg_gray.jd_visual{background: url(../images/diag/job_img03.png) no-repeat #f9f9f9 right center;}
-.job_diag .bg_gray.jd_visual .txt{width: 470px}
+.job_diag .bg_gray.jd_visual .txt{max-width: 470px;width: 100%;}
 
 /* 진단 table */
 .diag_wrap .jc_list .item{margin-bottom: 45px}
@@ -353,7 +353,7 @@ body {
 	.jt_pop .job_type_wrap .job_type_area .exp{display: block;margin: 15px 0 20px 0}
 	.jt_pop .job_type_wrap .job_type_area .exp .txt{width: 100%;margin-bottom: 15px}
 	.job_diag .bg_gray.jd_visual{background: #f9f9f9;}
-	.job_diag .bg_gray.jd_visual .txt{width: 100%;text-align: center}
+	.job_diag .bg_gray.jd_visual .txt{max-width: 100%;width: 100%;text-align: center}
 	
 	/* 진단하기 table */
 	.jc_list .table_style02 thead .border{display: none}
@@ -418,5 +418,6 @@ body {
 	.jt_pop .job_type_wrap .job_type_area .cont_hide li{display: block;}
 	.jt_pop .job_type_wrap .job_type_area .cont_hide strong{width: 60px;padding: 3px;margin:0 auto 5px auto;display: block;}
 	.jt_pop .job_type_wrap .job_type_area .cont_hide li p{width: 100%;margin-top: 10px;padding-left: 0}
+	.job_diag .bg_gray.jd_visual .txt {word-break: keep-all}
 	
 }
