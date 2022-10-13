@@ -179,7 +179,7 @@ body {
 .before_result .item:last-child{margin-bottom: 0}
 .before_result .tit{width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;}
 .before_result .table_style01{width: 100%}
-.before_result .table_style01 th {font-weight: 400;height: 100%}
+.before_result .table_style01 th {font-weight: 400;height: auto}
 .before_result table{width: 100%}
 .before_result .item:nth-child(odd) .tit{background: #133c72;color: #fff}
 .before_result .item:nth-child(even) .tit{background: #05a1ff;color: #fff}
@@ -325,10 +325,12 @@ body {
 	.before_diag .diag_list .diag_list_area .txt{padding-right: 20px}
 	.before_diag .diag_list .diag_list_area .btn_wrap{width: 200px}
 	.before_diag .diag_list .diag_list_area{margin-bottom: 30px;padding-bottom: 30px}
-	.diag_wrap .btn_style02{display: block;margin-top: 0}
-	.diag_wrap .btn_style02:first-child{margin-top: 0}
+	.diag_wrap .btn_style02{display: block;margin-bottom: 5px}
+	.diag_wrap .btn_style02:last-child{margin-bottom: 0}
 	.before_result{margin-top: 20px}
 	.before_result .tit{font-size: 15px}
+	.diag_wrap .table_style01 th, 
+	.diag_wrap .table_style01 td{padding: 10px}
 	
 	/*결과*/
 	.before_diag .mg50.f28{margin: 30px 0}
