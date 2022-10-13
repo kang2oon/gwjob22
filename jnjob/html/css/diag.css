@@ -39,7 +39,7 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
+	border-collapse: collapse;border-spacing: 0
 }
 table caption{text-indent: -99999px;height: 0;width: 0;overflow: hidden}
 body {
@@ -390,7 +390,9 @@ body {
 	.before_diag .bd_exp{padding: 50px 0}
 	.before_diag .diag_list{margin: 50px 0}
 	.before_diag .bd_exp .select_area{display: block}
-	.before_diag .bd_exp .select_area li{width: 100%;margin-right: 0;margin-bottom: 1f0px}
+	.before_diag .bd_exp .select_area select{padding: 10px 30px 10px 10px}
+	.before_diag .bd_exp .select_area li{width: 100%;margin-right: 0;margin-bottom: 5px}
+	.diag_select{background-position: right 20px center;}
 	.before_diag .bd_exp .select_area li:last-child{margin-bottom: 0}
 	.before_diag {margin-bottom: 50px}
 	.before_diag .diag_list .diag_list_area .btn_wrap{width: 100px}
