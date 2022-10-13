@@ -335,8 +335,16 @@ body {
 	/* 사전진단 결과 */
 	.before_result{margin-top: 20px}
 	.before_result .tit{font-size: 15px}
+	.before_result .table_style01 table,
+	.before_result .table_style01 tr,
+	.before_result .table_style01 tbody,
+	.before_result .table_style01 td,
+	.before_result .table_style01 th{display: block;text-align: center;}
 	.diag_wrap .table_style01 th, 
-	.diag_wrap .table_style01 td{padding: 10px}
+	.diag_wrap .table_style01 td{}
+	.diag_wrap .table_style01 th,
+	.diag_wrap .table_style01 td{border-top: 0}
+	.diag_wrap .table_style01 th{padding: 10px 0;color: #333;font-weight: 500}
 	
 	/*결과*/
 	.before_diag .mg50.f28{margin: 30px 0}
