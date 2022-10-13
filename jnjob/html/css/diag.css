@@ -177,7 +177,7 @@ body {
 .before_result{margin-top: 40px}
 .before_result .item{display: flex;text-align: center;margin-bottom: 20px}
 .before_result .item:last-child{margin-bottom: 0}
-.before_result .tit{width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;font-weight: 18px}
+.before_result .tit{width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;}
 .before_result .table_style01{width: 100%}
 .before_result .table_style01 th {font-weight: 400;}
 .before_result table{width: 100%}
