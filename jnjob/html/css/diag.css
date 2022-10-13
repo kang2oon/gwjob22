@@ -100,17 +100,17 @@ body {
 .diag_wrap .table_style02 tbody tr:nth-child(odd){background: #f9f9f9}
 
 /* 라디오 버튼 */
-.checks {width: 30px;height: 30px;}
-.checks label {font-size: 14px;color: #949494;font-weight: bold;vertical-align: middle;position: absolute;z-index: 999;display: flex;width: 30px;display: block;text-align: center;line-height: 30px;}
-.checks input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;
+.diag_checks label {font-size: 14px;color: #949494;font-weight: bold;vertical-align: middle;position: absolute;z-index: 999;display: flex;width: 30px;display: block;text-align: center;line-height: 30px;}
+.diag_checks input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;
 }
-.checks input[type="radio"]+label {display: inline-block;position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;
+.diag_checks input[type="radio"]+label {display: inline-block;position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;
 }
-.checks input[type="radio"]+label:before {content: '';position: absolute;left: 0px;top: 0px;width: 30px;height: 30px;text-align: center;background: #fff;border: 1px solid rgba(102, 102, 102, 0.7);border-radius: 100%;box-shadow: none;z-index: -1;box-sizing: border-box}
-.checks input[type="radio"]:checked+label:before {background: #fff;border-color: #05a1ff;} 
-.checks input[type="radio"]:checked+label:after {content: '';position: absolute;top: 0;left: 0;width: 30px;height: 30px;background: #05a1ff;z-index: -1;border-radius: 100%;box-shadow: none;
-}
-.checks input[type="radio"]:checked+label{color: #fff}
+.diag_checks input[type="radio"]+label:before {content: '';position: absolute;left: 0px;top: 0px;width: 30px;height: 30px;text-align: center;background: #fff;border: 1px solid rgba(102, 102, 102, 0.7);border-radius: 100%;box-shadow: none;z-index: -1;box-sizing: border-box}
+.diag_checks input[type="radio"]:checked+label:before {background: #fff;border-color: #05a1ff;} 
+.diag_checks input[type="radio"]:checked+label:after {content: '';position: absolute;top: 0;left: 0;width: 30px;height: 30px;background: #05a1ff;z-index: -1;border-radius: 100%;box-shadow: none;}
+
+.diag_checks input[type="radio"]:checked+label{color: #fff}
+.diag_checks  .mb_show{display: none}
 
 .diag_wrap .bg_gray{background: #f9f9f9;border: 1px solid #d4d4d4;padding: 40px;border-radius: 5px}
 .diag_wrap .white_box{padding: 40px 30px;border: 1px solid #d4d4d4;border-radius: 15px}
@@ -247,9 +247,11 @@ body {
 .job_diag .bg_gray.jd_visual .txt{width: 470px}
 
 /* 진단 table */
+.diag_wrap .jc_list .item{margin-bottom: 45px}
+.diag_wrap .jc_list .item:last-child{margin-bottom: 0}
 .diag_wrap .jc_list .tit{font-size: 16px;font-weight: bold;margin-bottom: 10px}
 .diag_wrap .jc_list .desc{font-size: 12px;color: #787878;}
-.diag_wrap .jc_list .checks{margin: auto}
+.diag_wrap .jc_list .check_area .diag_checks{margin: auto}
 .diag_wrap .diag_btn{margin-bottom: 100px}
 .diag_btn a{margin-right: 15px}
 .diag_btn a:last-child{margin-right: 0}
@@ -299,6 +301,8 @@ body {
 	.f16{font-size: 14px}
 	.f14{font-size: 13px}
 	.f13{font-size: 13px}
+	.mt20{margin-top: 15px}
+	.mt70{margin-top: 50px}
 	.btn_style01.btn_blue{font-size: 14px !important;padding: 8px 30px}
 	.diag_wrap .btn_style03{font-size: 13px;padding: 10px 20px}
 	.diag_wrap .bg_gray{padding: 20px}
@@ -349,7 +353,32 @@ body {
 	.jt_pop .job_type_wrap .job_type_area{padding-bottom: 30px;margin-bottom: 20px}
 	.jt_pop .job_type_wrap .job_type_area .exp{display: block;margin: 15px 0 20px 0}
 	.jt_pop .job_type_wrap .job_type_area .exp .txt{width: 100%;margin-bottom: 15px}
+	.job_diag .bg_gray.jd_visual{background: #f9f9f9;}
+	.job_diag .bg_gray.jd_visual .txt{width: 100%;text-align: center}
 	
+	/* 진단하기 table */
+	.jc_list .table_style02 thead .border{display: none}
+	.jc_list .table_style02,
+	.jc_list .table_style02 tbody,
+	.jc_list .table_style02 tbody tr,
+	.jc_list .table_style02 tbody td{display: block}
+	.jc_list .table_style02 tbody tr{overflow: hidden;margin-bottom: 20px}
+	.jc_list .table_style02 tbody tr:last-child{margin-bottom: 0}
+	.diag_wrap .table_style02 tbody tr:nth-child(odd){background: #fff}
+	.diag_wrap .jc_list .table_style02 tbody td{padding: 0}
+	.diag_wrap .jc_list .table_style02 .mb_tit{font-weight: 500;margin-bottom: 15px}
+	.diag_checks input[type="radio"]:checked+label{color: #949494}
+	.diag_wrap .jc_list .check_area{float: left;width: 20%}
+	.diag_wrap .jc_list .check_area strong{display: none}
+	.diag_wrap .jc_list .check_area .mb_show{display: block;width: 100%;padding-top: 35px;line-height: 1.2}
+	.diag_wrap .jc_list .diag_checks input[type="radio"]+label{width: 100%}
+	.diag_checks label{font-size: 13px;font-weight: 500}
+	.diag_checks input[type="radio"]+label:before,
+	.diag_checks input[type="radio"]:checked+label:after{width: 25px;height: 25px;left: 50%;transform: translateX(-50%)}
+	
+	/* 진단 버튼 */
+	.diag_wrap .diag_btn{margin-bottom: 50px}
+	.diag_btn .btn_style04{padding: 7px 20px;font-size: 13px}
 }
 
 @media all and (max-width:480px){
@@ -362,7 +391,7 @@ body {
 	.before_diag .bd_exp{padding: 50px 0}
 	.before_diag .diag_list{margin: 50px 0}
 	.before_diag .bd_exp .select_area{display: block}
-	.before_diag .bd_exp .select_area li{width: 100%;margin-right: 0;margin-bottom: 10px}
+	.before_diag .bd_exp .select_area li{width: 100%;margin-right: 0;margin-bottom: 1f0px}
 	.before_diag .bd_exp .select_area li:last-child{margin-bottom: 0}
 	.before_diag {margin-bottom: 50px}
 	.before_diag .diag_list .diag_list_area .btn_wrap{width: 100px}
@@ -378,8 +407,8 @@ body {
 	.job_diag .diag_section2 li strong{margin-right: 0;margin-bottom: 10px;}
 	.job_diag .diag_section2 li span{width: 100%}
 	.job_diag .job_selct{margin: 30px 0 20px 0}
-	.job_diag .job_selct a{margin-right: 30px}
-	.job_diag .job_selct a{max-width: 180px;width: calc(50% - 15px);height: 100px;font-size: 16px}
+	.job_diag .job_selct a{margin-right: 15px}
+	.job_diag .job_selct a{max-width: 180px;width: calc(50% - 7.5px);height: 100px;font-size: 16px}
 	.jt_pop .job_type_wrap .job_type_area{display: block;text-align: center;margin-bottom: 15px;padding-bottom: 15px}
 	.jt_pop .job_type_wrap .job_type_area .cont{width: 100%;}
 	.jt_pop .job_type_wrap .job_type_area .exp{margin: 15px 0 0 0}
