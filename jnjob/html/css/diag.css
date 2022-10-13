@@ -285,8 +285,7 @@ body {
 	.before_diag .diag_list .btn_radio input{height: 30px;}
 	.before_result .item{display: block;}
 	.before_result .tit{width: 100%;padding: 10px;box-sizing: border-box}
-	.before_result colgroup col:nth-child(1){width: 110px  !important}
-	
+	.before_result .tit br{display: none}
 	/* 직업선호도진단 */
 	.diag_pop{width: calc(100% - 40px)}
 	.diag_pop.w900{max-width: 900px;width: 90%}
