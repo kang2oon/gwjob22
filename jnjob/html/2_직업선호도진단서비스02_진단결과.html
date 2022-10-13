@@ -6,7 +6,8 @@
 	<title>전라도일자리정보망</title>
 	<!--전라도 일자리 정보망 css-->
 	<link rel="stylesheet" href="https://job.jeonnam.go.kr/site/jnjob/plat/css/layout.css">
-
+	<!--chart-->
+	<link rel="stylesheet" href="css/billboard.min.css">
 	<link rel="stylesheet" href="css/diag.css">
 </head>
 
@@ -27,81 +28,173 @@
 		</div>
 
 		<div class="job_diag diag_wrap">
-			<div class="inner">
-				<div class="bg_gray mg50">
-					<h3 class="f28 bold">
-						<span class="blue">직업선호도 진단 서비스</span>란?
-					</h3>
-					<p class="f16 mt10">
-						<span class="gray">직업선호도 검사는 좋아하는 활동, 관심있는 직업, 선호하는 분야를 탐색하여 여러분의 직업흥미유형에 적합한 직업들을 추천해 줍니다.</span><br>
-						<strong class="bold">
-							‘나’에 대해 이해도를 높이고 심리적인 특성과 직업흥미유형을 연관지어 직업의사결정과정에 활용해볼 수 있습니다.</strong><br>
-						<span class="gray">진로 및 직업상담 과정에서 가장 많이 활용되고 있는 Holland 흥미 이론에 기초하였습니다.</span>
-					</p>
-					<div class="img_wrap">
-						<img src="images/diag/job_img.png" alt="사물 탐구형, 예술 독창성, 사람 사회형, 기업형, 구체정 관습형, 실재형">
-					</div>
-					<div class="btn_wrap trt">
-						<a href="javascript:openModal('jt_pop');" class="btn_style03">
-							유형별 특성 보기 →
-						</a>
-					</div>
-				</div>
-				<!--//bg_gray-->
-
-				<div class="diag_section2 mg50">
-					<h4 class="f24 bold">진단은 이렇게 구성되어 있어요</h4>
-					<p class="f16 gray mt5">
-						검사를 위해서는 전라남도일자리정보망에 회원이어야 합니다.
-					</p>
-					<ul>
-						<li class="f16"><strong>검사 대상</strong><span>만 18세 이상</span></li>
-						<li class="f16"><strong>검사 시간</strong><span>약 4분 정도 소요</span></li>
-						<li class="f16"><strong>검사 내용</strong><span>24개 문항으로 구성되며, 개인의 흥미유형 및 성격 등을 측정하여 적합 직업 안내 </span></li>
-						<li class="f16"><strong>진단 요령</strong><span>자기 보고식으로 응답, 각 문항을 읽고 적합한 특성에 표시</span></li>
-					</ul>
-				</div>
-				<!--//diag_section2-->
-			</div>
-			<!--//inner-->
-			<div class="diag_section3">
+			<div class="jd_result">
 				<div class="inner">
-					<h4 class="f24 bold tct">생애주기를 선택해 주세요</h4>
-					<div class="job_selct">
-						<a href="javascript:void(0);">
-							청년<br>(18세~34세)
-						</a>
-						<a href="javascript:void(0);">
-							중장년<br>(35세~64세)
-						</a>
+					<h4 class="f28">
+						<span class="blue">직업선호도 진단</span> 서비스
+					</h4>
+					<div class="white_box mg30">
+						<ul class="jd_privacy">
+							<li class="f16">
+								<strong>성명</strong>
+								<p>윤주환</p>
+							</li>
+							<li class="f16">
+								<strong>생애주기</strong>
+								<p>청년(18세~34세)</p>
+							</li>
+							<li class="f16">
+								<strong>검사일</strong>
+								<p>2021-04-05</p>
+							</li>
+						</ul>
 					</div>
-					<p class="f14 bold02 tct">
-						생애주기를 선택하셨다면 검사 시작을 클릭하세요
-					</p>
+					<!--//진단자 정보-->
+				<!--//jd_result-->
 
-				</div>
-			</div>
-			<!--//diag_section3-->
-			<div class="diag_section4">
-				<a href="#">
-					<div class="inner">
-						<p class="f14">회원의 경우 바로 진단이 시작 됩니다.</p>
-						검사시작
+				<!--진단자 흥미코드-->
+				<div class="white_box mg30 job_code_wrap">
+					<h4 class="square_tit">윤주환님의 대표 흥미 코드는 ‘<span class="s">S</span><span class="c">C</span>’ 입니다.</h4>
+
+					<!--job_code-->
+					<div class="job_code">
+						<div class="txt">
+							<div class="gray_round tct">
+
+								<!--흥미코드-->
+								<!--
+								<span class="code_r code_name">R</span>
+						<span class="code_i code_name">I</span>
+						<span class="code_a code_name">A</span>
+						<span class="code_e code_name">E</span>
+						<span class="code_s code_name">S</span>
+						<span class="code_c code_name">C</span>-->
+						
+								<span class="code_s code_name">S</span>
+								<span class="code_c code_name">C</span>
+							</div>
+							<p class="f18 tct mt20">합계 : 82</p>
+
+
+							<div class="table_style03">
+								<table>
+									<caption>직업선호도 진단 결과</caption>
+									<col style="width: 50%">
+									<col style="width: 50%">
+									<tbody>
+										<tr>
+											<th scope="row" class="code_r">R 현실형</th>
+											<td>8</td>
+										</tr>
+										<tr>
+											<th scope="row" class="code_i">I 탐구형</th>
+											<td>8</td>
+										</tr>
+										<tr>
+											<th scope="row" class="code_a">A 예술형</th>
+											<td>8</td>
+										</tr>
+										<tr>
+											<th scope="row" class="code_s">S 사회형</th>
+											<td>8</td>
+										</tr>
+										<tr>
+											<th scope="row" class="code_e">E 진취형</th>
+											<td>8</td>
+										</tr>
+										<tr>
+											<th scope="row" class="code_c">C 사무형</th>
+											<td>8</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+
+						<div class="right">
+
+							<div class="job_chart">
+
+							</div>
+							<div class="btn_wrap">
+								<a href="javascript:vold(0)" class="btn_style05" onClick="javascript:openModal('modal1');">흥미의 육각모형 해석 TIP</a>
+							</div>
+						</div>
 					</div>
-				</a>
-
-			</div>
-		
-		<!--진단결과 팝업-->	
+					<!--//job_code-->
+					
+				<!--해석 Tip 팝업-->
 		<div class="shadow"></div>
-		<div class="diag_pop w900 jt_pop" style="display: none">
+		<div class="diag_pop jd_pop modal1" style="display: none">
 			<div class="dp_top">
-				<p>직업선호도 유형별 특성</p>
-				<a href="javascript:void(0);" class="close" onclick="close_pop()">닫기</a>
+				<p>흥미의 육각모형 해석 TIP</p>
 			</div>
 			<div class="dp_cont">
-				<!--job_type_wrap-->
-					<div class="job_type_wrap">
+				<div class="table_style01">
+					<table>
+						<caption>흉미의 육각모형 해석 TIP</caption>
+						<colgroup>
+							<col style="width: 60px">
+							<col style="width: 60px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2" colspan="2"></th>
+								<th colspan="2">육각형의 모양</th>
+							</tr>
+							<tr>
+								<th>한쪽으로 찌그러진 모양</th>
+								<th>정육각형에 가까운 모양</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th rowspan="2">육각형<br>
+크기
+</th>
+						<th>크다</th>
+						<td>특정 분야에 뚜렷한 관심을 보입니다.
+본인의 성격, 능력, 경험 등이 관심분야와 
+조화로운지 살펴보세요</td>
+						<td>관심분야가 폭 넓은 경우입니다.
+능력, 성격, 경험 등을 고려하여 흥미분야를 
+좁혀보세요</td>
+							</tr>
+							<tr>
+						<th>작다
+</th>
+						<td>특정분야에 관심이 있기는 하나 그 정도가 
+작은 편입니다. 조금이라도 관심있는 분야에 
+대해 적극적인 탐색이 필요합니다</td>
+						<td>뚜렷한 관심분야가 없습니다. 본인의 
+관심사와 잘 할 수있는 일 등을 고려하며 
+작은 부분에서 부터 흥미분야를 찾아보세요
+</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="bottm_close">
+				<a href="javascript:void(0);" onclick="close_pop()">닫기 →</a>
+			</div>
+		</div>
+		<!--//해석 Tip 팝업-->
+
+
+				</div>
+				<!--//진단자 흥미코드-->
+
+
+				<!--진단자 유형안내-->
+				<div class="white_box mg30">
+					<h4 class="square_tit">
+							유형 안내
+					</h4>
+
+					<!--job_type_wrap-->
+					<div class="job_type_wrap mt30">
 						<!--job_type_area-->
 						<div class="job_type_area">
 							<div class="tit">
@@ -117,7 +210,7 @@
 											실행/사물지향
 										</p>
 										<p class="f13 gray ">
-											분명하고, 체계적인 것을 좋아하고,  도구나 기계를 조작하는 활동이나 기술에 흥미 있음
+											분명하고, 체계적인 것을 좋아하고, 도구나 기계를 조작하는 활동이나 기술에 흥미 있음
 										</p>
 									</div>
 									<div class="btn_wrap">
@@ -184,9 +277,9 @@
 						<div class="job_type_area">
 							<div class="tit">
 								<p>
-								탐구형
+									탐구형
 									<strong>I</strong>
-									
+
 								</p>
 							</div>
 							<div class="cont">
@@ -196,7 +289,7 @@
 											사고/아이디어지향
 										</p>
 										<p class="f13 gray">
-											관찰적, 체계적이며 물리적, 생물학적, 문화적 현상의 창조적인 탐구를 수반하는 활동에 흥미  있음
+											관찰적, 체계적이며 물리적, 생물학적, 문화적 현상의 창조적인 탐구를 수반하는 활동에 흥미 있음
 
 										</p>
 									</div>
@@ -264,8 +357,8 @@
 						<div class="job_type_area">
 							<div class="tit">
 								<p>예술형
-								<strong>A</strong>
-									
+									<strong>A</strong>
+
 								</p>
 							</div>
 							<div class="cont">
@@ -496,7 +589,7 @@
 						<div class="job_type_area">
 							<div class="tit">
 								<p>
-								<strong>C</strong>
+									<strong>C</strong>
 									사무형
 								</p>
 							</div>
@@ -574,15 +667,326 @@
 						<!--//job_type_area-->
 					</div>
 					<!--//job_type_wrap-->
+				</div>
+				<!--//진단자 유형안내-->
+
+
+				<!--추천 유형-->
+				<div class="white_box mg30">
+						<h4 class="square_tit">추천 직업</h4>
+						<p class="f14 gray mt10">
+							흥미코드 진단결과에 따른 추천직업이 표시됩니다. 회원님의 흥미유형이 유사한 종사자가 많은 직업을 추천해드립니다.
+						</p>
+
+					<!--tab-->
+
+					<div class="tab_container">
+						<div class="tabs">
+							<ul class="tag_tab">
+								<li class="active">
+									<a href="javascript:vold(0)" data-tab="tab1">
+										행정사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab2">
+										생산관리사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab3">
+										보육교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab4">
+										총무사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab5">
+										방과후지도사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab6">
+										독서치료사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab7">
+										사회복지사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab8">
+									요양보호사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab9">
+										아동복지교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab10">
+										의료관광코디네이터
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab10">
+									학습매니저
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab11">
+										금융관련사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab12">
+										체험학습강사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab13">
+										보육교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab14">
+										통계사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab15">
+										객실승무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab16">
+										취업알선원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab17">
+										독서치료사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab18">
+										프랜차이즈매니저
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab18">
+										커리어코치
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab19">
+										복지시설생활지도원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab20">
+										노인상담사
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--tab1-->
+						<div class="tab_content" id="tab1">
+							<p class="f20 blue tct">
+								프랜차이즈 매니저
+							</p>
+
+							<div class="table_style03 mt30">
+								<table>
+									<caption>프랜차이즈 매니저</caption>
+									<colgroup>
+										<col style="width:22%" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">직종</th>
+											<td class="tlt">음식료 서비스</td>
+										</tr>
+										<tr>
+											<th scope="row">개요</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>
+														패밀리레스토랑, 패스트푸드점, 외국음식전문점, 커피전문점 등 프랜차이즈 전문점의 운영과 영업,
+														종업원들을 총괄 관리함
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">수행업무</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>상점의 매출을 증진시키기 위해 영업전략을 수립함</li>
+													<li>일일 또는 월간, 연간 매출을 분석함</li>
+													<li>직원의 근무스케줄을 조정하고 업무를 총괄 지휘함</li>
+													<li>서비스교육과 위생교육 등을 실시함</li>
+													<li>상점의 홀 및 주방, 화장실 등의 청결상태를 점검함</li>
+													<li>고객과 문제가 생겼을 때 이를 해결함</li>
+													<li>고객의 불편사항을 파악하여 개선안을 수립함</li>
+													<li>입점 상점의 건물주/ 관리소장 등과의 협력적 관계를 구축함</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">근무형태</th>
+											<td class="tlt"></td>
+										</tr>
+										<tr>
+											<th scope="row">자격요건</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>비스직은 타고난 능력이 더 중요하므로 특별히 요구되는 자격이나 학력 제한은 없이 고졸 이상 학력이면 충분하지만
+														대규모 레스토랑, 패밀리 레스토랑 등의 경우는 전문대졸 이상으로 학력을 제한함</li>
+													<li>기본적인 외국어 능력이 필요함</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">일자리 현황</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>레스토랑, 호텔, 바, 커피전문점</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">임금수준</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>평균 연봉 2,000만원</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">취업현황</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>가족 단위의 외식문화가 정착되고 있어 이로 인한 패밀리레스토랑, 패스트푸드 등의 외식산업이 성장하고 있어 고용은
+														다소 증가할 것으로 전망됨</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">역량</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>고객지향,대인관계,영업/마케팅 능력,책임감,코칭스킬,손익마인드</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">자격증</th>
+											<td class="tlt"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+						<!--//tab1-->
+
+						<!--//tab2-->
+						<div class="tab_content  mt_50" id="tab2">
+							탭2
+						</div>
+						<!--//tab2-->
+
+						<!--//tab3-->
+						<div class="tab_content  mt_50" id="tab3">
+							탭3
+						</div>
+						<!--//tab3-->
+
+						<!--//tab4-->
+						<div class="tab_content  mt_50" id="tab4">
+							탭4
+						</div>
+						<!--//tab4-->
+
+						<!--//tab5-->
+						<div class="tab_content  mt_50" id="tab5">
+							탭5
+						</div>
+						<!--//tab5-->
+
+						<!--tab6-->
+						<div class="tab_content  mt_50" id="tab6">
+							탭6
+						</div>
+						<!--//tab6-->
+
+
+
+
+					</div>
+					<!--//tab-->
+
+				</div>
+				<!--//추천 유형-->
 			</div>
-			<div class="bottm_close">
-				<a href="javascript:void(0);" onclick="close_pop()">닫기 →</a>
-			</div>
-		</div>
-		<!--//진단결과 팝업-->
 		</div>
 
+				</div>
 	</div>
+	
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
 	<script src="js/diag.js"></script>
+	
+	
+		<script>
+		var chart = bb.generate({
+			data: {
+				x: "x",
+				columns: [
+					["x", "현실형", "탐구형", "예술형", "사회형", "진취형", "사무형"],
+					["data1", 18, 15, 12, 8, 12, 12],
+				],
+				type: "radar", // for ESM specify as: radar()
+				labels: false,
+				  colors: {
+					  data1: "#f33170",
+				  }
+			},
+			legend: {
+				show: false
+			},
+			radar: {
+				axis: {
+					max: 20,
+
+				},
+				level: {
+					depth: 3,
+					text: {
+						show: false
+					}
+				},
+				direction: {
+					clockwise: false
+				}
+			},
+			point: {
+				r: 4
+			},
+			tooltip: {
+				show: false
+			},
+
+			bindto: ".job_chart"
+		});
+	</script>
 </body></html>
