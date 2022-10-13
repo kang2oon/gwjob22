@@ -179,7 +179,7 @@ body {
 .before_result .item:last-child{margin-bottom: 0}
 .before_result .tit{width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;}
 .before_result .table_style01{width: 100%}
-.before_result .table_style01 th {font-weight: 400;}
+.before_result .table_style01 th {font-weight: 400;height: 100%}
 .before_result table{width: 100%}
 .before_result .item:nth-child(odd) .tit{background: #133c72;color: #fff}
 .before_result .item:nth-child(even) .tit{background: #05a1ff;color: #fff}
