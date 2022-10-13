@@ -327,6 +327,8 @@ body {
 	.before_diag .diag_list .diag_list_area{margin-bottom: 30px;padding-bottom: 30px}
 	.diag_wrap .btn_style02{display: block;margin-bottom: 5px}
 	.diag_wrap .btn_style02:last-child{margin-bottom: 0}
+	
+	/* 사전진단 결과 */
 	.before_result{margin-top: 20px}
 	.before_result .tit{font-size: 15px}
 	.diag_wrap .table_style01 th, 
@@ -403,6 +405,7 @@ body {
 	.before_diag .diag_list .btn_radio label{border-radius: 5px;height: 30px;font-size: 13px}
 	.before_diag .diag_list .diag_list_area{margin-bottom: 20px;padding-bottom: 20px}
 	.before_diag .btn_wrap.tct{margin-top: 50px}
+	
 		
 	/* 직업선호도 진단서비스 */
 	.job_diag .diag_section3{padding: 50px 0 30px 0}
