@@ -415,7 +415,7 @@ body {
 	.jt_pop .job_type_wrap .job_type_area{display: block;text-align: center;margin-bottom: 15px;padding-bottom: 15px}
 	.jt_pop .job_type_wrap .job_type_area .cont{width: 100%;}
 	.jt_pop .job_type_wrap .job_type_area .exp{margin: 15px 0 0 0}
-	.jt_pop .job_type_wrap .job_type_area .tit{width: 90px;height: 90px;font-size: 13px;margin: auto}
+	.jt_pop .job_type_wrap .job_type_area .tit{width: 80px;height: 80px;font-size: 13px;margin: auto}
 	.jt_pop .job_type_wrap .job_type_area .tit strong{font-size: 26px}
 	.jt_pop .job_type_wrap .job_type_area .btn_wrap a{padding: 8px 20px;margin: auto}
 	.jt_pop .job_type_wrap .job_type_area .cont_hide{margin-top: 20px}
