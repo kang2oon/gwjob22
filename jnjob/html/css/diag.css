@@ -329,7 +329,7 @@ body {
 	.before_diag .diag_list .diag_list_area .txt{padding-right: 20px}
 	.before_diag .diag_list .diag_list_area .btn_wrap{width: 200px}
 	.before_diag .diag_list .diag_list_area{margin-bottom: 30px;padding-bottom: 30px}
-	.diag_wrap .btn_style02{margin-bottom: 5px;text-align: center;display: none}
+	.diag_wrap .btn_style02{display: inline-block;margin-bottom: 5px;text-align: center;}
 	.diag_wrap .btn_style02:last-child{margin-bottom: 0}
 	
 	/* 사전진단 결과 */
