@@ -242,7 +242,7 @@ body {
 .jt_pop .job_type_wrap .cont_hide{display: none}
 
 /* 직업선호도 진단하기 */
-.job_diag .bg_gray.jd_visual{background: url(../images/diag/job_img03.png) no-repeat #f9f9f9 right center;}
+.job_diag .bg_gray.jd_visual{background: url(../images/diag/job_img03.png) no-repeat #f9f9f9 right 40px center;padding-bottom: 80px}
 .job_diag .bg_gray.jd_visual .txt{max-width: 470px;width: 100%;}
 
 /* 진단 table */
@@ -368,7 +368,7 @@ body {
 	.jt_pop .job_type_wrap .job_type_area{padding-bottom: 30px;margin-bottom: 20px}
 	.jt_pop .job_type_wrap .job_type_area .exp{display: block;margin: 15px 0 20px 0}
 	.jt_pop .job_type_wrap .job_type_area .exp .txt{width: 100%;margin-bottom: 15px}
-	.job_diag .bg_gray.jd_visual{background: #f9f9f9;}
+	.job_diag .bg_gray.jd_visual{background: #f9f9f9;padding-bottom: 20px}
 	.job_diag .bg_gray.jd_visual .txt{max-width: 100%;width: 100%;text-align: center}
 	
 	/* 진단하기 table */
