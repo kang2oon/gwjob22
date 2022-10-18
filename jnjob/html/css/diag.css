@@ -423,7 +423,7 @@ body {
 	.job_code .job_chart{margin: auto}
 	
 	/* 직업역량진단서비스 */
-	.job_link .inner:after{background-size: 280px;width: 280px;height: 150px}
+	.job_abil .job_link .inner:after{background-size: 280px;width: 280px;height: 150px}
 }
 
 @media all and (max-width:768px){
@@ -538,8 +538,8 @@ body {
 	/*직업역량진단서비스*/
 	.job_abil .tit{display: block}
 	.job_abil .img_wrap{margin-top: 30px}
-	.job_link{margin-top: 60px}
-	.job_link .inner:after{display: none}
+	.job_abil .job_link{margin-top: 50px}
+	.job_abil .job_link .inner:after{display: none}
 	
 	/* 직업역량진단서비스_직종선택 */
 	.ja_step{margin: 30px 0 40px 0}
