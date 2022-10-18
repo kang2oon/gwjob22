@@ -280,6 +280,7 @@ body {
 .diag_wrap .jc_list .item:last-child{margin-bottom: 0}
 .diag_wrap .jc_list .tit{font-size: 16px;font-weight: bold;margin-bottom: 10px}
 .diag_wrap .jc_list .desc{font-size: 12px;color: #787878;}
+.diag_wrap .jc_list .check_area {text-align: center}
 .diag_wrap .jc_list .check_area .diag_checks{margin: auto}
 .diag_wrap .diag_btn{margin-bottom: 100px}
 .diag_btn a{margin-right: 15px}
