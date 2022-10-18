@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>전라도일자리정보망</title>
+	<!--전라도 일자리 정보망 css-->
+	<link rel="stylesheet" href="https://job.jeonnam.go.kr/site/jnjob/plat/css/layout.css">
+
+	<link rel="stylesheet" href="css/diag.css">
+</head>
+
+<body>
+	<div id="container">
+		<div class="tit_nav tit_nav_diag">
+			<!--서브 비주얼-->
+
+			<h3 class="off">취업 진단</h3>
+
+			<!--
+            <div id="top-nav-prev-next">
+                <a id="top-nav-prev" href="/">전 메뉴</a>
+                <a id="top-nav-next" href="/">후 메뉴</a>
+            </div>
+            -->
+			<div id="bg_wrap" class="bg_wrap"></div>
+		</div>
+		<div class="job_abil diag_wrap">
+			<div class="inner">
+				<h3 class="f28 mg50">직업역량진단</h3>
+				<!--직업역량 진단 step-->
+				<div class="ja_step">
+					<div>
+						<div class="cont">
+							<p class="num">01</p>
+							<p class="f18">직종선택</p>
+						</div>
+						<div class="ico ico01">
+						</div>
+						<div class="arrow">다음</div>
+					</div>
+
+					<div class="active">
+						<div class="cont">
+							<p class="num">02</p>
+							<p class="f18">직업선택</p>
+						</div>
+						<div class="ico ico02">
+						</div>
+						<div class="arrow">다음</div>
+					</div>
+
+					<div>
+						<div class="cont">
+							<p class="num">03</p>
+							<p class="f18">직업역량진단</p>
+						</div>
+					</div>
+
+				</div>
+				<!--//직업역량 진단 step-->
+
+				<div class="ja_select02_wrap">
+					<p class="f18">
+						<span class="blue f20">IT 분야</span>의 직업을 선택하세요
+					</p>
+					<div class="bg_gray ja_select02">
+						<p class="f14">IT교육전문가</p>
+						<ul>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">E-러닝교수설계자</label>
+								<a href="javascript:void(0)" class="ja_more" onClick="javascript:openModal('modal1');">직업정보 상세보기</a>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja02" name="it">
+								<label for="ja02">IT교육강사</label>
+								<a href="javascript:void(0)" class="ja_more" onClick="javascript:openModal('modal2');">직업정보 상세보기</a>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja03" name="it">
+								<label for="ja03">사이버 교육운영자</label>
+								<a href="javascript:void(0)" class="ja_more" onClick="javascript:openModal('modal2');">직업정보 상세보기</a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					<div class="bg_gray ja_select02">
+						<p class="f14">SI개발설계
+</p>
+						<ul>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">IT컨설턴트</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">IT프로젝트매니저</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">네트워크설계전문가</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">네트워크엔지니어</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">정보시스템감리사</label>
+							</li>
+							
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">네트워크프로그래머</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">데이터베이스관리자</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">시스템관리자</label>
+							</li>
+							<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">시스템엔지니어</label>
+							</li>
+								<li class="radio_style01">
+								<input type="radio" id="ja01" name="it">
+								<label for="ja01">정보시스템분석사</label>
+							</li>
+						</ul>
+					</div>
+					
+					
+					<!--상세보기 팝업-->
+					<div class="diag_pop modal1">
+						<div class="dp_top">
+							<p>직업정보 상세보기</p>
+							<a href="javascript:void(0)" class="close" onclick="close_pop()">닫기</a>
+						</div>
+						<div class="dp_cont">
+
+							<div class="table_style01">
+								<table class="w100">
+									<caption>직업정보 상세보기</caption>
+									<tr>
+										<th>직업명</th>
+										<td>웹 마케터</td>
+									</tr>
+									<tr>
+										<th>직군</th>
+										<td>시스템운영관리</td>
+									</tr>
+									<tr>
+										<th>개요</th>
+										<td>웹 상에서 고객과의 양방향 커뮤니케이션을 통한 전자상거래 활성화를 위해 마케팅을
+											기획하고 실행함</td>
+									</tr>
+									<tr>
+										<th>수행업무</th>
+										<td>회원의 구매 성향을 분석함<br>
+											상품전 및 이벤트를 기획함<br>
+											상품의 전자상거래 가능 여부를 판단함<br>
+											각 상품마케팅에 적절한 예산을 편성함<br>
+											상품 구매 선상에 근접해 있는 회원에게 상품을 광고함<br>
+											상품 판매 결과를 분석하고 경영자에게 보고한 후 기업 자체에 대한 홍보를 기획함</td>
+									</tr>
+									<tr>
+										<th>근무형태</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>자격요건</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>일자리전망</th>
+										<td></td>
+									</tr>
+
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--//상세보기 팝업-->
+				</div>
+					<div class="diag_btn tct mt70">
+					<a href="#" class="btn_style04">다음 단계 →</a>
+				
+				</div>
+			</div>
+			<!--//inner-->
+
+
+		</div>
+
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/diag.js"></script>
+</body></html>

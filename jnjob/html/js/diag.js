@@ -33,6 +33,37 @@ $(document).ready(function () {
 		//        $("#" + activeTab).fadeIn();
 		$("#" + tab_id).fadeIn();
 	});
+	
+	//직업역량진단 더보기
+	$('.jc_list .more_btn').click(function () {
+		$(this).parent().toggleClass('active');
+	});
+	
+	//진단 결과 더보기
+	$('.bar_area .txt a').click(function () {
+		$(this).parent().parent().toggleClass('active');
+		$(this).parent().parent().siblings('.bar_area').removeClass('active')
+	});
+
+
+	//직업역량진단 진단결과 차트 
+	$('.ja_chart  .lg_blue').click(function () {
+		$('.bar-blue').removeClass('off')
+		$('.bar-pink').addClass('off');
+	});
+
+	$('.ja_chart  .lg_pink').click(function () {
+		$('.bar-blue').addClass('off');
+		$('.bar-pink').removeClass('off');
+	});
+
+	$(document).mouseup(function (e) {
+		var movewrap04 = $(".ja_chart");
+		var moveinner04 = $(".ja_chart .bars .bar > div");
+		if (movewrap04.has(e.target).length === 0) {
+			moveinner04.removeClass("off");
+		}
+	});
 
 });
 
