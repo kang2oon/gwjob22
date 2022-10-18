@@ -55,6 +55,7 @@ body {
 .f18{font-size: 18px}
 .f14{font-size: 14px}
 .f13{font-size: 13px}
+.f12{font-size: 12px}
 .f28{font-size: 28px}
 .f24{font-size: 24px}
 .pb0{padding-bottom: 0}
@@ -63,6 +64,7 @@ body {
 .mt100{margin-top: 100px}
 .mt5 {margin-top: 5px}
 .mt10{margin-top: 10px}
+.mt15{margin-top: 15px}
 .mt20{margin-top: 20px}
 .mt30{margin-top: 30px}
 .mt70{margin-top: 70px}
@@ -88,6 +90,7 @@ body {
 .diag_wrap .btn_style03{font-size: 14px;background: #133c72;color: #fff;padding: 10px 40px;display: inline-block;border-radius: 20px}
 .diag_wrap .btn_style04{font-size: 14px;padding: 8px 50px;border: 1px solid #133c72;color:#133c72 ;border-radius: 30px;}
 .diag_wrap .btn_style05{background: #eeeeee;font-size: 12px;border: 1px solid #e2e2e2;padding: 5px 10px;display: inline-block}
+.diag_wrap .btn_style06{font-size: 13px;background: #133c72;color: #fff;padding: 5px 10px;display: inline-block;border-radius: 10px}
 
 /* table style */
 .diag_wrap .table_style01 th{background: #f7f7f8;}
@@ -322,6 +325,15 @@ body {
 .bar_list li:last-child{margin-bottom: 0}
 .bar_list li:before{content: '-';position: absolute;left: 0;top: 0}
 
+/* 직업역량진단서비스 */
+.job_abil .tit{display: flex;align-items: center}
+.job_abil .tit h4{margin-right: 10px}
+.job_abil .img_wrap{margin-top: 80px}
+.job_abil  .f13{max-width: 913px;width: 100%;margin: auto}
+.job_link{background: #f4f4f4;padding: 40px 0;margin-top: 180px}
+.job_link .inner{position: relative;}
+.job_link .inner:after {content: '';display: block;background: url(../images/diag/job_abil02.png) no-repeat;width: 380px;height: 206px;position: absolute;right: 30px;bottom: -40px}
+
 @media all and (max-width:1600px){
 	/*사전진단*/
 	.before_diag .bd_visual:before{width: 450px;background-size: 450px;height: 430px}
@@ -369,6 +381,9 @@ body {
 	.job_code .txt{margin: 0 auto 30px auto}
 	.job_code .right,
 	.job_code .job_chart{margin: auto}
+	
+	/* 직업역량진단서비스 */
+	.job_link .inner:after{background-size: 280px;width: 280px;height: 150px}
 }
 
 @media all and (max-width:768px){
@@ -479,6 +494,12 @@ body {
 	.job_code .table_style03{margin-top: 40px}
 	.job_code .right{width: 400px}
 	.job_code .job_chart{width: 400px;height: 300px}
+	
+	/*직업역량진단서비스*/
+	.job_abil .tit{display: block}
+	.job_abil .img_wrap{margin-top: 30px}
+	.job_link{margin-top: 60px}
+	.job_link .inner:after{display: none}
 }
 
 @media all and (max-width:480px){
