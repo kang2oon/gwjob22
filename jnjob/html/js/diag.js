@@ -38,6 +38,12 @@ $(document).ready(function () {
 	$('.jc_list .more_btn').click(function () {
 		$(this).parent().toggleClass('active');
 	});
+	$(document).mouseup(function (e) {
+		var moveinnerr = $(".jt_inner .more");
+		if (moveinnerr.has(e.target).length === 0) {
+			moveinnerr.removeClass("active");
+		}
+	});
 	
 	//진단 결과 더보기
 	$('.bar_area .txt a').click(function () {
@@ -64,6 +70,25 @@ $(document).ready(function () {
 			moveinner04.removeClass("off");
 		}
 	});
+	
+	//취업준비도 진단 차트 
+	$('.jr_table_wrap .spink').click(function () {
+		$('.bar-gray').addClass('off')
+		$('.bar-pink').removeClass('off');
+	});
+
+	$('.jr_table_wrap .sgray').click(function () {
+		$('.bar-gray').removeClass('off');
+		$('.bar-pink').addClass('off');
+	});
+	
+		$(document).mouseup(function (e) {
+		var movewrap05 = $(".jr_table_wrap");
+		var moveinner05 = $(".jr_table_wrap .bar > div");
+		if (movewrap05.has(e.target).length === 0) {
+			moveinner05.removeClass("off");
+		}
+		});
 
 });
 
