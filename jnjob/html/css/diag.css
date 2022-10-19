@@ -80,6 +80,7 @@ body {
 .diag_select::-ms-expand {display: none;}
 .diag_wrap .square_tit{font-size: 18px;font-weight: 500;position: relative;padding-left: 30px}
 .diag_wrap .square_tit:before{content: '';display: block;width: 18px;height: 18px;border: 6px solid #159fcc;box-sizing: border-box;position: absolute;left: 0;top: 5px}
+.diag_wrap .st_p{padding-left: 30px;margin-top: 15px;color: #666666;font-size: 14px;}
 .ref_list li{font-size: 13px;color: #787878;position: relative;padding-left: 20px;margin-bottom: 10px}
 .ref_list li:before{content: '※';display: block;position: absolute;left: 0;top: 0}
 .ref_list li:last-child{margin-bottom: 0}
@@ -291,7 +292,7 @@ body {
 
 /* 직업선호도 진단 결과 */
 .jd_privacy{display: flex;justify-content:space-around}
-.jd_result{margin: 80px 0}
+.jd_result{margin: 50px 0}
 .jd_privacy li{display: flex;}
 .jd_privacy li strong{width: 100px;}
 .jd_privacy li p{color: #666}
@@ -437,6 +438,26 @@ body {
 .jr_link{background: #f3f6ff;padding: 40px;border-radius: 15px;position: relative;margin-top: 80px !important}
 .jr_link .txt{padding-left: 200px}
 .jr_link:after{content: '';display: block;background: url(../images/diag/jr_link.png) no-repeat;width: 350px;height: 180px;position: absolute;right: 150px;bottom: 0}
+
+/*NCS 결과*/
+.ncs_result{margin-top: 20px;}
+.ncs_result .item{max-width: 930px;width: 100%;margin:50px auto;}
+.ncs_result .item .flex{display: flex;align-items: center}
+.ncs_result .item:last-child{margin-bottom: 0}
+.ncs_result .item .nr_tit{background: #1f4b89;color: #fff;text-align: center;width: 150px;height: 60px;display: flex;;align-items: center;justify-content: center;flex-direction: column;font-size: 16px;border-radius: 5px}
+.ncs_result .item .nr_cont{width: calc(100% - 150px);padding-left: 15px}
+.ncs_result .item  .table_style01{margin:15px 0 0 165px }
+.ncs_result .item  .table_style01 table{width: 100%;table-layout: fixed}
+.job_abil .recom_wrap{margin: 65px 0}
+.job_abil .recom_area{display: flex;margin-top: 50px;justify-content: center;}
+.job_abil .recom_area .item{background: #f4f4f4;border-radius: 20px;overflow: hidden;margin-right: 50px}
+.job_abil .recom_area .item .txt{padding: 55px 15px 15px 150px;font-size: 13px;color: #666}
+.job_abil .recom_area .item:nth-child(1) .txt{background: url(../images/diag/rc_img01.png) no-repeat left 20px bottom #f4f4f4}
+.job_abil .recom_area .item:nth-child(2) .txt{background: url(../images/diag/rc_img02.png) no-repeat left 0 bottom #f4f4f4}
+.job_abil .recom_area .item:last-child{margin-right: 0}
+.job_abil .recom_area .item .bottom{text-align: center;color: #fff;padding: 10px;font-size: 13px}
+.job_abil .recom_area .item:nth-child(1) .bottom{background: #738cfa;}
+.job_abil .recom_area .item:nth-child(2) .bottom{background: #2540b8}
 
 @media all and (max-width:1600px){
 	/*사전진단*/
@@ -628,6 +649,17 @@ body {
 	.ja_result .tit{margin-bottom: 5px}
 	.ja_result .cont{width: 100%}
 	.jr_link:after{display: none}
+	
+	/* NCS 결과 */
+	.ncs_result .item .flex{display: block;}
+	.ncs_result .item .nr_tit{height: auto;height: 50px;font-size: 14px}
+	.ncs_result .item .nr_cont{width: 100%;margin-top: 10px;padding-left: 0}
+	.ncs_result .item .table_style01{margin: 15px 0 0 0}
+	.job_abil .recom_area{margin-top: 30px}
+	.ncs_result .item{margin: 30px 0}
+	.job_abil .recom_area{margin: 50px 0;display: block}
+	.job_abil .recom_area .item{margin-right: 0;margin-bottom: 30px}
+	.job_abil .recom_area .item:last-child{margin-bottom: 0}
 }
 
 @media all and (max-width:480px){
@@ -703,5 +735,11 @@ body {
 	.ja_chart .bars .bar-group .txt{font-size: 13px}
 	.ja_chart .bars .bar > div{height: 10px;margin-bottom: 5px}
 	
+	/* NCS 결과*/
+	.job_abil .recom_area{margin: 30px 0 50px 0}
+	.job_abil .recom_area .item:nth-child(1) .txt{background-size: 100px}
+	.job_abil .recom_area .item:nth-child(2) .txt{background-size: 100px}
+	.job_abil .recom_area .item .txt{padding: 40px 15px 15px 120px;font-size: 12px}
+	.job_abil .recom_area .item .bottom{font-size: 12px}
 	
 }
