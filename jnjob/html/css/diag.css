@@ -193,10 +193,10 @@ body {
 
 /* 팝업 */
 .not_scroll {width: 100%;height: 100%;overflow: hidden;}
-.shadow{position: fixed;width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.3);z-index: 998;top: 0;left: 0;overflow: hidden;display: none}
+.shadow{position: fixed;width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.3);z-index: 9999;top: 0;left: 0;overflow: hidden;display: none}
 .diag_pop.w900{width: 900px;}
 .diag_pop.w600{width: 600px;}
-.diag_pop{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;z-index: 999}
+.diag_pop{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);display: none;z-index: 99999}
 .result_pop{max-width: 780px;width:calc(100% - 60px)}
 .diag_pop .dp_top{background: #133c72;color: #fff;padding: 15px 30px;display: flex;align-items: center;}
 .diag_pop .dp_top .close{background: url(../images/diag/close_btn.png) no-repeat;text-indent: -9999px;width: 17px;height: 17px;margin-left: auto}
