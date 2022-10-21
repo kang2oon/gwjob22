@@ -89,6 +89,72 @@ $(document).ready(function () {
 			moveinner05.removeClass("off");
 		}
 		});
+	
+	// 취업가능성진단 check 선택
+	$('.emab_select .item').click(function () {
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+	});
+	
+	// 취업가능성진단 희망직접선택
+	$('.es_emab_hope .btn_style07').click(function () {
+		var text = '전체닫기 -';
+		var $this = $('#activate');
+		if ($this.text() === text) {
+			$(this).text('전체펼침 +');
+			$(this).parent().parent().parent().find('.eh_text').slideUp();
+			$('.emab_select .cont').removeClass('active');
+		} else {
+			$(this).text(text)
+			$(this).parent().parent().parent().find('.eh_text').slideDown();
+			$('.emab_select .cont').addClass('active');
+		}
+	});
+	
+	$('.es_emab_hope .tit').click(function(){
+		$(this).next().slideToggle();
+		$(this).parent().toggleClass('active');
+	});
+	
+	/*취업가능성진단 결과보기 차트 */
+	$('.oj_table_wrap .spink').click(function () {
+		$('.bar-gray').addClass('off')
+		$('.bar-pink').removeClass('off');
+	});
+
+	$('.oj_table_wrap .sgray').click(function () {
+		$('.bar-gray').removeClass('off');
+		$('.bar-pink').addClass('off');
+	});
+	
+	$(document).mouseup(function (e) {
+		var movewrap = $(".oj_table_wrap");
+		var moveinner = $(".oj_table_wrap .bar > div");
+		if (movewrap.has(e.target).length === 0) {
+			moveinner.removeClass("off");
+		}
+	});
+	
+	// 탭메뉴
+	// 탭 컨텐츠 숨기기
+	$(".tab_content").hide();
+
+	// 첫번째 탭콘텐츠 보이기
+	$(".tab_container").each(function () {$(this).children().children("li:first").addClass("active"); //Activate first tab
+		$(this).children(".tab_content").first().show();
+	});
+
+	//탭메뉴 클릭 이벤트
+	$(".rs_tabs li a").click(function () {
+		var tab_id = $(this).attr('data-tab');
+		$(this).parent().siblings().removeClass("active");
+		$(this).parent().addClass("active");
+		$(this).parent().parent().parent().parent().find(".tab_content").hide();
+		//        var activeTab = $(this).attr("rel");
+		//        $("#" + activeTab).fadeIn();
+		$("#" + tab_id).fadeIn();
+	});
+
 
 });
 

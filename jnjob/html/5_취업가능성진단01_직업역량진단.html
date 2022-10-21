@@ -2,367 +2,339 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>전라도일자리정보망</title>
+	<!--전라도 일자리 정보망 css-->
+	<link rel="stylesheet" href="https://job.jeonnam.go.kr/site/jnjob/plat/css/layout.css">
+
 	<link rel="stylesheet" href="css/diag.css">
 </head>
 
 <body>
-	<div class="diag_wrap inner">
-		<h3 style="margin-top: 20px;margin-bottom: 10px">버튼</h3>
-		<a href="#" class="btn_blue btn_style01">
-			버튼
-		</a>
-		<a href="#" class="gray_blue btn_style02">
-			버튼
-		</a>
-		<a href="#" class="gray_blue btn_style03">
-			버튼
-		</a>
-		<a href="#" class="btn_style04">진단 홈으로 →</a>
-		<a href="#" class="btn_style05" onClick="javascript:openModal('modal1');">흥미의 육각모형 해석 TIP</a>
-		<a href="#" class="btn_style06">직업선호도 진단 바로가기→</a>
-		<a href="#" class="btn_style07">직업선호도 진단 바로가기→</a>
+	<div id="container">
+		<div class="tit_nav tit_nav_diag">
+			<!--서브 비주얼-->
 
-		<h3 style="margin-top: 20px;margin-bottom: 10px">table style</h3>
-		<div class="table_style01">
-			<table>
-				<caption>직무/직종진단</caption>
-				<tr>
-					<th>진단목적</th>
-					<td>직업(직무, 직종)에 대한 이해도 파악</td>
-				</tr>
-				<tr>
-					<th>진단결과</th>
-					<td class="normal">NORMAL</td>
-				</tr>
-				<tr>
-					<th>추천 서비스</th>
-					<td>
-						<div class="btn_wrap">
-							<a href="#" class="btn_style02">직업상담신청</a>
-							<a href="#" class="btn_style02">전문상담사 연결</a>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div class="table_style03">
-			<table>
-				<caption>직무/직종진단</caption>
-				<tr>
-					<th>진단목적</th>
-					<td>직업(직무, 직종)에 대한 이해도 파악</td>
-				</tr>
-				<tr>
-					<th>진단결과</th>
-					<td class="normal">NORMAL</td>
-				</tr>
-				<tr>
-					<th>추천 서비스</th>
-					<td>
-						<div class="btn_wrap">
-							<a href="#" class="btn_style02">직업상담신청</a>
-							<a href="#" class="btn_style02">전문상담사 연결</a>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
+			<h3 class="off">취업 진단</h3>
 
-		<h3 style="margin-top: 20px;margin-bottom: 10px">팝업</h3>
-		<!--진단결과 팝업-->
-		<div class="diag_pop" style="display: block;transform: translate(0);left: 0;top: 0;position: relative;">
-			<div class="dp_top">
-				<p>직업선호도 유형별 특성</p>
-				<a href="#" class="close" onclick="close_pop()">닫기</a>
-			</div>
-			<div class="dp_cont">
-				<p>팝업cont</p>
-			</div>
+			<!--
+            <div id="top-nav-prev-next">
+                <a id="top-nav-prev" href="/">전 메뉴</a>
+                <a id="top-nav-next" href="/">후 메뉴</a>
+            </div>
+            -->
+			<div id="bg_wrap" class="bg_wrap"></div>
 		</div>
-		<!--//진단결과 팝업-->
+		<div class="emab_wrap diag_wrap">
+			<div class="inner">
+				<div class="bg_gray mg50 daigVisual">
+					<div class="tit">
+						<h4 class="f28 blue">
+							취업준비도 진단 서비스
+						</h4>
+						<p class="f18">과연 내가 취업할 수 있는 가능성은?</p>
+					</div>
+					<p class="f16 gray mt20">
+						취업가능성진단은 원하는 직업에 취업하기에 본인의 역량수준이 어느정도인지 진단해볼 수 있습니다. <br><br>
 
-		<h4 class="square_tit">타이틀</h4>
-		
-		<h4 style="margin-top: 50px;margin-bottom: 10px">진단 영역</h4>
+						본 진단 서비스는 생애주기, 경력사항, 학력사항에 따라 상이한 결과가 도출되어, 자가진단을 통해 자신의 취업가능성을 예측해보고 보다 똑똑한 구직준비를
+						할 수 있도록 도와줍니다.
+
+
+					</p>
+				</div>
 				
-				
+				<div class="jc_list mg50">
+					<div class="item">
+						<div class="q">
+							<div class="tit">
+									<p class="tit">Q. 건설현장 안전점검</p>
+									<p class="desc">건설 안전 점검계획을 수립하고 안전 점검표를 작성하고 이를 근거로 안전점검을 실행하고 안전점검결과를 평가하는 능력</p>
+							</div>
+						</div>
+						<table class="table_style02">
+							<thead>
+								<tr>
+								</tr>
+								<tr class="border">
+									<th scope="col"></th>
+									<th scope="col">매우 그렇다</th>
+									<th scope="col">그렇다</th>
+									<th scope="col">보통이다</th>
+									<th scope="col">그렇지 않다</th>
+
+									<th scope="col">매우 그렇지 않다</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="mb_tit">1. 작업공정에 맞게 안전점검 계획을 수립할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">2. 안전점검 계획을 고려하여 공정별로 안전점검표를 작성할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="item">
+						<div class="q">
+							<div class="tit">
+								<div class="jt_inner">
+									<p>Q. 시장환경분석</p>
+									<div class="more">
+										<a href="javascript:void(0)" class="more_btn" title="자세히보기">자세히보기</a>
+										<p>시장환경, 고객요구사항, 경쟁사현황 등의 현황분석을 통하여 전자상거래 사업의 내외부 환경을 분석하는 능력
+										</p>
+									</div>
+								</div>
+								<p class="desc mt10">위험을 사전에 예방할 수 있도록 안전보건교육의 계획, 준비, 실시, 성과를 분서하여 근로자의 안전보건교육에 활용하는 능력</p>
+							</div>
+						</div>
+						<table class="table_style02">
+							<thead>
+								<tr>
+								</tr>
+								<tr class="border">
+									<th scope="col"></th>
+									<th scope="col">매우 그렇다</th>
+									<th scope="col">그렇다</th>
+									<th scope="col">보통이다</th>
+									<th scope="col">그렇지 않다</th>
+
+									<th scope="col">매우 그렇지 않다</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="mb_tit">20. 안전보건교육 관련 법령을 검토해서 연간 일정계획을 수립할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">21. 수립된 일정계획에 따라 안전보건 교육을 실시할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br" />그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			
 				<div class="diag_btn tct mt70">
-					<a href="#" class="btn_style04">← 이전 단계 </a>
 					<a href="#" class="btn_style04">다음 단계 →</a>
 					<a href="#" class="btn_style03">결과 보기 →</a>
 				</div>
-				
-				
-				<div class="jc_list">
-					<div class="item">
-						<table class="table_style02">
-							<thead>
-								<tr>
-									<th colspan="5" class="q">
-										<p class="tit">Q. [활동] 당신은 어떤 활동을 좋아합니까?</p>
-										<p class="desc">“매우 그렇다 ~ 매우 그렇지 않다” 까지 자신에게 맞는 부분에 체크 해주세요</p>
-									</th>
-								</tr>
-								<tr class="border">
-									<th scope="col"></th>
-									<th scope="col">매우 그렇다</th>
-									<th scope="col">그렇다</th>
-									<th scope="col">보통이다</th>
-									<th scope="col">그렇지 않다</th>
+				<!--//inner-->
+			</div>
+		</div>
 
-									<th scope="col">매우 그렇지 않다</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="mb_tit">1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd" name="ex_rds">
-											<label for="ex_rd">
-											<strong>1</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd02" name="ex_rds">
-											<label for="ex_rd02"><strong>2</strong>
-											<span class="mb_show">
-												그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd03" name="ex_rds">
-											<label for="ex_rd03"><strong>3</strong>
-											<span class="mb_show">
-												보통이다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd04" name="ex_rds">
-											<label for="ex_rd04"><strong>4</strong>
-											<span class="mb_show">
-												그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd05" name="ex_rds">
-											<label for="ex_rd05"><strong>5</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td class="mb_tit">1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd" name="ex_rds">
-											<label for="ex_rd">
-											<strong>1</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd02" name="ex_rds">
-											<label for="ex_rd02"><strong>2</strong>
-											<span class="mb_show">
-												그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd03" name="ex_rds">
-											<label for="ex_rd03"><strong>3</strong>
-											<span class="mb_show">
-												보통이다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd04" name="ex_rds">
-											<label for="ex_rd04"><strong>4</strong>
-											<span class="mb_show">
-												그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd05" name="ex_rds">
-											<label for="ex_rd05"><strong>5</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
- 					
-					<div class="item">
-						<table class="table_style02">
-							<thead>
-								<tr>
-									<th colspan="5" class="q">
-										<p class="tit">Q. [활동] 당신은 어떤 활동을 좋아합니까?</p>
-										<p class="desc">“매우 그렇다 ~ 매우 그렇지 않다” 까지 자신에게 맞는 부분에 체크 해주세요</p>
-									</th>
-								</tr>
-								<tr class="border">
-									<th scope="col"></th>
-									<th scope="col">매우 그렇다</th>
-									<th scope="col">그렇다</th>
-									<th scope="col">보통이다</th>
-									<th scope="col">그렇지 않다</th>
-
-									<th scope="col">매우 그렇지 않다</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="mb_tit">1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd" name="ex_rds">
-											<label for="ex_rd">
-											<strong>1</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd02" name="ex_rds">
-											<label for="ex_rd02"><strong>2</strong>
-											<span class="mb_show">
-												그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd03" name="ex_rds">
-											<label for="ex_rd03"><strong>3</strong>
-											<span class="mb_show">
-												보통이다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd04" name="ex_rds">
-											<label for="ex_rd04"><strong>4</strong>
-											<span class="mb_show">
-												그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd05" name="ex_rds">
-											<label for="ex_rd05"><strong>5</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td class="mb_tit">1. 나는 기계나 전기, 전자제품을 조작하는 활동을 좋아한다.</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd" name="ex_rds">
-											<label for="ex_rd">
-											<strong>1</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd02" name="ex_rds">
-											<label for="ex_rd02"><strong>2</strong>
-											<span class="mb_show">
-												그렇다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd03" name="ex_rds">
-											<label for="ex_rd03"><strong>3</strong>
-											<span class="mb_show">
-												보통이다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd04" name="ex_rds">
-											<label for="ex_rd04"><strong>4</strong>
-											<span class="mb_show">
-												그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-									<td class="check_area">
-										<div class="diag_checks">
-											<input type="radio" id="ex_rd05" name="ex_rds">
-											<label for="ex_rd05"><strong>5</strong>
-											<span class="mb_show">
-												매우 <br class="mb_br" />그렇지않다
-											</span>
-											</label>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
 	</div>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/diag.js"></script>
 </body></html>
