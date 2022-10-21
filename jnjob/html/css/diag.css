@@ -1011,6 +1011,11 @@ body {
 	.jp_visual.bg_gray{background-position: bottom;padding-bottom: 100px}
 	.jp_visual.bg_gray .f16{width: 100%;}
 	
+	/* 취업가능성진단*/
+	.oj_chart02{zoom:0.8}
+	.oj_chart02 .bb-axis-y text, .oj_chart02 .bb-axis-x text{font-size: 11px}
+	
+	
 	
 	
 }
