@@ -1,0 +1,135 @@
+@charset "utf-8";@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+* { font-family: 'scoredream'; } 
+img { max-width: 100%; object-fit: cover; } 
+.event05 .txtRed { color: #ed1c24 !important; } 
+.event05 .txtPink { color: #ff3c00 !important } 
+.event05 .txtWhite { color: #fff !important; } 
+.event05 .f20 { font-size: 20px; } 
+.event05 .f25 { font-size: 25px; } 
+.event05 .f30 { font-size: 30px; } 
+.event05 .mgt20 { margin-top: 20px; } 
+.event05 .mgt0 { margin-top: 0 !important; } 
+.event05 .brd { border-bottom: 1px solid #000; } 
+.event05 .ac { text-align: center; } 
+.event05 .btn01 { display: inline-block; width: 100%; padding: 20px 0; color: #fff; font-weight: bold; background: #00947a; border-radius: 15px; } 
+.event05 .btn02 { display: inline-block; width: 280px; padding: 20px 0; color: #fff; font-weight: bold; background: #00947a; border-radius: 15px; } 
+.event05 article { position: relative; z-index: 1; } 
+.event05 .innerSection { max-width: 1240px; padding: 0 20px; margin: 0 auto; } 
+
+.event05 .ev05_section01 { width: 100%; height: 730px; padding: 60px 0; background: url(../images/ev05/ev05_bg.png) #b2e7f2 center no-repeat; background-size: cover; } 
+.event05 .ev05_section01 .imageTitleWrap { position: relative; margin-top: 30px; } 
+.event05 .ev05_section01 .imageTitleWrap::before { content: ""; position: absolute; top: 30px; right: 0; width: 352px; height: 469px; background: url(../images/ev05/ev05_02.png) top center no-repeat; background-size: cover;}
+.event05 .ev05_section01 .txtWrap { margin-top: 50px; } 
+.event05 .ev05_section02 { padding-bottom: 60px; background: #d4f7ff; } 
+.event05 .ev05_section02 ul.evnetList { display: flex; flex-wrap: wrap; gap: 30px 20px; } 
+.event05 .ev05_section02 ul.evnetList li { display: flex; align-items: center; width: calc((100% - 20px) / 2); gap: 0 18px; font-size: 25px; font-weight: 500; } 
+.event05 .ev05_section02 ul.evnetList li span { display: block; min-width: 150px; height: 55px; background: #2a74c8; color: #fff; line-height: 55px; text-align: center; border-radius: 15px; } 
+.event05 .ev05_section02 ul.evnetList li p { color: #000000; } 
+.event05 .whiteBox { position: relative; padding: 28px 28px; background: #fff; border-radius: 15px; } 
+.event05 .ev05_section02 .whiteBox.icon01::after { content: ""; position: absolute; top: 210px; left: 50%; width: 308px; height: 335px; background: url(../images/ev05/ev05_03.png) center no-repeat; background-size: contain; transform: translateX(-50%); z-index: -1; } 
+.event05 .ev05_section02 .boxWrap { position: relative; display: flex; gap: 0 20px; margin-top: 400px; }
+.event05 .ev05_section02 .boxWrap::after { content: ""; position: absolute; top: -215px; left: 48%; width: 900px; height: 216px; background: url(../images/ev05/ev05_04.png) center no-repeat; background-size: cover; transform: translateX(-50%); } 
+.event05 .ev05_section02 .boxWrap .whiteBox { text-align: center; } 
+.event05 .ev05_section02 .boxWrap .whiteBox .imgWrap img { max-width: 230px; } 
+.event05 .ev05_section02 .boxWrap .whiteBox.fl { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 30px; } 
+.event05 .ev05_section02 .boxWrap .whiteBox strong { display: block; width: 100%; margin-bottom: 20px; text-align: center; } 
+.event05 .ev05_section02 .boxWrap .whiteBox strong span { font-weight: 400; } 
+.event05 .ev05_section02 .boxWrap .whiteBox p { margin-top: 20px; text-align: center; } 
+.event05 .ev05_section03 { padding: 60px 0; background: #e0f9ff; text-align: center; } 
+.event05 .ev05_section03 .entryStep .imgWrap { margin-bottom: 50px; } 
+.event05 .ev05_section03 .entryCont { position: relative; margin:0 50px 209px; padding: 100px 40px 20px; background: #fff; font-weight: 500; border: 2px solid #6b594a; } 
+.event05 .ev05_section03 .entryCont .tit { margin-bottom: 30px; color: #000000; } 
+.event05 .ev05_section03 .entryCont .txt { line-height: 30px; text-align: left; } 
+.event05 .ev05_section03 .entryCont .txt p { border-bottom: 1px solid #eeebe6; } 
+.event05 .ev05_section03 .entryCont .txt p:first-child { border-top: 1px solid #eeebe6; } 
+
+.event05 .ev05_section03 .entryCont::after { content: ""; position: absolute; top: -23px; left: 14px; width: 96%; height: 62px; background: url(../images/ev05/ev05_09.png) left no-repeat; } 
+.event05 .ev05_section03 .entryCont::before { content: ""; position: absolute; right: 0; bottom: 30px; width: 78px; height: 90px; background: url(../images/ev05/ev05_18.png) center no-repeat; } 
+.event05 .ev05_section03 .entryStepBox { position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; } 
+.event05 .ev05_section03 .entryStepBox::after { content: ""; position: absolute; top: -218px; left: 0; width: 100%; height: 218px; background: url(../images/ev05/ev05_10.png) center no-repeat; } 
+.event05 .ev05_section03 .entryStepBox .whiteBox.stpe { display: flex; align-items: center; gap: 0 20px; width: 100%; } 
+
+.event05 .ev05_section03 .entryStepBox .whiteBox.stpe span { width: 80px; height: 80px; background: #00947a; color: #fff; font-size: 40px; font-weight: bold; line-height: 80px; border-radius: 20px; } 
+.event05 .ev05_section03 .entryStepBox .whiteBox.stpe p { text-align: left; line-height: 30px; font-weight: 500; } 
+.event05 .ev05_section03 .tipWrap { display: flex; align-items: center; gap: 0 20px; margin-bottom: 50px; } 
+.event05 .ev05_section03 .tipWrap .tipBox { padding: 36px 0; min-width: 200px; background: #00947a; color: #fff; font-size: 25px; font-weight: 600; text-align: center; border-radius: 20px; } 
+.event05 .ev05_section03 .tipWrap ol.winningTipList { padding: 12px 20px 12px 40px; display: flex; flex-direction: column; gap: 8px 0; width: calc(100% - 210px); background: #fff; border-radius: 10px; } 
+.event05 .ev05_section03 .tipWrap ol.winningTipList li { list-style: decimal; font-size: 16px; font-weight: 500; text-align: left; } 
+.event05 .ev05_section03 .stepTitle { margin-bottom: 30px; } 
+.event05 .ev05_section03 .stepTitle strong { display: inline-block; min-width: 180px; padding: 10px 0; background: #1f527d; font-size: 30px; color: #fff; border-radius: 30px; } 
+.event05 .ev05_section03 .stepBox { margin-bottom: 60px; } 
+.event05 .ev05_section03 .stepItem { display: flex; justify-content: space-between; gap: 0 20px; } 
+.event05 .ev05_section03 .stepItem span .imgWrap { margin-bottom: 20px; border-radius: 20px; border: 1px solid #959088; overflow: hidden; } 
+.event05 .ev05_section03 .stepItem span .imgWrap img { display: block; height: 100%; } 
+.event05 .eventWarning { background: #1f527d; padding: 40px 0;; } 
+.event05 .eventWarning strong { margin: 0 0 20px; display: inline-block; color: #fff; font-size: 26px; font-weight: 700; letter-spacing: -1px; } 
+.event05 ul.warningList { display: flex; flex-direction: column; gap: 8px 0; } 
+.event05 ul.warningList li { padding-left: 10px; color: #fff; font-size: 14px; } 
+.event05 ul.warningList li::before { content: "-"; margin-left: -10px; margin-right: 5px; } 
+.event05 .ev05_footer { padding: 20px 0; background: #cdcdcd; } 
+.event05 .ev05_footer .txt { color: #000; font-weight: 500; } 
+.event05 .ev05_footer .innerSection { display: flex; align-items: center; justify-content: space-between; } 
+.event05 .ev05_footer .txt strong { position: relative; margin-right: 10px; } 
+.event05 .ev05_footer .txt strong::before { content: "|"; position: absolute; right: 0; margin-right: -12px; } 
+
+@media all and (max-width:1199px) {
+  .event05 .ev05_footer .innerSection { flex-direction: column; gap: 20px 0; } 
+}
+@media all and (max-width:1080px){
+
+  .forMobile2 { display: none; } 
+  .event05 .f20 { font-size: 18px; } 
+  .event05 .f25 { font-size: 20px; } 
+  .event05 .f30 { font-size: 24px; } 
+  .event05 .ev05_section01 .imageTitleWrap::before { content: none; } 
+  .event05 .ev05_section02 ul.evnetList { flex-direction: column; gap: 20px 0; } 
+  .event05 .ev05_section02 ul.evnetList li { width: 100%; font-size: 20px; } 
+  .event05 .ev05_section02 .whiteBox.icon01::after { top: 334px; } 
+  .event05 .ev05_section02 .boxWrap { flex-direction: column; gap: 20px 0; } 
+  .event05 .ev05_section03 .entryStepBox { flex-direction: column; gap: 20px 0; }
+
+}
+@media all and (max-width:768px){
+
+  .event05 .f20 { font-size: 16px; } 
+  .event05 .f25 { font-size: 18px; } 
+  .event05 .f30 { font-size: 20px; } 
+  .forMobile { display: none; } 
+  .event05 .ev05_section01 { padding: 20px 0; height: auto; } 
+  .event05 .ev05_section01 .imageTitleWrap { margin-top: 0; } 
+  .event05 .ev05_section01 .txtWrap { margin-top: 20px; } 
+  .event05 .ev05_section02 ul.evnetList li { font-size: 16px; } 
+  .event05 .ev05_section02 ul.evnetList li span { min-width: 100px; height: auto; line-height: 30px; } 
+  .event05 .ev05_section02 .whiteBox.icon01::after { top: 176px; width: 200px; } 
+  .event05 .ev05_section02 .boxWrap::after { content: none; } 
+  .event05 .ev05_section02 .boxWrap { margin-top: 236px; } 
+  .event05 .ev05_section02 .boxWrap .whiteBox p { margin-top: 10px !important; } 
+  .event05 .ev05_section03 .entryCont { margin: 0 0 209px; padding: 70px 20px 20px; } 
+  .event05 .ev05_section03 .entryCont::before { content: none; } 
+  .event05 .ev05_section03 .tipWrap .tipBox { padding: 16px 0; } 
+  .event05 .ev05_section03 .entryStepBox .whiteBox.stpe span { min-width: 60px; width: 60px; height: 60px; font-size: 20px; line-height: 60px; } 
+  .event05 .ev05_section03 .stepBox { margin-bottom: 20px; } 
+  .event05 .ev05_section03 .stepItem { flex-direction: column; gap: 20px 0; } 
+  .event05 .ev05_section03 .stepItem span .imgWrap img { width: 100%; } 
+  .event05 .ev05_section02 ul.evnetList li { font-size: 14px; } 
+  .event05 .ev05_section02 .whiteBox.icon01::after { top: 156px; } 
+  .event05 .ev05_section03 .tipWrap { flex-direction: column; gap: 0; } 
+  .event05 .ev05_section03 .tipWrap .tipBox { width: 100%; font-size: 18px; border-radius: 10px 10px 0 0; } 
+  .event05 .ev05_section03 .tipWrap ol.winningTipList { border-radius: 0 0 10px 10px; padding: 20px 10px 20px 30px; gap: 5px 0; width: 100%; } 
+  .event05 .ev05_section03 .tipWrap ol.winningTipList li { font-size: 12px; word-break: keep-all; } 
+  .event05 .ev05_section03 .stepTitle strong { min-width: 120px; font-size: 24px; } 
+
+}
+
+@media (max-width: 640px){
+
+  .event05 .f20 { font-size: 14px; } 
+  .event05 .f25 { font-size: 14px; } 
+  .event05 .f30 { font-size: 16px; } 
+  .event05 .whiteBox { padding: 16px; } 
+  .event05 .eventWarning strong { margin: 0 0 10px; font-size: 18px; } 
+  .event05 ul.warningList li { padding-left: 10px; color: #fff; font-size: 12px; } 
+  .event05 .btn02 { width: 100%; } 
+  .event05 .ev05_footer .txt strong { display: block; margin-right: 0; } 
+  .event05 .ev05_footer .txt strong::before { content: none; } 
+}
