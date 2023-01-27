@@ -1,63 +1,24 @@
 
+
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-a{text-decoration: none;color: inherit}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;border-spacing: 0
-}
-table caption{text-indent: -99999px;height: 0;width: 0;overflow: hidden}
-body {
-  font-family: "Noto Sans KR", sans-serif ;
-}
-
-
+.hide{text-indent: -9999px;}
+.noScr{overflow: hidden;}
 .inner{max-width: 1200px;width: calc(100% - 40px);margin: auto}
 .tct{text-align: center}
 .tlt{text-align: left}
 .trt{text-align: right}
 .f20{font-size: 20px}
 .f18{font-size: 18px}
+.f16{font-size: 16px}
+.f15{font-size: 15px}
 .f14{font-size: 14px}
 .f13{font-size: 13px}
 .f12{font-size: 12px}
 .f28{font-size: 28px}
 .f24{font-size: 24px}
+.ac{display:flex;align-items:center}
+.ac select{height:auto}
 .w100{width: 100%}
 .vm{vertical-align: middle}
 .pb0{padding-bottom: 0}
@@ -72,9 +33,11 @@ body {
 .mt20{margin-top: 20px}
 .mt30{margin-top: 30px}
 .mt50{margin-top: 50px}
+.mb50{margin-bottom: 50px}
 .mt70{margin-top: 70px}
 .bold{font-weight: 600}
 .bold02{font-weight: 500}
+.flex_right{display:flex;justify-content:space-between;align-items:center}
 .diag_wrap .blue{color: #003d92}
 .diag_wrap .blue02{color: #05a1ff !important}
 .diag_wrap .pink{color: #fd486a !important}
@@ -85,33 +48,34 @@ body {
 .diag_select{ -webkit-appearance: none;  -moz-appearance: none;    appearance: none;    background: url(../images/diag/arrow.png) no-repeat right 20px center #fff;padding: 15px 40px 15px 20px;border: 1px solid #d1d1d1 ;border-radius: 10px;font-size: 16px;font-weight: 600;color: #333}
 .diag_select::-ms-expand {display: none;}
 .diag_wrap .square_tit{font-size: 18px !important;font-weight: 500;position: relative;padding-left: 30px;margin:0 !important;background:0 !important}
-.diag_wrap .square_tit:before{content: '';display: block;width: 18px;height: 18px;border: 6px solid #159fcc;box-sizing: border-box;position: absolute;left: 0;top: 2px}
-.diag_wrap .st_p{padding-left: 30px;margin-top: 15px;color: #666666;font-size: 14px;}
-.ref_list li{font-size: 13px;color: #787878;position: relative;padding-left: 20px;margin-bottom: 10px}
+.diag_wrap .square_tit:before{content: '';display: block;width: 18px;height: 18px;border: 6px solid #159fcc;box-sizing: border-box;position: absolute;left: 0;top: 50%;transform:translateY(-50%)}
+.diag_wrap .st_p{padding-left: 30px;margin-top: 15px;color: #666666;font-size: 16px;}
+.ref_list li{font-size: 14px;color: #787878;position: relative;padding-left: 20px;margin-bottom: 10px}
 .ref_list li:before{content: '※';display: block;position: absolute;left: 0;top: 0}
 .ref_list li:last-child{margin-bottom: 0}
 
 /* 버튼 style */
 .diag_wrap .btn_style01{display: inline-block;padding: 10px 45px;background: #eee;}
 .diag_wrap .btn_style01.btn_blue{background: #05a1ff;color: #fff;font-size: 18px}
+.diag_wrap .btn_style01.btn_blue02{background: #133c72;color: #fff;font-size: 16px}
 .diag_wrap .btn_style01.btn_shadow{box-shadow: 3px 3px 0  #e6e6e6}
-.diag_wrap .btn_style02{display: inline-block;padding: 5px 20px;font-size: 12px;background: #eee;border: 1px solid #e2e2e2;color: #133c72}
+.diag_wrap .btn_style02{display: inline-block;padding: 5px 20px;font-size: 14px;background: #eee;border: 1px solid #e2e2e2;color: #133c72}
 .diag_wrap .btn_style03{font-size: 14px;background: #133c72;color: #fff;padding: 10px 40px;display: inline-block;border-radius: 20px;border: 1px solid #133c72}
-.diag_wrap .btn_style04{font-size: 14px;padding: 8px 50px;border: 1px solid #133c72;color:#133c72;background: #fff;border-radius: 30px;}
+.diag_wrap .btn_style04{font-size: 16px;padding: 8px 50px;border: 1px solid #133c72;color:#133c72;background: #fff;border-radius: 30px;}
 .diag_wrap .btn_style05{background: #eeeeee;font-size: 12px;border: 1px solid #e2e2e2;padding: 5px 10px;display: inline-block}
 .diag_wrap .btn_style06{font-size: 13px;background: #133c72;color: #fff;padding: 5px 10px;display: inline-block;border-radius: 10px}
-.diag_wrap .btn_style07{background: #003d92;color: #fff;font-size: 12px;padding: 6px 35px;border: 0}
+.diag_wrap .btn_style07{background: #003d92;color: #fff;font-size: 14px;padding: 6px 35px;border: 0}
 .diag_wrap .btn_style08{font-size: 12px;display: inline-block;background: #159fcc;color: #fff;padding: 5px 20px}
 
 /* table style */
 .diag_wrap .table_style01 th{background: #f7f7f8;}
 .diag_wrap .table_style01 th,
-.diag_wrap .table_style01 td{border:1px solid #bfbfbf;padding: 10px 20px;color: #787878;font-size: 13px}
+.diag_wrap .table_style01 td{border:1px solid #bfbfbf;padding: 10px 20px;color: #787878;font-size: 16px}
 .diag_wrap .table_style02{width: 100%}
 .diag_wrap .table_style02 thead .border{border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;}
-.diag_wrap .table_style02 thead .border th{padding: 10px;font-size: 12px;color: #787878;font-weight: 400}
+.diag_wrap .table_style02 thead .border th{padding: 10px;font-size: 14px;color: #787878;font-weight: 400}
 .diag_wrap .table_style02 thead .q{text-align: left;padding-bottom: 15px}
-.diag_wrap .table_style02 tbody td{padding: 20px;font-size: 14px;color: #787878;}
+.diag_wrap .table_style02 tbody td{padding: 20px;font-size: 16px;color: #787878;}
 .diag_wrap .table_style02 tbody tr:nth-child(odd){background: #f9f9f9}
 .diag_wrap .table_style03 tbody tr{border-top: 1px solid #d4d4d4;border-bottom: 1px solid #d4d4d4;}
 .diag_wrap .table_style03 tbody th{background: #fafafa;padding: 10px 20px;font-weight: 500;font-size: 16px;}
@@ -145,13 +109,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none
 }
-.radio_style01 input[type="radio"] + label:before {content: '';position: absolute;left: 0;top: 0px;width: 21px;height: 21px;text-align: center;background: #fff; border: 1px solid #c7cee1;border-radius: 100%;}
+.radio_style01 input[type="radio"] + label:before {content: '';position: absolute;left: 1px;top: 1px;width: 18px;height: 18px;text-align: center;background: #fff; border: 1px solid #c7cee1;border-radius: 100%;}
 .radio_style01 input[type="radio"] + label:active:before,
 .radio_style01 input[type="radio"]:checked + label:active:before  {
 }
 .radio_style01 input[type="radio"]:checked + label:before {
 }
-.radio_style01 input[type="radio"]:checked + label:after {content: '';position: absolute;top: 1px;left: 1px;width: 21px;height: 21px;background: #05a1ff;border-radius: 100%;}
+.radio_style01 input[type="radio"]:checked + label:after {content: '';position: absolute;top: 2px;left: 2px;width: 18px;height: 18px;background: #05a1ff;border-radius: 100%;}
 
 .diag_checks input[type="radio"]:checked+label{color: #fff}
 .diag_checks  .mb_show{display: none}
@@ -205,7 +169,7 @@ body {
 .before_diag .diag_list .btn_wrap ul li:first-child{margin-right: 10px}
 .before_diag .diag_list .btn_radio{position: relative;width: calc(50% - 5px);}
 .before_diag .diag_list .btn_radio input{height: 30px;width: 100%; opacity: 0;cursor: pointer}
-.before_diag .diag_list .btn_radio label{position: absolute;top: 0; left: 0;color: #949494;width: 100%;height: 100%;font-size:14px;background: #fff;border: 1px solid #d1d1d1;display: flex;align-items: center;justify-content: center;border-radius:10px;cursor: pointer}
+.before_diag .diag_list .btn_radio label{position: absolute;top: 0; left: 0;color: #949494;width: 100%;height: 100%;font-size:16px;background: #fff;border: 1px solid #d1d1d1;display: flex;align-items: center;justify-content: center;border-radius:10px;cursor: pointer}
 .before_diag .btn_wrap ul .btn_radio input:checked +  label {background: #133c72;font-weight: bold;color: #fff;border: 1px solid #133c72}
 .before_diag .btn_wrap.tct{margin-top: 70px}
 
@@ -229,7 +193,7 @@ body {
 .before_result{margin-top: 40px}
 .before_result .item{display: flex;text-align: center;margin-bottom: 20px}
 .before_result .item:last-child{margin-bottom: 0}
-.before_result .tit{width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;}
+.before_result .tit{font-size:18px;width: 200px;display: flex;align-items: center;justify-content: center;text-align: center;background: #ddd;font-weight: bold;}
 .before_result .table_style01{width: 100%}
 .before_result .table_style01 th {font-weight: 400;height: auto}
 .before_result table{width: 100%}
@@ -260,8 +224,8 @@ body {
 .job_diag .job_selct a:focus{background: #133c72;color: #fff}
 .job_diag .job_selct a.active{background: #133c72;color: #fff}
 .job_diag .diag_section4{color: #fff;}
-.job_diag .diag_section4 .inner {position: relative;color:#fff}
-.job_diag .diag_section4 p{color:#fff;position: absolute;padding-left: 35px;left: 0;top: 50%;transform: translateY(-50%);display: flex;align-items: center}
+.job_diag .diag_section4 .inner {position: relative;color:#fff;font-size:18px}
+.job_diag .diag_section4 p{color:#fff;position: absolute;left: 0;top: 50%;transform: translateY(-50%);display: flex;align-items: center}
 .job_diag .diag_section4 p:before{content: '';display: inline-block;background: url(../images/diag/check02.png) no-repeat;width: 27px;height: 27px;margin-right: 10px}
 .job_diag .diag_section4 a{color:#fff;font-size: 30px;font-weight: bold;text-align: center;display: block;background: #05a1ff;padding: 40px 0;}
 
@@ -273,18 +237,18 @@ body {
 .job_type_wrap .job_type_area .tit strong{color:#fff;}
 .job_type_wrap .job_type_area .tit strong{display: block;margin-top:10px;font-size: 35px;}
 .job_type_wrap .job_type_area:nth-child(1) .tit{background: #003d92}
-.job_type_wrap .job_type_area:nth-child(1) .exp .f16{color: #003d92}
+.job_type_wrap .job_type_area:nth-child(1) .exp .f18{color: #003d92}
 .job_type_wrap .job_type_area:nth-child(2) .tit{background: #fdbf00}
-.job_type_wrap .job_type_area:nth-child(2) .exp .f16{color: #fdbf00}
+.job_type_wrap .job_type_area:nth-child(2) .exp .f18{color: #fdbf00}
 .job_type_wrap .job_type_area:nth-child(3) .tit{background: #36afc5}
-.job_type_wrap .job_type_area:nth-child(3) .exp .f16{color: #36afc5}
+.job_type_wrap .job_type_area:nth-child(3) .exp .f18{color: #36afc5}
 .job_type_wrap .job_type_area:nth-child(4) .tit{background: #a28cf8}
-.job_type_wrap .job_type_area:nth-child(4) .exp .f16{color: #a28cf8}
+.job_type_wrap .job_type_area:nth-child(4) .exp .f18{color: #a28cf8}
 .job_type_wrap .job_type_area:nth-child(5) .tit{background: #048aef}
-.job_type_wrap .job_type_area:nth-child(5) .exp .f16{color: #048aef}
-.job_type_wrap .job_type_area:nth-child(5) .exp .f16{color: #048aef}
+.job_type_wrap .job_type_area:nth-child(5) .exp .f18{color: #048aef}
+.job_type_wrap .job_type_area:nth-child(5) .exp .f18{color: #048aef}
 .job_type_wrap .job_type_area:nth-child(6) .tit{background: #005cd3}
-.job_type_wrap .job_type_area:nth-child(6) .exp .f16{color: #005cd3}
+.job_type_wrap .job_type_area:nth-child(6) .exp .f18{color: #005cd3}
 .job_type_wrap .job_type_area .cont{width: calc(100% - 135px);}
 .job_type_wrap .job_type_area .exp{display: flex;justify-content: space-between;margin: 20px 0 40px 0}
 .job_type_wrap .job_type_area .exp .txt{width: calc(100% - 200px);word-break: keep-all}
@@ -294,31 +258,30 @@ body {
 .job_type_wrap .job_type_area .cont_hide strong{color: #6184b5;font-weight: 400;border: 1px solid #c7cee1;width: 90px;text-align: center;padding:5px 10px;border-radius: 20px;}
 .job_type_wrap .job_type_area .cont_hide li p{width: calc(100% - 90px);padding-left: 20px}
 .job_type_wrap .job_type_area .btn_wrap a{background: #eeeeee;font-size: 12px;padding: 10px 30px;width: 135px;display: block;box-sizing: border-box;text-align: center;}
-.job_type_wrap .job_type_area .txt .f16{font-weight: bold;margin-bottom: 3px}
+.job_type_wrap .job_type_area .txt .f18{font-weight: bold;margin-bottom: 3px}
 .job_type_wrap .cont_hide{display: none}
 
 /* 직업선호도 진단하기 */
 .job_diag .bg_gray.jd_visual{background: url(../images/diag/job_img03.png) no-repeat #f9f9f9 right 40px center;padding-bottom: 80px}
-.job_diag .bg_gray.jd_visual .txt{max-width: 470px;width: 100%;}
+.job_diag .bg_gray.jd_visual .txt{max-width: 530px;width: 100%;}
 
 /* 진단 table */
 .diag_wrap .jc_list .item{margin-bottom: 45px}
 .diag_wrap .jc_list .item:last-child{margin-bottom: 0}
-.diag_wrap .jc_list .tit{font-size: 16px;font-weight: bold;margin-bottom: 10px}
-.diag_wrap .jc_list .desc{font-size: 12px;color: #787878;}
+.diag_wrap .jc_list .tit{font-size: 18px;font-weight: bold;margin-bottom: 10px}
+.diag_wrap .jc_list .desc{font-size: 16px;color: #787878;}
 .diag_wrap .jc_list .check_area {text-align: center}
 .diag_wrap .jc_list .check_area .diag_checks{margin: auto}
 .diag_wrap .diag_btn{margin-bottom: 100px}
 .diag_btn a{margin-right: 15px}
 .diag_btn a:last-child{margin-right: 0}
-.diag_btn a.btn_style03{padding: 8px 50px}
+.diag_btn a.btn_style03{padding: 8px 50px;font-size:16px}
 
 /* 직업선호도 진단 결과 */
-.jd_privacy{display: flex;justify-content:space-around}
-.jd_result{margin: 50px 0}
+.jd_privacy{display: flex;justify-content:space-around;align-items:center}
 .jd_privacy li{display: flex;}
 .jd_privacy li strong{width: 100px;}
-.jd_privacy li p{color: #666}
+.jd_privacy li p{color: #666;font-size:16px}
 
 /*직업선호도 진단 흥미코드*/
 .job_code{display: flex;justify-content:center;margin-top: 60px}
@@ -355,7 +318,7 @@ body {
 /*추천직업 */
 .jd_result .tag_tab{margin: 30px 0 50px 0}
 .tag_tab {display: flex;flex-wrap: wrap}
-.tag_tab li{font-size: 13px;border: 1px solid #c7cee1;border-radius: 20px;padding: 5px 20px;margin-right: 5px;margin-bottom: 5px;}
+.tag_tab li{font-size: 16px;border: 1px solid #c7cee1;border-radius: 20px;padding: 5px 20px;margin-right: 5px;margin-bottom: 5px;}
 .tag_tab li a{color: #666;}
 .tag_tab li:hover,
 .tag_tab li:active,
@@ -366,7 +329,7 @@ body {
 .tag_tab li:focus a{color: #fff !important}
 .tag_tab li.active a {color: #fff !important}
 .jd_result .tab_content th,
-.jd_result .tab_content td{font-size: 13px !important;color: #666;font-weight: 400 !important;vertical-align: middle}
+.jd_result .tab_content td{font-size: 16px !important;color: #666;font-weight: 400 !important;vertical-align: middle}
 
 .bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px}
 .bar_list li:last-child{margin-bottom: 0}
@@ -395,21 +358,21 @@ body {
 .ja_select > div{width: calc(25% - 11.25px);margin-right: 15px;text-align: center;margin-top: 30px}
 .ja_select > div:nth-child(4n){margin-right: 0;}
 .ja_select > div .img{border-radius: 20px;overflow: hidden;margin-bottom: 10px}
-.ja_select > div  label{font-size: 13px;color: #666;padding-top: 2px}
+.ja_select > div  label{font-size: 16px;color: #666;padding-top: 2px}
 .ja_select > div .img img{display: block;width: 100%}
 
 /* 직업역량진단_직업선택 */
 .ja_select02_wrap .f18{font-weight: 500}
 .ja_select02_wrap .ja_select02{margin-top: 20px;}
-.ja_select02_wrap .ja_select02 .f14{color: #133c72;font-weight: bold;}
+.ja_select02_wrap .ja_select02 .f14{color: #133c72;font-weight: bold;font-size:16px}
 .ja_select02_wrap .ja_more{background: url(../images/diag/mg.png) no-repeat #494949  center;display: inline-block;width: 20px;height: 20px;text-indent: -9999px;border-radius: 50%;margin-left: 10px;}
 .ja_select02_wrap ul {display: flex;flex-wrap: wrap}
 .ja_select02_wrap ul li{margin-right: 30px;margin-top: 20px;display: flex;align-items: center}
-.ja_select02_wrap ul li label{font-size: 13px;color: #666}
+.ja_select02_wrap ul li label{font-size: 15px;color: #666}
 
 /* 직업역량진단_진단 */
-.jc_list .jt_inner {display: flex;align-items: center}
-.jc_list .jt_inner .jt_inner > p{font-size: 16px;}
+.jc_list .jt_inner {display: flex;align-items: center;margin-bottom:10px}
+.jc_list .jt_inner > p{font-size: 18px;}
 .jc_list .jt_inner .more{display: flex;align-items: center;width: 20px;height: 20px;margin-left: 10px}
 .jc_list .jt_inner .more .more_btn{width: 20px;height:20px;display: inline-block;text-indent: -9999px;background: url(../images/diag/mg.png) no-repeat #494949  center;border-radius: 50%;}
 .jc_list .jt_inner .more p {margin-left: 10px;width: calc(100% - 20px);display: none}
@@ -419,8 +382,8 @@ body {
 
 /* 직업역량진단 결과 */
 .ja_result .ja_privacy{display: flex;}
-.ja_result .tit{font-size: 16px;font-weight: bold;width: 160px;}
-.ja_result .cont{width: calc(100% - 160px);font-size: 14px;color: #666}
+.ja_result .tit{font-size: 18px;font-weight: bold;width: 160px;}
+.ja_result .cont{width: calc(100% - 160px);font-size: 16px;color: #666}
 .ja_chart .graph{position: relative;width: 910px;margin: auto;transform: translateX(120px);height: auto;}
 .ja_chart .bar_area {margin-bottom: 30px}
 .ja_chart  .x-axis {position: absolute;bottom: -40px; display: flex;width: 100%;}
@@ -467,7 +430,7 @@ body {
 .ncs_result .item{max-width: 930px;width: 100%;margin:50px auto;}
 .ncs_result .item .flex{display: flex;align-items: center}
 .ncs_result .item:last-child{margin-bottom: 0}
-.ncs_result .item .nr_tit{background: #1f4b89;color: #fff;text-align: center;width: 150px;height: 60px;display: flex;;align-items: center;justify-content: center;flex-direction: column;font-size: 16px;border-radius: 5px}
+.ncs_result .item .nr_tit{background: #1f4b89;color: #fff;text-align: center;width: 150px;height: 60px;display: flex;;align-items: center;justify-content: center;flex-direction: column;font-size: 18px;border-radius: 5px}
 .ncs_result .item .nr_cont{width: calc(100% - 150px);padding-left: 15px}
 .ncs_result .item  .table_style01{margin:15px 0 0 165px }
 .ncs_result .item  .table_style01 table{width: 100%;table-layout: fixed}
@@ -498,14 +461,14 @@ body {
 /* 취업준비도 결과 */
 .jr_result_top{display: flex;box-shadow: 3px 7px 0 #f7f7f7;border:1px solid #d4d4d4;border-radius: 20px;overflow: hidden}
 .jr_result_top .tit{font-size: 20px;width: 130px;display: flex;background: #ddd;justify-content: center;align-items: center;color: #fff;font-weight: bold}
-.jr_result_top .tit p{color:#fff}
+.jr_result_top .tit p{color:#fff;font-weight:500;font-size:18px;}
 .jr_result_top .cont{width: calc(100% - 250px);padding: 30px  60px}
 .jr_result_top .cont .name{color: #222;}
 .jr_result_top .tit.jr_red{background: #e80f0f}
 .jr_result_top .tit.jr_blue{background: #05a1ff}
 
 /*취업가능성진단서비스 차트*/
-.jr_table_wrap .jr_header {text-align: center;height: 30px;line-height: 30px;background: #f7f7f8;font-size: 13px;font-weight:600;border: 1px solid #bfbfbf;vertical-align: middle;color: #666;}
+.jr_table_wrap .jr_header {text-align: center;height: 30px;line-height: 30px;background: #f7f7f8;font-size: 15px;font-weight:600;border: 1px solid #bfbfbf;vertical-align: middle;color: #666;}
 .jr_table_wrap .jr_header:first-child{border-left: 0;}
 .jr_table_wrap .jr_header:last-child{border-right: 0;}
 .jr_table_wrap table {width: 100%;table-layout: fixed;border-collapse: collapse;}
@@ -525,7 +488,7 @@ body {
 .jr_table_wrap .jr-bg td:last-child{border-right: 0}
 .jr_table_wrap .jr_chart {height: 100%;}
 .jr_table_wrap .jr_chart table{height: 100%;}
-.jr_table_wrap .jr_chart th{vertical-align: middle;font-size: 13px;color: #666666;}
+.jr_table_wrap .jr_chart th{vertical-align: middle;font-size: 15px;color: #666666;}
 .jr_table_wrap .jr_chart .bar{margin-top: 15px}
 .jr_table_wrap .jr_chart .bar > div {height: 12px;width: 50px;margin-bottom: 5px;position: relative;animation: 1s chart;border-radius: 0 20px 20px 0}
 .jr_table_wrap .jr_chart .bar > div:last-child{margin-bottom: 0;}
@@ -535,7 +498,7 @@ body {
 .jr_table_wrap .jr_chart .bar > div .num{position: absolute;right: -20px;top: 50%;transform: translateY(-50%);color: #666;font-size: 12px;color: rgba(102, 102, 102, 0.5)}
 .jr_table_wrap  .grayBg{background: #f7f7f8;}
 .jr_table_wrap .dotted_b{border-bottom: 1px dotted #bfbfbf}
-.jr_table_wrap .pd{padding: 10px;vertical-align: middle;font-size: 13px;color: #666666;}
+.jr_table_wrap .pd{padding: 10px;vertical-align: middle;font-size: 15px;color: #666666;}
 
 .jr_table_wrap .jr_lagend{display: flex;justify-content: flex-end;margin-bottom: 15px}
 .jr_table_wrap .jr_lagend li{display: flex;align-items: center;margin-right: 20px;color: #666;cursor: pointer;font-size: 12px}
@@ -544,7 +507,7 @@ body {
 .jr_table_wrap .jr_lagend .spink span{background: #fd486a}
 .jr_table_wrap .jr_lagend .sgray span{background: #e2e2e2;}
 .jr_table_wrap .jr_chart .bar > div.off{opacity: 0.3}
-.job_pre .check{font-size: 14px;position: relative;padding-left: 30px;font-weight: 500}
+.job_pre .check{font-size: 16px;position: relative;padding-left: 30px;font-weight: 500}
 .job_pre .check:before{content: '';display: block;background: url(../images/diag/check03.png) no-repeat;width: 23px;height: 23px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 
 .jp_result_table{padding-left: 30px;}
@@ -554,10 +517,11 @@ body {
 .other_sevice > *{flex-grow: 1;margin-right: 30px;border-radius: 20px;overflow: hidden;}
 .other_sevice > *:last-child{margin-right: 0}
 .other_sevice img{display: block;width: 100%}
-.other_sevice .txt{background:#0f2057;color: #fff;text-align: center;font-size: 13px;padding: 10px;}
+.other_sevice .txt{background:#0f2057;color: #fff;text-align: center;font-size: 15px;padding: 10px;}
 
 /* 취업준비도진단 */
-.emab_select_top{font-size: 22px;text-align: center;font-weight: 600;}
+.emab_select_top{text-align: center;font-weight: 600;}
+.emab_select_top p{font-size: 22px;}
 .emab_select_top span{margin:0 auto 15px auto}
 .emab_select_top .ea_age{background: url(../images/diag/emab_step01.png) no-repeat;width: 67px;height: 84px;display: block;}
 .emab_select{background: #e7f0f5;margin-top:80px;position: relative;padding: 140px 0 10px 0}
@@ -575,8 +539,8 @@ body {
 .emab_select .item .radio_style01.radio_bottom input[type="radio"] + label{padding-left: 0;padding-bottom: 30px;}
 .emab_select .item .radio_style01.radio_bottom input[type="radio"] + label:before{bottom: 0;top: auto;left: 50%;transform: translateX(-50%)}
 .emab_select .radio_style01.radio_bottom input[type="radio"]:checked + label:after{top: auto;bottom: 1px;left: 50%;transform: translateX(-50%)}
-.emab_select .item .txt{margin-top: 15px}
-.emab_select .item label {font-size: 14px;font-weight: 500}
+.emab_select .item .txt{margin-top: 15px;font-size:18px}
+.emab_select .item label {font-size: 16px;font-weight: 500}
 .emab_select .item label span{display: block;}
 .emab_select .item.active .img{border: 3px solid #003d92;}
 
@@ -590,28 +554,29 @@ body {
 .emab_select .cont{background: #f9f9f9;border: 1px solid #d4d4d4;margin-bottom: 5px;border-radius: 20px;}
 .emab_select .cont:last-child{margin-bottom: 0}
 .emab_select .cont .tit,
-.emab_select .cont .eh_text li p{font-size: 14px;font-weight: bold;}
+.emab_select .cont .eh_text li p{font-size: 16px;font-weight: bold;}
 .emab_select .cont .eh_text{padding: 0  40px;display: none}
 .emab_select .cont .eh_text li p{font-weight: 500;}
 .emab_select .cont .eh_text > ul > li {border-bottom: 1px solid #cacaca;padding-bottom: 25px;margin-bottom: 25px}
 .emab_select .cont .eh_text > ul > li:last-child{padding-bottom: 0;border-bottom: 0}
 .emab_select .cont .eh_text .flex_list{display: flex;flex-wrap: wrap;}
-.emab_select .cont .eh_text .flex_list li{margin-right: 60px;font-size: 13px;color: #666;margin-top: 20px}
+.emab_select .cont .eh_text .flex_list li{margin-right: 40px;font-size: 16px;color: #666;margin-top: 20px}
 .emab_select .cont a{display: block;padding:20px 40px;position: relative;}
 .emab_select .cont a:after{content: '';display: block;background: url(../images/diag/ac_arrow.png) no-repeat;width: 19px;height: 12px;position: absolute;right: 40px;top: 50%;transform: translateY(-50%)}
 .emab_select .cont.active{background: #fff}
 .emab_select .cont.active a:after{content: '';background: url(../images/diag/ac_arrow_active.png) no-repeat center;}
 
 .em_diag_area{margin-top: 15px}
+.em_diag_area .tit{font-size:18px}
 .em_diag_area .item{padding: 20px;border-top: 1px solid #dadada;color: #787878;font-size: 14px}
 .em_diag_area .item:last-child{border-bottom: 1px solid #dadada}
 .em_diag_area .item:nth-child(odd){background: #f9f9f9}
 .em_diag_area .item .flex_list{display: flex;flex-wrap: wrap;}
-.em_diag_area .item .flex_list li{margin-top: 20px;margin-right: 100px;}
-
+.em_diag_area .item .flex_list li{margin-top: 20px;margin-right: 40px;font-size:16px}
+.em_diag_area .item .flex_list li label{font-size:16px}
 /* 취업가능성진단 결과 */
 .optionalJob.white_box{background: url(../images/diag/ea_ico.png) no-repeat #fff left 40px center;padding: 40px 60px 40px 200px}
-.optionalJob li{font-size: 14px;margin-bottom: 5px;}
+.optionalJob li{font-size: 16px;margin-bottom: 5px;}
 .optionalJob li:last-child{margin-bottom: 0}
 
 /*취업가능성진단서비스 차트*/
@@ -652,7 +617,7 @@ body {
 /* 탭메뉴 */
 .rs_tabs{display: flex;}
 .rs_tabs li{border: 1px solid #d4d4d4;margin-right:-1px;flex-grow: 1;text-align: center;}
-.rs_tabs a{font-size: 12px;padding: 10px;display: block;}
+.rs_tabs a{font-size: 16px;padding: 10px;display: block;}
 .rs_tabs .active a{background: #003d92;color: #fff;font-weight: bold;}
 
 /* 취업가능성진단 차트 */
@@ -662,7 +627,7 @@ body {
 .oj_chart02 .bb .c3-grid line {stroke: #f2f4f7;stroke-dasharray: 0;fill:#f2f4f7}
 .oj_chart02 .bb path{stroke:#ced4e5}
 .oj_chart02 .bb-axis-y text,
-.oj_chart02 .bb-axis-x text{font-size: 13px;color: #666;}
+.oj_chart02 .bb-axis-x text{font-size: 13px;color: #666;font-family:'Noto Sans KR';}
 .oj_chart02 .legend{background: #f7f7f8;padding: 15px;display: flex;justify-content: flex-end;margin-top: 30px}
 .oj_chart02 .legend span{font-size: 12px;color: #666666;margin-right: 40px;background: none !important;position: relative;padding-left: 15px;}
 .oj_chart02 .legend span:before{content: '';display: block;width: 10px;height: 10px;border-radius: 50%;background: #000;position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
@@ -680,8 +645,8 @@ body {
 .result_go .inner{display: flex;justify-content: space-between;align-items: center}
 .result_go .inner p,
 .result_go .inner a{color: #fff;}
-.result_go .inner p{font-size: 14px;}
-.result_go .inner a{font-weight: 500}
+.result_go .inner p{font-size: 16px;}
+.result_go .inner a{font-weight: 500;font-size:18px}
 
 @media all and (max-width:1600px){
 	/*사전진단*/
@@ -698,13 +663,21 @@ body {
 	/*사전진단*/
 	.before_diag .bd_visual:before{background-size: 300px;width: 300px;height: 290px}
 	.before_diag .bd_visual .bd_top{padding-left: 300px}
-	
+
 	/* 마이페이지 */
 	.mypage_diag .table_style04 table{min-width: 100%;width: auto;white-space: nowrap}
 
 }
 
+@media all and (max-width:999px){
+	.inner{width:96%}
+	}
+
 @media all and (max-width:1024px){
+	.mb_table{width: 100%;overflow-x: auto}
+	.mb_table table{width: auto;min-width: 100%}
+	.mb_table table td,
+	.mb_table table th{white-space: nowrap}
 	/*사전진단*/
 	.before_diag .bd_visual:before{background-size: 200px;width: 200px;height: 190px;}
 	.before_diag .bd_visual .bd_top{padding-left: 0;padding-top: 200px}
@@ -720,7 +693,7 @@ body {
 	/*사전진단 결과*/
 	.before_result .item{flex-direction: column}
 	.before_result .table_style01 colgroup col:nth-child(1){width: 110px !important}
-	.before_result .tit{width: 100%;padding: 10px;box-sizing: border-box}
+	.before_result .tit{font-size:18px;width: 100%;padding: 10px;box-sizing: border-box}
 	.before_result .tit br{display: none}
 	.before_result .table_style01 td{text-align: left}
 
@@ -954,10 +927,10 @@ body {
 	.optionalJob.white_box{padding-top: 100px;background-position: top 20px left 20px;background-size: 80px}
 	.table_wrap{width: 100%;overflow-x: auto;}
 	.table_wrap table{width: 768px;}
-	
+
 	/* 마이페이지 */
 	.mypage_diag .btn_wrap .btn_style07{font-size: 14px;padding: 10px 20px}
-	
+
 	/* 진단결과 보기*/
 	.result_go{padding: 30px 0}
 	.result_go .inner{display: block;}
@@ -966,7 +939,8 @@ body {
 }
 
 @media all and (max-width:480px){
-
+	.flex_right{display:block}
+	.flex_right .jd_privacy {margin-top:10px;justify-content:flex-end !important;flex-direction:row}
 	.diag_wrap .table_style03 tbody th,
 	.diag_wrap .table_style03 tbody td{padding: 10px}
 
