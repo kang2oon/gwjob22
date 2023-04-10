@@ -2649,7 +2649,7 @@ width: calc(100% - 170px);
     .emp_infor_main .detail_search .item_wrap .tit{font-size: 1.6rem;padding: 13px;margin-bottom: 15px }
     .emp_infor_main .detail_search .item_wrap .item .scrollbar{max-height: 107px}
     .emp_infor_main .detail_search .item_wrap li{margin-bottom: 10px}
-	
+    .emp_infor_main .detail_search .item_wrap li:first-child{margin-top: 5px}
     /* 고용정보서비스 상세 */
     .emp_infor_view .btn_wrap a{padding: 10px 30px}
     .emp_infor_view .emp_infor_top .tit span{padding: 5px 15px}
