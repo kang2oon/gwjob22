@@ -1,19 +1,23 @@
-// 스크롤바 커스텀
-(function ($) {
-	$(window).on("load", function () {
-		$(".scrollbar").mCustomScrollbar({
-			scrollInertia: 0,
-		});
-
-		$(".scrollbar02").mCustomScrollbar({
-			scrollInertia: 0,
-		});
+	$(document).mouseup(function (e) {
+		var movewrapp = $(".ja_diag .jt_inner");
+		var moveinnerr = $(".ja_diag .more_btn");
+		if (moveinnerr.has(e.target).length === 0) {
+			movewrapp.removeClass("active");
+		}
 	});
-
-})(jQuery);
-
+	
 
 $(document).ready(function () {
+	
+	//직업역량진단 더보기
+	$('.ja_diag .more_btn').click(function () {
+		$(this).parent().toggleClass('active');
+		$(this).parent().parent().parent().parent().parent().siblings().find('.more').removeClass('active')
+	});
+	
+
+	$(".imgFill").imgLiquid();
+
 	/*footer 유관사이트*/
 	$('.fm_site').click(function () {
 		$(this).toggleClass('on');
@@ -28,10 +32,11 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 		pauseOnHover: true,
 		vertical: true,
+		slidesToShow : 5,		// 한 화면에 보여질 컨텐츠 개수
 	});
 
 	// 자소서 직무별 필터
-	$('.filter_wrap li a').off().on('click', function () {
+	$('.filter_wrap li').on('click', function () {
 		$(this).toggleClass('on');
 	});
 
@@ -63,7 +68,6 @@ $(document).ready(function () {
 
 	});
 
-	$(".imgFill").imgLiquid();
 
 
 	// 페이지 nav
@@ -176,16 +180,37 @@ $(document).ready(function () {
 		}
 	});
 
-	$(document).ready(function () {
 		// a href='#' 클릭 무시 스크립트
 		$('a[href="#"]').click(function (ignore) {
 			ignore.preventDefault();
 		});
+
+
+
+
+		
+		if (window.innerWidth > 1260) {
+			// 온라인 참여기업 if문 추가
+		$('.online_slider').each(function () {
+			if ($(this).find('li').length < 9) {
+				$(this).parent().find('.slider_scrollbar').hide();
+			} else {
+				$(this).parent().find('.slider_scrollbar').show();
+			}
+		});
+		} else {
+			$('.online_slider').find('.slider_scrollbar').show();
+		}
+
+
+	
+	
+	$(".online_slider .logo").imgLiquid({
+		fill: false,
+		horizontalAlign: "center",
+		verticalAlign: "50%"
 	});
-
-
-
-
+	
 	// 온라인 참여기업  슬라이드
 	var $slider = $('.online_slider');
 	var $progressBar = $('.progress');
@@ -196,8 +221,6 @@ $(document).ready(function () {
 			$slider.slick("slickGoTo", 0, true);
 		}, 0);
 	});
-
-
 	$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 		var calc = ((nextSlide + 1) / (slick.slideCount)) * 100;
 		$progressBarLabel
@@ -212,7 +235,7 @@ $(document).ready(function () {
 		rows: 2,
 		slidesPerRow: 4,
 		arrows: true,
-		infinite: false,
+		infinite: true,
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
 		responsive: [
@@ -241,48 +264,40 @@ $(document).ready(function () {
   ]
 	});
 
-	$('.online_slider').on('wheel', (function (e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickNext');
-		} else {
-			$(this).slick('slickPrev');
-		}
-	}));
 
 	// 달력
 	$(".datepicker-wrap input").datepicker({
 		dateFormat: 'yy-mm-dd' //달력 날짜 형태
 			,
-		showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+			showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
 			,
-		showMonthAfterYear: true // 월- 년 순서가아닌 년도 - 월 순서
-			,
+			showMonthAfterYear: true // 월- 년 순서가아닌 년도 - 월 순서
+				,
 		changeYear: true //option값 년 선택 가능
 			,
-		changeMonth: true //option값  월 선택 가능                
+			changeMonth: true //option값  월 선택 가능                
 			,
-		showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+			showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
 			,
-		buttonImage: "./images/sub/calendar_ico.png" //버튼 이미지 경로
+			buttonImage: "https://gwjob.kgoon.pw/html/images/sub/calendar_ico.png" //버튼 이미지 경로//버튼 이미지 경로
 			,
-		buttonImageOnly: true //버튼 이미지만 깔끔하게 보이게함
+			buttonImageOnly: true //버튼 이미지만 깔끔하게 보이게함
+				,
+				buttonText: "선택" //버튼 호버 텍스트              
+				,
+			yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
+				,
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 텍스트
 			,
-		buttonText: "선택" //버튼 호버 텍스트              
-			,
-		yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
-			,
-		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 텍스트
-			,
-		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip
-			,
-		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 텍스트
-			,
-		dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 Tooltip
-			,
-		minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-			,
-		maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip
+				,
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 텍스트
+				,
+			dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 Tooltip
+				,
+			minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+				,
+			maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
 	});
 
 
@@ -383,8 +398,8 @@ $(document).ready(function () {
 			debug: false
 		});
 	});
-	
-		//프린트 -> 취업활동증명서 출력
+
+	//프린트 -> 취업활동증명서 출력
 	$('#prt_btn2').on("click", function () {
 		$('#print-layer').printThis({
 			importCSS: true,
@@ -471,19 +486,6 @@ $(document).ready(function () {
 		$(this).parent().parent().next().slideToggle(200);
 	});
 
-	//직업역량진단서비스 직종선택
-	$('.ja_select > div').click(function () {
-		$(this).find('input').prop("checked", "checked");
-		$(this).addClass('active');
-		$(this).siblings().removeClass('active');
-		$(this).siblings().find('input').removeProp("checked", "");
-	})
-
-	//직업역량진단 더보기
-	$('.ja_diag .more_btn').click(function () {
-		$(this).parent().toggleClass('active');
-		$(this).parent().parent().parent().parent().parent().siblings().find('.more').removeClass('active')
-	});
 
 	//진단 결과 더보기
 	$('.bar_area .more_btn').click(function () {
@@ -498,13 +500,6 @@ $(document).ready(function () {
 		}
 	});
 
-	$(document).mouseup(function (e) {
-		var movewrapp = $(".ja_diag .jt_inner");
-		var moveinnerr = $(".ja_diag .more_btn");
-		if (moveinnerr.has(e.target).length === 0) {
-			movewrapp.removeClass("active");
-		}
-	});
 
 	//진단결과 차트 
 	$('.ja_chart  .lg_blue').click(function () {
@@ -620,55 +615,6 @@ $(document).ready(function () {
 	});
 
 
-	//자소서 컨설팅 하단 height 맞추기
-	changeDivHeight();
-
-	$(window).resize(function () {
-		changeDivHeight();
-	});
-	/*here we place our logic
-	  we take each sizes, compares which one is largest and then
-	  set other's height.*/
-	function changeDivHeight() {
-		// .innerHeight() returns height of an element
-		var a = $(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").innerHeight();
-		var b = $(".self_intro_main .main_section05 #tab1 .job_aricle > div").innerHeight();
-		//alert(a + " " + b);
-		// .height() sets height of an element
-		// we can pass an integer value, which will be converted into px
-		// otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
-		if (a > b) {
-			$(".self_intro_main .main_section05 #tab1 .job_aricle > div").height(a);
-		} else {
-			$(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").height(b);
-		}
-	}
-
-
-	changeDivHeight2();
-
-	$(window).resize(function () {
-		changeDivHeight2();
-	});
-	/*here we place our logic
-	  we take each sizes, compares which one is largest and then
-	  set other's height.*/
-	function changeDivHeight2() {
-		// .innerHeight() returns height of an element
-		var c = $(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").innerHeight();
-		var d = $(".self_intro_main .main_section05 #tab2 .job_aricle > div").innerHeight();
-		//alert(a + " " + b);
-		// .height() sets height of an element
-		// we can pass an integer value, which will be converted into px
-		// otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
-		if (c > d) {
-			$(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").height(c);
-		} else {
-			$(".self_intro_main .main_section05 #tab2 .job_aricle > div").height(d);
-		}
-	}
-
-
 	$('.tab_slider li button').click(function () {
 		$(this).toggleClass('active');
 	});
@@ -715,6 +661,7 @@ $(document).ready(function () {
 		infinite: false,
 		arrows: true,
 		slidesToShow: 4,
+		slidesToScroll : 4,
 		pauseOnHover: true,
 		dots: false,
 		responsive: [ // 반응형 웹 구현 옵션
@@ -722,6 +669,7 @@ $(document).ready(function () {
 				breakpoint: 1400, //화면 사이즈 960px
 				settings: {
 					slidesToShow: 3,
+					slidesToScroll : 3
 				}
                     },
 			{
@@ -729,6 +677,7 @@ $(document).ready(function () {
 				settings: {
 					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
 					slidesToShow: 2,
+					slidesToScroll : 2
 				}
                     },
 			{
@@ -736,6 +685,7 @@ $(document).ready(function () {
 				settings: {
 					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
 					slidesToShow: 1,
+					slidesToScroll :1
 				}
                     }
 
@@ -743,13 +693,13 @@ $(document).ready(function () {
 	});
 
 
-	$('.like').click(function () {
-		$(this).toggleClass('active');
-	});
-
-	$('.en_like').click(function () {
-		$(this).toggleClass('active');
-	});
+//	$('.like').click(function () {
+//		$(this).toggleClass('active');
+//	});
+//
+//	$('.en_like').click(function () {
+//		$(this).toggleClass('active');
+//	});
 
 	$('.view-menus li a').click(function (e) {
 		e.preventDefault(); //a태그이기때문에 버벅거림?빼기
@@ -843,15 +793,61 @@ $(document).ready(function () {
 
 	});
 
-
-			//left_wing
-			$(window).on('scroll', function () {
-				if ($(window).scrollTop() > 226) {
-					$('.left_wing').addClass("fixed");
-				} else {
-					$('.left_wing').removeClass("fixed");
+	$('.local_tag a').click(function () {
+		$(this).toggleClass('active')
+	});
+	
+	//left_wing
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 226) {
+			$('.left_wing').addClass("fixed");
+		} else {
+			$('.left_wing').removeClass("fixed");
+		}
+	});
+    
+    /* 고용정보서비스 */
+	$('.pick_slide').slick({
+		slide: 'div',
+		infinite: false,
+		arrows: true,
+		slidesToShow: 4,
+		pauseOnHover: true,
+		dots: false,
+		responsive: [ // 반응형 웹 구현 옵션
+			{
+				breakpoint: 1400, //화면 사이즈 960px
+				settings: {
+					slidesToShow: 3,
 				}
-			})
+                    },
+			{
+				breakpoint: 641, //화면 사이즈 768px
+				settings: {
+					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+					slidesToShow: 2,
+				}
+                    },
+			{
+				breakpoint: 480, //화면 사이즈 768px
+				settings: {
+					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+					slidesToShow: 1,
+				}
+                    }
+
+                ]
+	});
+    
+    $('.detail_search .tit_more').click(function(){
+       $(this).toggleClass('active'); 
+       $(this).next().slideToggle();
+    });
+    
+    $('.emp_infor_view .share .open').click(function(){
+        $(this).toggleClass('acitve');
+        $(this).next().fadeToggle(0)
+    })
 });
 
 
@@ -859,11 +855,56 @@ function openModal(modalname) {
 	document.get
 	$("." + modalname).show();
 	$('body').addClass('not_scroll');
-	$('.shadow').show();
 }
 
 function close_pop(flag) {
 	$('.popup_area').hide();
 	$('body').removeClass('not_scroll');
-	$('.shadow').hide();
 };
+
+
+
+
+
+//자소서 컨설팅 하단 height 맞추기
+
+
+window.onload = function(){
+
+	
+/*here we place our logic
+  we take each sizes, compares which one is largest and then
+  set other's height.*/
+	// .innerHeight() returns height of an element
+	var a = $(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").innerHeight();
+	var b = $(".self_intro_main .main_section05 #tab1 .job_aricle > div").innerHeight();
+	//alert(a + " " + b);
+	// .height() sets height of an element
+	// we can pass an integer value, which will be converted into px
+	// otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
+	if (a > b) {
+		$(".self_intro_main .main_section05 #tab1 .job_aricle > div").height(a);
+	} else {
+		$(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").height(b);
+	}
+
+
+
+
+
+
+	// .innerHeight() returns height of an element
+	var c = $(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").innerHeight();
+	var d = $(".self_intro_main .main_section05 #tab2 .job_aricle > div").innerHeight();
+	//alert(a + " " + b);
+	// .height() sets height of an element
+	// we can pass an integer value, which will be converted into px
+	// otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
+	if (c > d) {
+		$(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").height(c);
+	} else {
+		$(".self_intro_main .main_section05 #tab2 .job_aricle > div").height(d);
+	}
+}
+
+
