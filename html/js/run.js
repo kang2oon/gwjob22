@@ -847,7 +847,48 @@ $(document).ready(function () {
     $('.emp_infor_view .share .open').click(function(){
         $(this).toggleClass('acitve');
         $(this).next().fadeToggle(0)
-    })
+    });
+    
+    
+    /* 상시이벤트 페이지 작성예시*/
+    	$('.ev_ex_slider').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: true,
+        dots: false,
+        speed: 300,
+        centerPadding: '0',
+        infinite: true,
+        autoplaySpeed: 5000,
+        autoplay: true,
+        responsive: [ // 반응형 웹 구현 옵션
+			{
+				breakpoint: 1400, //화면 사이즈 960px
+				settings: {
+					slidesToShow: 2,
+				}
+                    },
+			{
+				breakpoint: 768, //화면 사이즈 768px
+				settings: {
+					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+					slidesToShow: 1,
+				}
+                    },
+			{
+				breakpoint: 480, //화면 사이즈 768px
+				settings: {
+					//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+					slidesToShow: 1,
+				}
+                    }
+
+                ]
+            
+	});
+    
+    
 });
 
 
