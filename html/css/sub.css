@@ -1869,6 +1869,7 @@ width: calc(100% - 170px);
 .ev_page .ev_list .tit a:hover,
 .ev_page .ev_list .tit a:active,
 .ev_page .ev_list .tit a:focus{text-decoration: underline}
+.ev_page .ev_list .tit a{width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: block}
 
 
 
