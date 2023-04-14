@@ -1823,7 +1823,7 @@ width: calc(100% - 170px);
 .ev_page .ev_ex_slider .slick-list{margin: 0 -24px}
 .ev_page .ev_ex_slider .item .top{display: none;margin-bottom: 2rem}
 .ev_page .ev_ex_slider .item .top .img{width: 100px;height: 100px;border-radius: 50%;background: url(../images/sub/ex_img01.png) no-repeat center bottom #f0f7ff}
-.ev_page .ev_ex_slider .item:nth-child(2n) .top .img{background: url(../images/sub/ex_img02.png) no-repeat center bottom #f0f7ff}
+.ev_page .ev_ex_slider .item:nth-child(2n) .top .img{background: url(../images/sub/ex_img02.png) no-repeat center bottom #f0f7ff !important}
 .ev_page .ev_ex_slider .item:nth-child(3n) .top .img{background: url(../images/sub/ex_img03.png) no-repeat center bottom #f0f7ff}
 .ev_page .ev_ex_slider .item:nth-child(4n) .top .img{background: url(../images/sub/ex_img04.png) no-repeat center bottom #f0f7ff}
 .ev_page .ev_ex_slider .item .top .txt{width: calc(100%  - 120px);margin-left: 20px;}
