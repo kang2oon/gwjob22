@@ -862,6 +862,7 @@ $(document).ready(function () {
         infinite: true,
         autoplaySpeed: 5000,
         autoplay: true,
+      adaptiveHeight: false,
         responsive: [ // 반응형 웹 구현 옵션
 			{
 				breakpoint: 1400, //화면 사이즈 960px
@@ -887,6 +888,55 @@ $(document).ready(function () {
                 ]
             
 	});
+    
+    if($(window).width() < 768) {
+         var max_h=0; // 최대 높이 구하기
+
+    $(".ev_ex_slider .item").each(function(){
+
+        var h = parseInt($(this).css("height"));
+
+        if(max_h<h){ max_h = h; }
+
+    });
+
+    $(".ev_ex_slider").each(function(){ // 최대 높이로 설정
+
+        $(this).css({height:max_h + 100});
+
+    });
+} else {
+// window 크기가 768보다 클때
+}
+    
+    $(window).resize(function() {
+	if($(window).width() < 768) {
+	   var max_h=0; // 최대 높이 구하기
+
+    $(".ev_ex_slider .item").each(function(){
+
+        var h = parseInt($(this).css("height"));
+
+        if(max_h<h){ max_h = h; }
+
+    });
+
+    $(".ev_ex_slider").each(function(){ // 최대 높이로 설정
+
+        $(this).css({height:max_h + 100});
+
+    });
+	} else {
+    $(".ev_ex_slider").each(function(){ // 최대 높이로 설정
+
+        $(this).css({height:'auto'});
+
+    });
+	}
+});
+    
+
+
     
     
 });
